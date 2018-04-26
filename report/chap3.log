@@ -1,0 +1,2340 @@
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  11 APR 2018 10:32
+ restricted system commands enabled.
+**chap3.tex
+(./chap3.tex
+LaTeX2e <2017-04-15>
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /Users/danish/Library/texlive/2017/texmf-var/luatex
+-cache/generic)(using read cache: /usr/local/texlive/2017/texmf-var/luatex-cache
+/generic /Users/danish/Library/texlive/2017/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /Users/danish/Library/texlive/2017/t
+exmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/local/texlive/2017/texmf-dist/tex/luatex/luaotfload/fontl
+oader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /Users/danish/Library/texlive/2017/t
+exmf-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.104 seconds
+Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.1 \chapter
+          {Design}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{D
+            esign}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
+[]Design
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 I
+   n this section, we would be describing the design process of our oil trad...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.4 ... oil trading model. In the previous \hyperref
+                                                  [background]{section}, we ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
+[]In
+ []
+
+! Undefined control sequence.
+l.6 \tikzstyle
+            {decision} = [diamond, draw, fill=blue!20,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \tikzstyle{d
+              ecision} = [diamond, draw, fill=blue!20,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.8 \tikzstyle
+            {block} = [rectangle, draw, fill=blue!20,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.10 \tikzstyle
+             {line} = [draw, -latex']
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.11 \tikzstyle
+             {cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \begin{figure}
+                 [!h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \begin{tikzpicture}
+                      [node distance = 2cm, auto]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.18     \node
+             [block] (init) {clean \\ data};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--18
+ []decision 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     \node [block] (init) {clean \\ d
+                                       ata};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.19     \node
+             [cloud, right of=init] (pandas) {\texttt{pandas}};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+luaotfload | db : Font names database loaded from /Users/danish/Library/texlive/
+2017/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users/
+danish/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-re
+gular.luc)
+! Undefined control sequence.
+l.20     \node
+             [block, left of=init, node distance=3cm] (ret) {retrieve \\ dat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (31.5pt too wide) in paragraph at lines 18--20
+ \TU/lmtt/m/n/10 pandas\nullfont ; 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...nit, node distance=3cm] (ret) {retrieve \\ d
+                                                  atasets};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.21     \node
+             [block, below of=init] (identify) {identify \\ regime};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...ck, below of=init] (identify) {identify \\ r
+                                                  egime};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.22     \node
+             [cloud, left of=identify] (expert) {\texttt{hmms}};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23     \node
+             [block, below of=identify] (evaluate) {train \\ network};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (21.0pt too wide) in paragraph at lines 21--23
+ \TU/lmtt/m/n/10 hmms\nullfont ; 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...k, below of=identify] (evaluate) {train \\ n
+                                                  etwork};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.24     \node
+             [block, left of=evaluate, node distance=3cm] (update) {change \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...te, node distance=3cm] (update) {change \\ p
+                                                  arameters};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.25     \node
+             [decision, below of=evaluate] (decide) {high \\ validation \\ e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...sion, below of=evaluate] (decide) {high \\ v
+                                                  alidation \\ error?};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...=evaluate] (decide) {high \\ validation \\ e
+                                                  rror?};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.26     \node
+             [block, right of=decide, node distance=4cm] (test) {test \\ mod...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...decide, node distance=4cm] (test) {test \\ m
+                                                  odel};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.27     \node
+             [block, left of=ret, node distance=3cm] (idind) {identify \\ in...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...t, node distance=3cm] (idind) {identify \\ i
+                                                  ndicators};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.28     \node
+             [block, below of=idind] (macro) {macro \\ research};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ... [block, below of=idind] (macro) {macro \\ r
+                                                  esearch};
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.29     \node
+             [cloud, right of=evaluate] (pgmpy) {\texttt{pgmpy}};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31     \path
+             [line] (init) -- (identify);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.32     \path
+             [line] (ret) -- (init);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.33     \path
+             [line] (identify) -- (evaluate);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.34     \path
+             [line] (evaluate) -- (decide);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.35     \path
+             [line,dashed] (expert) -- (identify);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.36     \path
+             [line,dashed] (pandas) -- (init);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.37     \path
+             [line] (decide) -| node [near start] {yes} (update);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.38     \path
+             [line] (decide) -- node {no} (test);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39     \path
+             [line] (update) |- (evaluate);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.40     \path
+             [line] (macro) -- (idind);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41     \path
+             [line] (idind) -- (ret);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42     \path
+             [line,dashed] (pgmpy) -- (evaluate);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \end{tikzpicture}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \caption
+           {An illustration of the design process for the oil trading model.}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \end{figure}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (26.25pt too wide) in paragraph at lines 28--46
+\TU/lmtt/m/n/10 pgmpy\nullfont ;
+ []
+
+! Undefined control sequence.
+l.47 \section
+           {Macro Strategy}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \section{M
+             acro Strategy}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 47--48
+[]Macro
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 M
+    ost speculation on oil is done on the interpretation and prediction of l...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{ecoact}
+(load luc: /Users/danish/Library/texlive/2017/texmf-var/luatex-cache/generic/fon
+ts/otl/lmroman10-regular.luc)(load luc: /Users/danish/Library/texlive/2017/texmf
+-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.49 ...rading a global macro strategy \cite{ecoact}
+                                                  . Macroeconomic indicators...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `ecoact' on page  undefined on input line 49.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 49--50
+[]Most
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 49--50
+[[]].
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 T
+    hese macroeconomic variables are usually in the form economic time-serie...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 51--52
+[]These
+ []
+
+! Undefined control sequence.
+l.54 \subsection
+              {Energy Information Administration}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \subsection{E
+                nergy Information Administration}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 54--55
+[]Energy
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 O
+    ther than providing time-series data on the crude oil markets markets, t...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 56--57
+[]Other
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 T
+    he EIA provides a number of datasets which are easily accessible from th...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.58 ...market factors of the oil markets. The \href
+                                                  {https://www.eia.gov/outlo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 58--59
+[]The
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 T
+    he EIA assess the various factors that influence the crude oil prices; p...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{eiacrude}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.60 ...rading and financial markets \cite{eiacrude}
+                                                  . The EIA lists non-OPEC a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `eiacrude' on page  undefined on input line 60.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--61
+[]The
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 60--61
+[[]].
+ []
+
+! Undefined control sequence.
+l.62 \subsubsection
+                 {Supply Non-OPEC}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \subsubsection{S
+                   upply Non-OPEC}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 62--63
+[]Supply
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 C
+    rude Oil production from countries outside the Organization of the Petro...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{nonopec}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.64 ...countries in a number of ways \cite{nonopec}
+                                                  . In contrast to OPEC oil ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `nonopec' on page  undefined on input line 64.
+
+\citation{opecshort}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.64 ...ices by managing production \cite{opecshort}
+                                                  . Ceteris paribus, when th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `opecshort' on page  undefined on input line 64.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 64--65
+[]Crude
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 64--65
+[[]].
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 64--65
+[[]].
+ []
+
+! Undefined control sequence.
+l.66 \subsubsection
+                 {Supply OPEC}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \subsubsection{S
+                   upply OPEC}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 66--67
+[]Supply
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 C
+    rude Oil production \citep{opec} in the Organization of the Petroleum Ex...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.68 Crude Oil production \citep
+                              {opec} in the Organization of the Petroleum Ex...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.68 ... Petroleum Exporting Countries (OPEC) \citep
+                                                  {opec} plays an pivotal ro...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.68 ...C) \citep{opec} plays an pivotal role \citep
+                                                  {opecsmarketrole} in the s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 68--69
+[]Crude
+ []
+
+! Undefined control sequence.
+l.70 \subsubsection
+                 {Demand OECD}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \subsubsection{D
+                   emand OECD}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 70--71
+[]Demand
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 T
+    he Organization of Economic Cooperation and Development (OECD) consists ...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 72--73
+[]The
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 S
+    tructural conditions in OECD member countries economies influence\cite{o...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{oecd}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.74 ...ber countries economies influence\cite{oecd}
+                                                   the relationship between ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `oecd' on page  undefined on input line 74.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 74--75
+[]Structural
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 74--75
+influence[[]]
+ []
+
+! Undefined control sequence.
+l.77 \subsubsection
+                 {Demand Non-OECD}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \subsubsection{D
+                   emand Non-OECD}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 77--78
+[]Demand
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 O
+    il consumption in developing countries outside the Organization of Econo...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{nonoecd}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.79 ...ncreased by almost 40 percent \cite{nonoecd}
+                                                  . \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `nonoecd' on page  undefined on input line 79.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 79--80
+[]Oil
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 79--80
+[[]]. 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 S
+    tructural conditions in non-OECD countries are entirely different to tha...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 81--82
+[]Structural
+ []
+
+! Undefined control sequence.
+l.84 \subsubsection
+                 {Balance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \subsubsection{B
+                   alance}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 84--85
+[]Balance 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 I
+    nventories \cite{impactinvent} play an important role in the oil markets...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{impactinvent}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.86 Inventories \cite{impactinvent}
+                                   play an important role in the oil markets...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `impactinvent' on page  undefined on input line 86.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 86--87
+[]Inventories
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 86--87
+[[]]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 F
+    or quantifying balance, we would be using \href{https://www.eia.gov/open...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.88 ...quantifying balance, we would be using \href
+                                                  {https://www.eia.gov/opend...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.88 .../www.eia.gov/opendata/qb.php?sdid=STEO.PASC_
+                                                  OECD_T3.M}{\texttt{STEO.PA...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 88.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 88.
+! Extra }, or forgotten $.
+l.88 ...ov/opendata/qb.php?sdid=STEO.PASC_OECD_T3.M}
+                                                  {\texttt{STEO.PASC\_OECD\_...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.89 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 88--89
+[]For
+ []
+
+
+Overfull \hbox (340.50835pt too wide) in paragraph at lines 88--89
+https://www.eia.gov/opendata/qb.php?sdid=STEO.PASC$[][]\OML/cmm/m/it/10 ECD[]\O
+T1/cmr/m/n/10 3\OML/cmm/m/it/10 :M[]whichrepresentsthemonthlyOECDEnd \OMS/cmsy/
+m/n/10  
+ []
+
+
+Overfull \hbox (18.59729pt too wide) in paragraph at lines 88--89
+\OML/cmm/m/it/10 of \OMS/cmsy/m/n/10  
+ []
+
+
+Overfull \hbox (252.38496pt too wide) in paragraph at lines 88--89
+\OML/cmm/m/it/10 periodCommercialCrudeOilandOtherLiquidsInventory:$ 
+ []
+
+! Undefined control sequence.
+l.90 \subsubsection
+                 {Other EIA data}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \subsubsection{O
+                   ther EIA data}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 90--91
+[]Other
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 O
+    ther than using the seven factors \cite{sevenfactors} idenfied by the EI...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{sevenfactors}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.92 ... using the seven factors \cite{sevenfactors}
+                                                   idenfied by the EIA that ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `sevenfactors' on page  undefined on input line 92.
+
+\citation{physcial}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.92 ... Oil market physical factors \cite{physcial}
+                                                   and U.S. foreign exchange...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `physcial' on page  undefined on input line 92.
+
+\citation{forex}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.92 ... and U.S. foreign exchange rate \cite{forex}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `forex' on page  undefined on input line 92.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 92--93
+[]Other
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 92--93
+[[]]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 92--93
+[[]]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 92--93
+[[]]. 
+ []
+
+
+! LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 \begin{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 \begin{center}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 95--95
+[] 
+ []
+
+! Undefined control sequence.
+<recently read> \href 
+      
+l.99 \href
+        {https://www.eia.gov/opendata/qb.php?sdid=STEO.RGDPQ_NONOECD.M}{\tex...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.99 ...www.eia.gov/opendata/qb.php?sdid=STEO.RGDPQ_
+                                                  NONOECD.M}{\texttt{STEO.RG...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.99 ...v/opendata/qb.php?sdid=STEO.RGDPQ_NONOECD.M}
+                                                  {\texttt{STEO.RGDPQ\_NONOE...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+ 
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
+                                                   \texttt{M} \\  \hline
+(That makes 100 errors; please try again.)
+
+Here is how much of LuaTeX's memory you used:
+ 44 strings out of 494481
+ 100000,89155 words of node,token memory allocated
+ 62449 words of node memory still in use:
+   153 hlist, 9 rule, 2 disc, 37 local_par, 4 dir, 2 math, 1612 glue, 35 kern, 9
+8 penalty, 3 unset, 10 noad, 9 math_char, 1 sub_box, 1 sub_mlist, 7988 glyph, 2 
+align_record, 140 attribute, 46 glue_spec, 140 attribute_list, 10 temp, 1 align_
+stack, 1 write nodes
+   avail lists: 2:5,3:71,4:134,5:8,7:21,8:75,10:133
+ 4277 multiletter control sequences out of 65536+600000
+ 27 fonts using 1602879 bytes
+ 19i,11n,23p,978b,208s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

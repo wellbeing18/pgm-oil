@@ -1,0 +1,107 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Contents}{i}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Objective of Research}{3}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Understanding the structure of the energy markets on a macroeconomic level}{4}{subsection.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Exploring government open-data facilities by extracting relevant datasets}{4}{subsection.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.3}Constructing a Bayesian Network of Energy Markets using the macroeconomic indicators.}{4}{subsection.1.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.4}Testing the outcome of the Bayesian Model based on historical performance and results.}{5}{subsection.1.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Data sources used in this research}{5}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Federal Reserve Economic Data, St. Louis}{5}{subsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}Energy Information Administration}{5}{subsection.1.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {2}Background \& Literature Review}{7}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Probabilistic Graphical Models}{7}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Belief Networks}{8}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1.1}Learning Belief Networks}{13}{subsubsection.2.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.1.1.1.1}Parameter learning}{13}{paragraph.2.1.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.1.1.1.2}Structure learning}{14}{paragraph.2.1.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{\numberline {2.1.1.1.2.1}Constraint-based learning}{15}{subparagraph.2.1.1.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{\numberline {2.1.1.1.2.2}Score-based learning}{17}{subparagraph.2.1.1.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Markov Chain}{21}{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2.1}Hidden Markov Models}{22}{subsubsection.2.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.1.2.1.1}The Forward Algorithm}{24}{paragraph.2.1.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.1.2.1.2}The Backward Algorithm}{24}{paragraph.2.1.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.1.2.1.3}The Viterbi Algorithm}{25}{paragraph.2.1.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.1.2.1.4}The Baum-Welch Algorithm}{26}{paragraph.2.1.2.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Python modules for Bayesian Programming}{28}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}\texttt {pgmpy} : A Python Library for Probabilistic Graphical Models}{28}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}\texttt {hmms}: A Python Library for Hidden Markov Models}{29}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Datasets in macroeconomic perspective}{30}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Physical market factors from EIA}{30}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}FRED}{32}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {3}Design}{34}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Macro Strategy}{34}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Energy Information Administration}{35}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1.1}Supply Non-OPEC}{36}{subsubsection.3.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1.2}Supply OPEC}{36}{subsubsection.3.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1.3}Demand OECD}{37}{subsubsection.3.1.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1.4}Demand Non-OECD}{37}{subsubsection.3.1.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1.5}Balance}{38}{subsubsection.3.1.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1.6}Other EIA data}{38}{subsubsection.3.1.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Federal Economic Reserve Data}{39}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Preprocessing data (Cleaning data)}{39}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}\texttt {pandas} - powerful Python data analysis toolkit}{40}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Obtaining the training, validation, testing set}{40}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Time-series discretisation}{42}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Regime Detection}{42}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Constructing structure of the Crude Oil Markets}{43}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Assessing the model}{44}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {4}Implementation}{47}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {5}Conclusions \& Future Work}{48}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Future Work}{49}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{50}{section*.16}

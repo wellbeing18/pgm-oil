@@ -1,0 +1,290 @@
+\chapter{Design}
+\label{design}
+
+In this section, we would be describing the design process of our oil trading model. The proposed design process is based on an earlier research used to quantify public bicycle behaviour in Xian \cite{wang2017bayesian}. Laying out a clear design plan will allow us to not only describe the structure of our model, but would also allow us to have clear outline of the sprints required hence lay a solid foundation to the implementation stage. \\
+
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+\vspace{5mm}
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+    \node [block] (init) {clean \\ data};
+    \node [cloud, right of=init] (pandas) {\texttt{pandas}};
+    \node [block, left of=init, node distance=3cm] (ret) {retrieve \\ datasets};
+    \node [block, below of=init] (identify) {identify \\ regime};
+    \node [cloud, left of=identify] (expert) {\texttt{hmms}};
+    \node [block, below of=identify] (evaluate) {train \\ network};
+    \node [block, left of=evaluate, node distance=3cm] (update) {change \\ parameters};
+    \node [decision, below of=evaluate] (decide) {high \\ validation \\ error?};
+    \node [block, right of=decide, node distance=4cm] (test) {test \\ model};
+    \node [block, left of=ret, node distance=3cm] (idind) {identify \\ indicators};
+    \node [block, below of=idind] (macro) {macro \\ research};
+    \node [cloud, right of=evaluate] (pgmpy) {\texttt{pgmpy}};
+    % Draw edges
+    \path [line] (init) -- (identify);
+    \path [line] (ret) -- (init);
+    \path [line] (identify) -- (evaluate);
+    \path [line] (evaluate) -- (decide);
+    \path [line,dashed] (expert) -- (identify);
+    \path [line,dashed] (pandas) -- (init);
+    \path [line] (decide) -- node {no} (test);
+    \path [line] (macro) -- (idind);
+    \path [line] (idind) -- (ret);
+    \path [line,dashed] (pgmpy) -- (evaluate);
+\end{tikzpicture}
+\caption{An illustration of the design process for the Crude Oil Trading model.}
+\end{figure}
+
+\section{Macro Strategy}
+
+Most speculation on oil is done on the interpretation and prediction of large-scale events relating to geopolitics, monetary policy, privatizations of national petroleum and gas companies, supply and demand factors, and natural disasters - thus making oil trading a global macro strategy \cite{ecoact}. Macroeconomic indicators are used as buy and sell signals on a quarterly (or perhaps even monthly) scale.  \\
+
+These macroeconomic variables are usually in the form economic time-series data provided by federal statistical bodies responsible for the collection, analysis, and dissemination of macroeconomic data. We would be using the Energy Information Administration (EIA) for data for the energy markets and we would be using the Federal Reserve Economic Data (FRED) for macroeconomic data. \\
+
+
+\subsection{Energy Information Administration}
+
+Other than providing time-series data on the crude oil markets markets, the EIA also provides expert economic knowledge of the structure of the oil markets, latest news and reports of the energy markets, and forecasts of these macroeconomic variables. We would be priciesly using these forecasts as inputs to for inference on our learnt model to obtain the forecast of the price of oil as the output. \\
+
+The EIA provides a number of datasets which are easily accessible from their open-data facilities. These datasets, such as the Annual Energy Outlook, International Energy Data, and the Short-Term Energy Outlook, provide vital information on the physical market factors of the oil markets. The \href{https://www.eia.gov/outlooks/steo/}{Short-Term Energy Outlook} (STEO) contains datasets which have forecasts for the supply and demand of crude oil amongst forecasts for many other factors affecting the energy sector. We would be mostly be using data from STEO to learn our model and would be using the forecasts as inferences to our model to make predictions. \\
+
+The EIA assess the various factors that influence the crude oil prices; physical market factors as well as those relating to trading and financial markets \cite{eiacrude}. The EIA lists non-OPEC and OPEC crude oil production, non-OECD and OECD consumption of crude oil, OECD inventories, proven reserves, geopolitical events, and the trading of oil in financial markets as the main factors affecting the price of oil. We would be disseminating these factors and understanding what role they play in the crude oil markets. \\
+
+\subsubsection{Supply Non-OPEC}
+
+Crude Oil production from countries outside the Organization of the Petroleum Exporting Countries (OPEC) currently represents about 60 percent of world oil production. The way the oil producers operate in non-OPEC countries is fundamentally different to how they operate in the OPEC countries in a number of ways \cite{nonopec}. In contrast to OPEC oil producers which have a centralised decision making body, non-OPEC producers make independent decisions about oil production. Whereas OPEC producers are mostly in the hands of nationalised oil companies (NOCs), non-OPEC producers are usually international or investor-owned oil companies (IOCs). Unlike the OPEC producers, non-OPEC producers are price takers; they respond to market prices than trying to influence the oil prices by managing production \cite{opecshort}. Ceteris paribus, when there is a non-OPEC supply cut, there is an upward push on prices and an expectation from OPEC to fill the supply void. \\
+
+\subsubsection{Supply OPEC}
+
+Crude Oil production \citep{opec} in the Organization of the Petroleum Exporting Countries (OPEC) \citep{opec} plays an pivotal role \citep{opecsmarketrole} in the stability of the oil markets. Given that it holds 40 percent of the crude oil production and 60 percent of the petroleum traded internationally, the cartel actively seeks to control oil production in its member countries by setting production targets. Changes of crude oil production from the OPECs largest producer, Saudi Arabia, often affects the price of oil. OPEC producers maintain spare capacity of producing oil which is often used as a tool for influencing the markets. Despite OPECs efforts to manage production to maintain targetted price levels, OPEC member countries do not always comply with production targets adopted by the cartel, as they are often not in the interests of some member countries. \\
+
+\subsubsection{Demand OECD}
+
+The Organization of Economic Cooperation and Development (OECD) consists of the United States, much of Europe, and other developed countries such as Turkey. These developed economies consume more oil than the non-OECD countries, but have much lower oil consumption growth. Oil consumption in the OECD countries actually declined in the decade between 2000 and 2010, whereas non-OECD consumption jumped to 40 percent during the same period. \\
+
+Structural conditions in OECD member countries economies influence\cite{oecd} the relationship between oil prices, economic growth, and oil consumption. For example, economies in OECD countries tend to have larger technology and services sectors relative to industrial manufacturing. Therefore economic growth in these countries may not have the same impact on oil consumption as it would in non-OECD countries.  Moreover, given the available public transportation in OECD countries, consumers have an easy alternative to privately owned vehicles in the face of increasing oil prices. \\
+
+
+\subsubsection{Demand Non-OECD}
+
+Oil consumption in developing countries outside the Organization of Economic Cooperation and Development (OECD) has risen sharply in recent years.While the OECD member states' oil consumption was declining from 2000 to 2010, non-OECD consumption increased by almost 40 percent \cite{nonoecd}. \\
+
+Structural conditions in non-OECD countries are entirely different to that in OECD countries and influence the relationship between oil prices, economic growth, and  oil consumption in an entirely different manner. Developing countries tend to have a greater proportion of their economies in manufacturing industries which are relatively more energy intensive than service industries. Due to lack of public transport infrastructure, vehicle ownership per capita is highly correlated with rising incomes and has much room to grow in non-OECD countries therefore pushing the oil price upwards by increasing oil consumption. \\
+
+
+\subsubsection{Balance}
+
+Inventories \cite{impactinvent} play an important role in the oil markets because they act as the balancing point between supply and demand. During periods of over-production, crude oil and petroleum products can be stored for future use and similarly, during periods of over-consumption, crude oil and petroleum products can be used from the inventory. During the 2008 Financial Crisis, the unexpected drop in crude oil consumption led to record crude oil inventories in the United States and other OECD countries. Given the uncertainity in the supply and demand, petroleum inventories are often seen as a precautionary measure. \\
+
+For quantifying balance, we would be using \href{https://www.eia.gov/opendata/qb.php?sdid=STEO.PASC_OECD_T3.M}{\texttt{STEO.PASC\_OECD\_T3.M}} which represents the monthly OECD End-of-period Commercial Crude Oil and Other Liquids Inventory.
+
+\subsubsection{Other EIA data}
+
+Other than using the seven factors \cite{sevenfactors} idenfied by the EIA that drive the price of crude oil, we would be using other macroeconomic data chosen by trial and error that increases the accuracy of our model. We would be using datasets such as the U.S. Crude Oil market physical factors \cite{physcial} and U.S. foreign exchange rate \cite{forex}.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Series ID} & \textbf{Frequency} \\ \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.RGDPQ_NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.RGDPQ_OECD.M}{\texttt{STEO.RGDPQ\_OECD.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.PAPR_NONOPEC.M}{\texttt{STEO.PAPR\_NONOPEC.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.PAPR_OPEC.M}{\texttt{STEO.PAPR\_OPEC.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.PATC_OECD.M}{\texttt{STEO.PATC\_OECD.M}} & \texttt{M}  \\ \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.PATC_NON_OECD.M}{\texttt{STEO.PATC\_NON\_OECD.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.COPRPUS.M}{\texttt{STEO.COPRPUS.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.CORIPUS.M}{\texttt{STEO.CORIPUS.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.FOREX_WORLD.M}{\texttt{STEO.FOREX\_WORLD.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.PASC_OECD_T3.M}{\texttt{STEO.PASC\_OECD\_T3.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.COPS_OPEC.M}{\texttt{STEO.COPS\_OPEC.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.COPC_OPEC.M}{\texttt{STEO.COPC\_OPEC.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.T3_STCHANGE_OOECD.M}{\texttt{STEO.T3\_STCHANGE\_OOECD.M}} & \texttt{M} \\  \hline
+\href{https://www.eia.gov/opendata/qb.php?sdid=STEO.T3_STCHANGE_NOECD.M}{\texttt{STEO.T3\_STCHANGE\_NOECD.M}} & \texttt{M} \\  \hline
+
+\end{tabular}
+\end{center}
+\caption{Datasets obtained from the EIA.}
+\end{table}
+
+\subsection{Federal Economic Reserve Data}
+
+As a matter of fact, we are also using data from the FRED, which is one of the most primary data sources for macroeconomic data. There are a number of macroeconomic variables which play a pivotal role in the oil markets and the price of crude oil has long been influenced by the monetary policy dictated by the Federal Reserve Bank \cite{hamilton2004oil}, the macroeconomic atmosphere \cite{ferderer1996oil} of the economy,  industrial growth, industrial production, capacity, and capacity utilization.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Series ID} & \textbf{Frequency} \\ \hline
+\href{https://fred.stlouisfed.org/series/CPIENGSL}{\texttt{CPIENGSL}} & \texttt{M} \\  \hline
+\href{https://fred.stlouisfed.org/series/CAPG211S}{\texttt{CAPG211S}} & \texttt{M} \\  \hline
+\href{https://fred.stlouisfed.org/series/CAPUTLG211S}{\texttt{CAPUTLG211S}} & \texttt{M} \\  \hline
+\href{https://fred.stlouisfed.org/series/IPG211S}{\texttt{IPG211S}} & \texttt{M} \\  \hline
+\href{https://fred.stlouisfed.org/series/IPG211111CN}{\texttt{IPG211111CN}} & \texttt{M}  \\  \hline
+\href{https://fred.stlouisfed.org/series/INDPRO}{\texttt{INDPRO}} & \texttt{M} \\  \hline
+\href{https://fred.stlouisfed.org/series/IPN213111N}{\texttt{IPN213111N}} & \texttt{M} \\  \hline
+\href{https://fred.stlouisfed.org/series/PCU211211}{\texttt{PCU211211}} & \texttt{M} \\  \hline
+\end{tabular}
+\end{center}
+\caption{Datasets obtained from the FRED.}
+\end{table}
+\section{Preprocessing data (Cleaning data)}
+
+Data preprocessing is the process by which data inconsistencies such as missing values, noise, out-of-range values, and unformatted data are removed so that the data can be used with \texttt{hmms} and \texttt{pgmpy}. Analysing data that has not been carefully preprocessed can often lead to harmfully misleading results. Data preprocessing is therefore one of the most elementary steps towards harnessing the power of a dataset, however it is also one of the most time-consuming processes which involves alot of experimentation with trying diffrerent data structures and different data analysis tools. The final product of data preprocessing is the \textbf{training} dataset, which would be used to train our model to be used on the \textbf{testing} dataset for assessing the performance of our model. \\
+
+As described earlier, there are a number of available Python libraries for retrieving data from the EIA and FRED and for data preprocessing. Given the data retrieved from the EIA\cite{eiagit} and FRED\cite{fredgit} are often unable to be used directly due to their unstructured format, we would be using \texttt{pandas}\cite{pandasgit} for data preprocessing and noise-reduction, respectively, so that they could be transformed into formats which could be used with both, \texttt{pgmpy} and \texttt{hmms}. In the next subsections, we would be describing the tools and the methods being used for data preprocessing in this project. \\
+
+\subsection{\texttt{pandas} - powerful Python data analysis toolkit}
+
+\href{https://pandas.pydata.org/}{\texttt{pandas}} is an open-source Python library that provides fast, flexible, and expressive data structures designed to make working with \enquote{relational} or \enquote{labeled} data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python. In many ways, \texttt{pandas} can be compared to SQL in that it provides functionality to construct dataframes (synonymous to tables) and provides functionality to carry out queries on the data. \\
+
+\label{incons} Data obtained from the EIA and FRED often at times are replete with missing values (\texttt{NaN}, \texttt{inf} values), have inconsistent date ranges for the required date ranges, have indices which are formatted as strings rather than the Python \texttt{datetime}, and have intersecting date ranges and congruent frequencies, yet different dates (so indices of all \texttt{pandas.Series} in a dataframe have to be made the same for them to be merged). \\
+
+\href{https://www.quantopian.com/}{Quantopian}, a crowd-sourced hedge-fund for freelance quantitative analysts, provides academic resources for prospective quants. Amongst these lectures was an exhaustive lecture by Maxwell Margenot \cite{maxwell} on \texttt{pandas}, which was highly used in the data preprocessing. We would be using \texttt{pandas} to solve all the data \hyperref[incons]{inconsistencies} and would consequently obtain the \textbf{training, validation and testing} dataset so that it could be used with \texttt{pgmpy}.\\
+
+\subsection{Obtaining the training, validation, testing set}
+\label{trainvaldtest}
+
+In Machine Learning projects, it is  almost always required to construct algorithms that learn and make predictions based on data. In our project, we would be making data driven decisions by inputing our data in a Bayesian model. \\
+
+In order to learn the belief network, we would be using the \textbf{$k$-fold} cross validation method, with $k=3$. In the $k$-fold cross-validation method, the data are is partitioned into $k$ subsets. Each subset is used in turn to validate the model fitted on the remaining subsets.  In our example, we would be sticking to the \textbf{leave-one-out cross-validation technique}, thus having three datasets; the training set, the validation set, and the testing set. \\
+
+
+\begin{description}
+	\item[Training set:] is a sample used for \hyperref[learn]{learning} the Belief Network using \hyperref[learn]{Hill Climbing}.
+	\item[Validation set:]is a sample used to tune the parameters of the belief network. In our example, we experimented with using different \textit{Bayesian Dirichlet} scoring functions such as the \texttt{BDeu} or \texttt{K2} and the Bayesian Information Criterion (\texttt{BIC}) 
+	\item[Testing set:]is a sample used only to assess the performance of a \textbf{fully-trained} model. In our project, we would be using the testing dataset to estimate the error rate after we have chosen our final model with the scoring function that gives the most accurate validation dataset. 
+\end{description}
+
+The difference between the validation and testing datasets is often at times vastly misunderstood and both datasets are often incorrectly equated. The validation dataset is used for model selection and the test set is used for assessing the error in the final model that was selected to be \enquote{tuned} with the validation set\cite{friedman2001elements}. A popular ratio of $\mathtt{80:10:10}$ is used for spliting the data and we would be adhering to this standard. Moreover, given that the validation dataset and the testing data set would each be of 33 months (recall the \hyperref[30x]{\enquote{30x rule of thumb}}) hence being a appropriate length of time to have statistical confidence at. \\
+
+However, before we decide to split our preprocessed data into three datasets, there is a vital step that needs to be carried out. The \texttt{pandas.DataFrame} that \texttt{pgmpy} takes in as input has values of a \textbf{discretised} nature i.e. having a \textbf{fixed} number of states. The data obtained from the EIA and FRED is raw continious time-series data which has almost an infinite number of states. In order for \texttt{pgmpy} to use this data, it is essential we find a mechanism to find \textbf{hidden} states in time-series data for discretisation of this data. We would be describing the process of discretising the EIA and FRED data in the coming \hyperref[regime]{section}.
+
+\section{Time-series discretisation}
+
+Belief Networks come handy when representing single independence models with \textit{discrete} states, however they do not allow us to model changes of random variables over time. Due to such changes in \textit{regimes}, it is necessary we use different belief networks at different times in order to have an appropriate model over random variables . In this section, we propose using Hidden Markov Models to \textit{discretise} the time-series data so that they can be used in a belief network. \\ 
+
+The general idea of \textbf{systematic} oil trading is to use \textbf{macroeconomic} and \textbf{physical market} data to identify the \textbf{structure} of the markets, thus assisting us in identifying opportune times to be \textit{long} in the oil markets, and periods when it is beneficial to be \textit{short}. As a matter of fact, it is obvious that we would prefer to be \textit{long} before periods where oil markets are in a \textbf{bull regime} and be \textit{short} before periods of a \textbf{bear} regime. 
+
+\subsection{Regime Detection}
+
+Regime detection is the process by which we identify periods of similar volatility in a time-series model. These periods could either be bull/bear regimes, periods of low or high volatility, or perhaps some other characteristic that cannot be qualitatively described. Given that these periods are \textbf{latent} in nature and can only be \textbf{observed} as \textbf{emissions} (returns), the problem ultimately decomposes to the problem \textbf{Hidden Markov Models} were constructed to solve. \\
+
+In our design specification, we have decided to use Hidden Markov Models\footnotemark to identify these regimes in the time-series data. The HMM would be a 5-tuple $(Q, \sum, \Pi, A, B)$,  and the regime detection will comprise of four main stages, 
+
+\begin{description}
+\item[Transforming]{ the time-series into an \textbf{emission sequence} by \textit{first-order intergration} of the concerned time-series and replacing the \textit{returns} with the \textbf{parity} of the returns.}
+\item[Learning]{ the parameters of the assumed HMM generating the time series by using the \textbf{Baum-Welch algorithm}, hence allowing us to obtain the $\Pi$ (initial state probabilities), $A$ (state transition probability matrix), and $B$ (emission matrix).}
+\item[Finding]{ the most likely sequence of \textit{hidden} states as the underlying regimes that possibly generated the sequence of \textit{observed} emissions using the \textbf{Viterbi algorithm}.}
+\item[Identifying]{ the \textit{latent} meaning behind each \textit{hidden} state by indexing them according to their \textit{arthimetic mean}.}
+
+\end{description}
+\begin{figure}[htbp]
+\begin{center}
+\begin{tikzpicture}[]
+% states
+\node[state] (s1) at (0,2) {$q_1$}
+    edge [loop above]  ();
+\node[state] (s2) at (-2,2) {$q_2$}
+    edge [<-,bend right=45] node[auto,swap] {$a_{12}$} (s1)
+    edge [->,bend left=45] (s1);
+\node[state] (s3) at (2,2) {$q_3$}
+    edge [<-,bend right=45] (s2)
+    edge [->,bend left=45] (s2);
+% observations
+\node[observation] (y1) at (-1,0) {$y_1$}
+    edge [lightedge] (s1)
+    edge [lightedge] (s2)
+    edge [lightedge] (s3);
+\node[observation] (y2) at (1,0) {$y_2$}
+    edge [lightedge] (s1)
+    edge [lightedge] (s2)
+    edge [lightedge] (s3);
+\node[state, initial, initial where=above] (init) at (0,4) {$q_{0}$}
+    edge [->, bend right=30] node[auto=right,swap] {$\pi_1$} (s1)
+    edge [->] (s2)
+    edge [->] (s3);
+\end{tikzpicture}
+\end{center}
+\caption{A graphical illustration of the proposed 3-state HMM generating the behaviour of a financial time-series.}
+\end{figure}
+\footnotetext[1]{Applying HMMs to regime detection often can be a challenging, as there is in particular no known method by which we can determine the \textit{meaning} of a state, or even the number of states.}
+
+The Python implementation for HMMs provided by \texttt{hmms}\cite{hmmsgit} is perhaps one of the most easy to use, given its concise yet exhaustive documentation as an iPython notebook\cite{hmmsnotebook}, and its \textit{ready-to-use} implementations of the \textbf{Forward-Backward}, \textbf{Viterbi} and \textbf{Baum-Welch} algorithms, amongst many other functionalities. 
+
+\section{Constructing structure of the Crude Oil Markets}
+
+Belief networks are highly applicable to capture \textbf{causal} relationships between both; standard \textit{data-driven economic variables}, and \textit{quantified expert judgements} about the geo-politics of the oil market (in particular the production and capacity policy of OPEC members). Given the exponentially increasing rate of data collection, it is almost infeasible for oil speculators to construct belief networks alone by expert knowledge. Moreover, given the dynamic nature of the structure of the commodities markets, minor structural changes are always taking place and therefore it is infeasible to keep update with the structure of the markets. \\
+
+We therefore propose using structure learning algorithms for constructing a \textit{causal} network of the oil markets. In Chapter 2, we had discussed two main \hyperref[structure]{structure learning} algorithms; the \hyperref[constraint]{\textbf{constraint-based}} Structural learning, and  \hyperref[scorebased]{\textbf{score-based}} Structural learning. Despite recent advances in constraint-based learning algorithms\cite{pellet2008using}, we would be using score-based algorithms, which have benefited a lot from past and recent research in optimization theory, using the network score as the objective function to maximise\cite{scutari2014bayesian}. A popular score-based structure learning algorithm is \hyperref[scorebased]{\textbf{Hill Climbing}}, a greedy, iterative search algorithm used to maximise the network score, which we would be using to learn the structure of the oil markets and perform inferences to make forecasts of the future. \\
+
+We would be using \texttt{pgmpy}, which provides a very straightforward implementation to the \textbf{Hill Climbing} algorithm. \texttt{pgmpy} provides an excellent notebook \cite{pgmpynotebook} for learning belief networks. We would be using our training data to \textbf{estimate the structure of the network}, and would then fit the data using an \textbf{estimator} to learn the parameters. Below is a minimal working example in Python.
+
+\begin{listing}[ht]
+\begin{minted}{python}
+import numpy as np
+import pandas as pd
+from pgmpy.estimators import BicScore
+from pgmpy.estimators import HillClimbSearch
+from pgmpy.estimators import BayesianEstimator
+
+# Generate (discretised) data with dependencies
+
+data = pd.DataFrame(np.random.randint(0, 3, size=(2500, 8)),
+                        columns=list('ABCDEFGH'));
+
+data['A'] += data['B'] + data['C'];
+data['H'] = data['G'] - data['A'];
+
+data_train = data[: int(data.shape[0] * 0.75)];
+
+# Learn network structure
+
+hc = HillClimbSearch(data_train, scoring_method=BicScore(data_train));
+model = hc.estimate();
+
+# Learn parameters of the network
+
+model.fit(data_train,
+          estimator=BayesianEstimator, prior_type="BDeu");
+
+# Test the dataset
+
+data_test = data[int(0.75 * data.shape[0]) : data.shape[0]]; 
+data_test.drop('A', axis=1, inplace=True); # Drop variable to be predicted
+prediction = model.predict(data_test); # Obtain prediction
+\end{minted}
+\caption{Minimal working example}
+\label{listing:1}
+\end{listing}
+
+\section{Assessing the model}
+
+Given that our model is predicting time-series data, the application of \textbf{traditional} methods such as \textit{$k$-fold cross-validation} on a time-series prediction model often becomes a challenging task. We propose using a modified version of the \textit{$k$-fold cross-validation}, which is called \textit{forward-chaining}\citep{14109}. \\
+
+In the \textit{forward-chaining} method, we begin with a small subset of data for training purposes, and forecast it for future data points and then check the accuracy for the forecasted data points. The same forecasted data points are then included as part of the next training dataset and subsequent data points are forecasted. \\
+
+The mechanism can be demonstrated in the following psuedocode. \\
+
+\begin{algorithm}
+\caption{$k$-fold cross-validation using Forward Chaining}\label{kfoldcross}
+\begin{algorithmic}
+\Procedure{ForwardChaining}{$k$, \texttt{dataset} $\mathcal{ D}$}
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+In the next chapter, we would be implementing the design process as described in Python in an attempt to experiment with the proposed models and observe their performance, feasability, reliability, and return. 
+
+
+
+
+
+

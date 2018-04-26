@@ -1,0 +1,155 @@
+ %% thesis.tex 2014/04/11
+%
+% Based on sample files of unknown authorship.
+%
+% The Current Maintainer of this work is Paul Vojta.
+
+\LoadClass{myclass}
+\documentclass{myclass}
+\usepackage{fontspec, tabu, array, hyperref, booktabs, dcolumn, amsmath, braket, amscd, amsfonts,amssymb, xcolor,caption, subcaption, csquotes, algorithm, minted}
+\usepackage{algpseudocode}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[backend=bibtex,	
+                style=authoryear,
+                natbib=true, 
+                style=numeric-comp
+                ]{biblatex}  
+\usepackage{tikz}
+\DisemulatePackage{setspace}
+\usepackage{setspace}
+\newtheorem{definition}{Definition}[section]
+\usepackage{framed} % or, "mdframed"
+\usepackage[framed]{ntheorem}
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+\definecolor{darkgreen}{rgb}{0.0, 0.4, 0.13}
+\usetikzlibrary{automata, chains, positioning, shapes,arrows, calc, fit, backgrounds, decorations.pathmorphing, calc,intersections}
+\tikzstyle{state}=[shape=circle,draw=black, fill=gray!20]
+\tikzstyle{observation}=[shape=rectangle, draw=black]
+\tikzstyle{lightedge}=[<-,dotted]
+\tikzstyle{mainstate}=[state,thick]
+\tikzstyle{mainedge}=[<-,thick]
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{float}
+\newframedtheorem{frm-def}{Definition}
+\newframedtheorem{frm-thm}{Theorem}
+\newcolumntype{M}[1]{D{.}{.}{1.#1}}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+\usepackage{csquotes}
+\newtheorem{theorem}{Jibberish}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\interfootnotelinepenalty=100000
+\usepackage{minted}
+\usepackage{xcolor}
+
+\definecolor{LightGray}{gray}{0.9}
+%\definecolor{DarkGray}{gray}{0.1}
+
+%\pagecolor{DarkGray}
+
+\usemintedstyle{borland}
+
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\bibliography{references.bib}
+
+\hyphenation{mar-gin-al-ia}
+\hyphenation{bra-va-do}
+
+\begin{document}
+
+
+% Declarations for Front Matter
+
+\title{\Large{Application of Probabilistic Graphical Models\\ \vspace{3mm}
+				   in Forecasting Crude Oil Price}}
+\author{Danish A. Alvi}
+\degreesemester{Spring}
+\degreeyear{2018}
+\degree{Bachelors of Science}
+%\chair{Professor Philip Treleaven, UCL Centre of Financial Computing}
+%\othermembers{Denis De Montigny, FinSpark \\ }
+%\numberofmembers{3}
+% Previous degrees are no longer to be listed on the title page.
+% \prevdegrees{B.A. (University of Northern South Dakota at Hoople) 1978 \\
+%   M.S. (Ed's School of Quantum Mechanics and Muffler Repair) 1989}
+\field{Computer Science}
+% Designated Emphasis -- this is optional, and rare
+% \emphasis{Colloidal Telemetry}
+% This is optional, and rare
+% \jointinstitution{University of Western Maryland}
+% This is optional
+
+% For a masters thesis, replace the above \documentclass line with
+% \documentclass[masters]{ucbthesis}
+% This affects the title and approval pages, which by default calls this
+% document a "dissertation", not a "thesis".
+
+\maketitle
+% Delete (or comment out) the \approvalpage line for the final version.
+%\approvalpage
+%\copyrightpage
+
+\include{abstract}
+
+
+\newpage
+
+\begin{frontmatter}
+
+
+% You can delete the \clearpage lines if you don't want these to start on
+% separate pages.
+
+\tableofcontents
+
+%\begin{acknowledgements}
+%Bovinely invasive brag; cerulean forebearance.
+%Washable an acre. To canned, silence in foreign.
+%Be a popularbooly. A as midnight transcript alike.
+%To by recollection bleeding. That calf are infant. In clause.
+%Buckaroo loquaciousness?  Aristotelian!
+%Masterpiece as devoted. My primal the narcotic. For cine?
+%In the glitter. For so talented. Which is confines cocoa accomplished.
+%Or obstructive, or purposeful.
+%And exposition? Of go. No upstairs do fingering.
+%
+%\end{acknowledgements}
+
+\end{frontmatter}
+
+\pagestyle{headings}
+
+% (Optional) \part{First Part}
+
+\begin{onehalfspacing}
+\include{chap1}
+\include{chap2}
+\include{chap3}
+\include{chap4}
+\include{chap5}
+\end{onehalfspacing}
+
+% \appendix
+% \chapter{More Monticello Candidates}
+
+\printbibliography
+
+\end{document}

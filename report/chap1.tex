@@ -1,0 +1,210 @@
+\chapter{Introduction}
+
+\begin{quote}
+This chapter introduces the general context of the dissertation. The motivation of presenting this research to accurately predict the behaviour of the energy markets using a global macro strategy hence assist portfolio managers and energy traders in making better investment decisions. It is our objective to use probabilistic graphical models to construct a model of the oil markets and carry out inferences on them to forecast multi-quarter behaviour of the oil markets, and therefore we propose using Belief Networks and Hidden Markov Models. We also propose using U.S. Federal Government open-data facilities to retrieve relevant macroeconomic and physical market factors.
+\end{quote}
+
+\section{Motivation}
+
+The application of Machine Learning in Quantitative and Computational Finance has become increasingly popular in the recent years. An increasing number of hedge funds such as Man Group, Two Sigma Investments, Winton Capital, Renaissance Technologies and a number of investment banks such as Goldman Sachs Asset Management (GSAM) and Bank of America Merrill Lynch have been applying Machine Learning and Artificial Intelligence in their trades. In 2015, Artificial Intelligence was contributing roughly half the profits in one of MAN’s biggest funds, the AHL Dimension Programme. Two Sigma Investments, a New York based hedge fund, is entirely basing its revenues from strategies based on Machine Learning.  \\
+
+Hedge funds employing a ‘global macro’ strategy observe minute changes in the macroeconomic behaviour, in which the price of crude oil is a vital key player. Crude oil plays an important role in the macroeconomic stability given not only its utilisation in conventional fuels but also its utilisation in creating infrastructure, such as the use of bitumen in laying roads. Therefore, in the long-term, crude oil may heavily influence the rate of economic growth of countries, especially those relying on oil imports and hence have a heavy influence on the performance of the global financial markets. There is widespread agreement that unexpected fluctuations in the real price of crude oil are detrimental to the welfare of both oil-importing and oil-exporting economies. Reliable forecasts of the price of oil are of interest for a wide range of applications. For example, ‘global macro’ hedge-funds view forecast the price of oil as one of the key variables in generating macroeconomic projections and assessing the general macroeconomic atmosphere of the global financial markets. The price of oil plays an important role for policy makers in predicting recessions. For example, Hamilton (2009), building on the analysis in Edelstein and Kilian (2009), provides evidence that the 2008 Financial Crisis was preceded by an economic slowdown in the automobile industry and a consequent depreciation of consumer sentiment. \\
+
+With the exponentially increasing amount of datasets and the increasing amount of computational power and storage being available in the form of distributed and cloud computing, the cost of storing, crunching, and analysing Big Data has been decreasing and therefore it has become even more feasible to use Bayesian Analysis for financial forecasting. Therefore, many hedge funds, such as Two Sigma investments, are actively harnessing the benefits of distributed Cloud Computing, Machine Learning and Artificial Intelligence. Although it is true that the performance of the model tends to increase with more data, due to Friedrich Hayek’s ‘Dispersed Knowledge’ notion, the performance of a Bayesian model might increase until a certain number of datasets have been incorporated, after which the model will begin showing traits of over-fitness, which is not desirable. \\
+
+The first problem is that the existing models for analysing the spot price for crude oil such as GARCH are based on the mere assumption that the error variance of the  spot price of crude Oil forecast follows the ARMA model, and therefore these models certainly do not incorporate the macroeconomic, microeconomic and geopolitical events which play an important role in determining the spot price for crude oil. The research proposes using Bayesian derived views which be compared with the GARCH based views to determine which scheme is better. \\
+
+The second problem is that given the vast amount of datasets available on the Energy Information administration's website, it is not only very time consuming task for a quantitative analyst to relate all the data using expert knowledge, but it is also a very error-prone task and the Bayesian Probabilistic Graphical Model would always be changing in the face of new and changing market dynamics. The research proposes a scheme which would allow the system to learn the Bayesian Network in an attempt of causally relating all datasets without the presence of an expert.\\
+
+The third problem is regarding how the futures price of crude oil is related to forecast of the spot price and how it could be used to analyse the volatility of oil. Given that the futures price reflects the price buyers are willing to pay for oil on a delivery date set at some point in the future, it is an indicator or the sentiment of the buyers and hence is a very useful tool that could be used for forecasting the price of oil. We would be using Machine Learning Regression analytical techniques in order to determine the relation between futures price and spot price and will incorporate it in our Bayesian Model. \\
+
+The main motivation of this research is to create a Bayesian Model of the oil markets using Probabilistic Graphical Models an in attempt improve the existing quantitative models for the oil markets.\\
+
+\section{Objective of Research}
+
+The objective of the research is to propose an model for accurately forecasting the price of crude oil by representing structural and macroeconomic changes in the oil market by using Probabilistic Graphical Models. The main hypothesis of the research is: \\
+
+\begin{displayquote}
+By using Probabilistic Graphical Models and applying various Machine Learning and Statistical techniques, the accuracy of existing quantitative models forecasting the spot price of oil can be improved by taking in account many different macroeconomic and geopolitical variables in consideration when making a prediction system.
+\end{displayquote}
+
+
+To validate this hypothesis, there are \textbf{four} primary tasks for the research:
+
+\subsection{Understanding the structure of the energy markets on a macroeconomic level}
+
+The first task is to understand the macroeconomic structure of the oil markets to have an idea of the factors affect the price of crude oil. There are a number of macroeconomic factors \cite{Lee2017} which affect the energy markets such as production, consumption, policy, geopolitics, GDP Growth, Consumer Price Index (CPI) and Industrial Production Index (IPI) which determine the direction of the energy markets.
+
+\subsection{Exploring government open-data facilities by extracting relevant datasets}
+
+The second task is to fetch the relevant datasets from governmental open-data sources which are most relevant to to understanding the macroeconomic situation of the energy markets. Datasets describing these macroeconomic indicators are easily available on governmental open-data facilities and can be easily retrieved by API calls from Python.
+
+\subsection{Constructing a Bayesian Network of Energy Markets using the macroeconomic indicators.}
+
+The third task is to construct a Bayesian Belief network based on the datasets collected from the open-data facilities. Constructing the Bayesian Network can be achieved in a number of ways, such as by either using expert knowledge or using network learning methods such as Hill Climb Search \cite{neapolitan2004learning}, or perhaps a combination of both. We would be using libraries in Python which would allow us to easily implement Probablistic Graphic Models such as Bayesian Networks and carry out the necessary inferential operations to make forecasts.
+
+\subsection{Testing the outcome of the Bayesian Model based on historical performance and results.}
+
+The fourth task is testing our constructed Bayesian Network by historical backtesting on oil price data. Stress testing \cite{Rebonato2009} plays an important role in the backtesting process as it allows the portfolio managers to understand the behaviour of the Bayesian model in volatile markets. We would initially be using a basic model of comparing the predicted inferences from test data with the actual outcome of the predicted variable and outputing it as a percentage, and later would be using some Python libraries for backtesting and even live testing our data.
+
+\section{Data sources used in this research}
+
+The United States Federal Government \cite{united2017statistical} has a number of open-data services which provide macroeconomic time-series data about the production, consumption, energy policy, and financial atmosphere of the industry. We would be primarily using two data sources in our research, mainly the \href{https://www.eia.gov/}{Energy Information Administration} for obtaining data regarding oil, and the \href{https://fred.stlouisfed.org/}{Federal Reserve Bank Economic Data} for datasets concerning macroeconomic factors. 
+
+\subsection{Federal Reserve Economic Data, St. Louis}
+
+The Federal Reserve Economic Data, St. Louis (FRED) is a database maintained by the research division of Federal Reserve Bank of St. Louis which contains a number of economic time-series data. The FRED has a number of macroeconomic indicators such as the Effective Funds Rate and Consumer Price Index (CPI), which are popularly used in quantitative models. We would be using the FRED's data for retrieving data sets concerning macroeconomic indicators which directly affect the price of oil such as the Consumer Price Index (CPI), global interest rates, and global industrial production.
+
+\subsection{Energy Information Administration}
+
+The Energy Information Administration (EIA) is the primary organisation of the United States Government which is responsible for collecting, analysing, and disseminating energy information to promote policy making, efficient markets and the public understanding of the relationship of energy with the economy and the environment. We would be using the EIAs data for not only retrieving data sets regarding the current and future supply, demand of oil in the global markets, but also expert knowledge for constructing the Probabilistic Graphical Models relating these datasets.
+
+
+
+%\subsection{Bayesian Model Construction}
+%
+%One of the primary reasons to use Bayesian Networks in Quantitative Analysis of commodities such as crude oil is to be able to relate different variables together in a modular way, allowing a portfolio manager to easily “plug” or “unplug” variables in an attempt to fit a reliable model to the data. \\
+%
+%We will be exploring two \textbf{different} methods of constructing the Bayesian Model:
+%
+%\begin{enumerate}
+%	\item{Learning Bayesian Network from data using Structure and/or Parameter Learning.}
+%	\item{Manually constructing the Bayesian Network using the expert knowledge of the portfolio manager.}
+%\end{enumerate}
+%
+%Depending on the particular situation, there are a number of reasons why each these methods might have a relative perk over the other. The analysis of the advantages and disadvantages of both learning the network and constructing the network, has been summarised in both the tables below.
+%
+%\clearpage
+%
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{|P{7cm}|P{7cm}|}
+%\hline
+%\textbf{Advantages} & \textbf{Disadvantages}  \\
+%\hline
+%Allows us to assert causal relations between factors which are associated with each other based on scoring methods such as BDeu (Bayesian Dirichlet), K2, and Bayesian Information Criterion (BIC).  & Often relates variables that the expert might find entirely unrelated. Results in a network based only on score-based causal dependencies rather than economic expert knowledge, fitting only the current time frame.  \\
+%\hline
+%Allows us to crunch large datasets of information and use maximum data in our models. & May result in “overfitting” our network which will result in making inaccurate forecasts.\\
+%\hline
+%Allows us to dynamically adjust the Bayesian Network and discovers developing latent relations hidden from expert knowledge. & Computationally expensive, resulting in a mega-network of variables hence exponentiating the size of the conditional probability tables.\\
+%\hline
+%\end{tabular}
+%\end{center}
+%\caption{Advantages and disadvantages of learning Bayesian Network from data.}
+%\end{table}
+%
+%
+%
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{|P{7cm}|P{7cm}|}
+%\hline
+%\textbf{Advantages} & \textbf{Disadvantages}  \\
+%\hline
+%Allows us to use expert knowledge of macroeconomics (supply and demand, monetary and fiscal policy) to construct a sound model. & The Bayesian Network constructed by the expert can be incorrect due to the misinterpretation of the behaviour macroeconomic system. \\
+%\hline
+%Allows the expert to “modularise” the model construction process by simplifying the process of addition, removal, and modification of variables via a "plug and play" provision. & Can result in drastic effects and modification is a very time consuming process for the expert to trial and error with different combinations of possible DAGs to determine the best one.\\
+%\hline
+%Allows an (ideally perfect) model to be \textit{static} and \textit{immutable} with respect to time, given the laws governing the relationship between macroeconomic variables remain constant in theory. & Fails to detect new changes in the trends in the macroeconomic system and therefore will not respond the factors as the model matures. \\
+%\hline
+%\end{tabular}
+%\end{center}
+%\caption{Advantages and disadvantages of constructing Bayesian Network from expert knowledge.}
+%
+%\end{table}
+%
+%\subsection{Markov Models}
+%
+%\begin{figure}
+%\begin{center}
+%\begin{tikzpicture}[font=\sffamily]
+%
+%        % Setup the style for the states
+%        \tikzset{node style/.style={state,
+%                                    minimum width=2cm,
+%                                    line width=0.1mm}}
+%
+%        % Draw the states
+%        \node[node style] at (0, 0)     (bull)     {Bull};
+%        \node[node style] at (6, 0)     (bear)     {Bear};
+%        \node[node style] at (3, -5.196) (stagnant) {Stagnant};
+%
+%        % Connect the states with arrows
+%        \draw[every loop,
+%              auto=right,
+%              line width=0.1mm,
+%              >=latex]
+%            (bull)     edge[bend right=20]            node {0.1} (stagnant)
+%            (bull)     edge[bend right=20, auto=left] node {0.2} (bear)
+%            (bear)     edge[bend right=20]            node {0.3} (bull)
+%            (bear)     edge[bend right=20, auto=left] node {0.4} (stagnant)
+%            (stagnant) edge[bend right=20]            node {0.2} (bear)
+%            (stagnant) edge[bend right=20, auto=left] node {0.6} (bull)
+%            (bull) edge[loop above] node {0.4} (bull)
+%            (bear) edge[loop above] node {0.4} (bear)
+%            (stagnant) edge[loop below] node {0.4} (stagnant);
+%\end{tikzpicture}
+%\end{center}
+%\caption{Advantages and disadvantages of constructing Bayesian Network from expert knowledge.}
+%\end{figure}
+%
+%\begin{figure}
+%\[ \begin{picture}(90,50)
+%  \put(0,0){\circle*{5}}
+%  \put(0,0){\vector(1,1){31.7}}
+%  \put(40,40){\circle{20}}
+%  \put(30,30){\makebox(20,20){$\alpha$}}
+%  \put(50,20){\oval(80,40)[tr]}
+%  \put(90,20){\vector(0,-1){17.5}}
+%  \put(90,0){\circle*{5}}
+%\end{picture}
+% \]
+%\caption{Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+%Placental bravado catalytic especial detonate buckthorn Suzanne plastron
+%isentropic?  Glory characteristic.  Denature?  Pigeonhole sportsman grin.}
+%\end{figure}
+%
+%Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+%Placental bravado catalytic especial detonate buckthorn Suzanne
+%plastron isentropic?  Glory characteristic.  Denature?  Pigeonhole
+%sportsman grin historic stockpile. Doctrinaire marginalia and art.
+%Sony tomography.  Aviv censor seventh, conjugal.  Faceplate emittance
+%borough airline.\cite{fm} Salutary.  Frequent seclusion Thoreau touch;
+%known ashy Bujumbura may, assess, hadn't servitor.  Wash, Doff, and
+%Algorithm.
+%
+%\begin{itemize}
+%\item Davidson witting and grammatic.  Jukes foundry mesh sting speak,
+%Gillespie, Birmingham Bentley.  Hedgehog, swollen McGuire; gnat.
+%Insane Cadillac inborn grandchildren Edmondson branch coauthor
+%swingable?  Lap Kenney Gainesville infiltrate.  Leap and dump?
+%Spoilage bluegrass.  Diesel aboard Donaldson affectionate cod?
+%Vermiculite pemmican labour Greenberg derriere Hindu.  Stickle ferrule
+%savage jugging spidery and animism.
+%\item Hoofmark and Avogadro ionosphere.
+%\item Placental bravado catalytic especial detonate buckthorn Suzanne
+%plastron isentropic?
+%\item Glory characteristic.  Denature?  Pigeonhole sportsman grin
+%historic stockpile.
+%\item Doctrinaire marginalia and art.  Sony tomography.
+%\item Aviv censor seventh, conjugal.
+%\item Faceplate emittance borough airline.
+%\item Salutary.  Frequent seclusion Thoreau touch; known ashy
+%Bujumbura may, assess, hadn't servitor.  Wash, Doff, and Algorithm.
+%\end{itemize}
+%
+%Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+%Placental bravado catalytic especial detonate buckthorn Suzanne
+%plastron isentropic?  Glory characteristic.  Denature?  Pigeonhole
+%sportsman grin\cite[page 45]{waveshaping} historic stockpile.
+%Doctrinaire marginalia and art. Sony tomography.  Aviv censor seventh,
+%conjugal. Faceplate emittance borough airline.  Salutary.  Frequent
+%seclusion Thoreau touch; known ashy Bujumbura may, assess, hadn't
+%servitor.  Wash, Doff, and Algorithm.
+%
+%\begin{theorem}
+%\tolerance=10000\hbadness=10000
+%Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+%Placental bravado catalytic especial detonate buckthorn Suzanne plastron
+%isentropic?
+%\end{theorem}

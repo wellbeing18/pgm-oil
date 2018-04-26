@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: chap1.aux
+A level-1 auxiliary file: chap2.aux
+A level-1 auxiliary file: chap3.aux
+A level-1 auxiliary file: chap4.aux
+A level-1 auxiliary file: chap5.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 14591 items from 5000.
+Database file #1: thesis-blx.bib
+Database file #2: references.bib
+Biblatex version: 3.3
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 69 entries,
+            6256 wiz_defined-function locations,
+            1563 strings with 20578 characters,
+and the built_in function-call counts, 377656 in all, are:
+= -- 22805
+> -- 14313
+< -- 3338
++ -- 13139
+- -- 8330
+* -- 23041
+:= -- 35207
+add.period$ -- 0
+call.type$ -- 69
+change.case$ -- 1887
+chr.to.int$ -- 580
+cite$ -- 136
+duplicate$ -- 38474
+empty$ -- 33902
+format.name$ -- 3820
+if$ -- 76335
+int.to.chr$ -- 0
+int.to.str$ -- 204
+missing$ -- 0
+newline$ -- 1963
+num.names$ -- 4044
+pop$ -- 22954
+preamble$ -- 1
+purify$ -- 2122
+quote$ -- 0
+skip$ -- 14730
+stack$ -- 0
+substring$ -- 35224
+swap$ -- 10960
+text.length$ -- 2014
+text.prefix$ -- 68
+top$ -- 1
+type$ -- 2328
+warning$ -- 0
+while$ -- 3772
+width$ -- 0
+write$ -- 1895

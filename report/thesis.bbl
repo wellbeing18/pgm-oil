@@ -1,0 +1,1997 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{pgmpynotebook}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=AA}{%
+         family={Ankan},
+         familyi={A\bibinitperiod},
+         given={Ankur},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{AA1}
+    \strng{fullhash}{AA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Learning Bayesian Networks}
+    \verb{url}
+    \verb https://github.com/pgmpy/pgmpy_notebook/blob/master/notebooks/9.%20Le
+    \verb arning%20Bayesian%20Networks%20from%20Data.ipynb
+    \endverb
+    \field{journaltitle}{GitHub repository}
+    \field{year}{2017}
+  \endentry
+
+  \entry{pgmpydoc}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=AA}{%
+         family={Ankan},
+         familyi={A\bibinitperiod},
+         given={Ankur},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{organization}{1}{%
+      {Proc. of the 14th Python in Science Conf. (SciPy 2015)}%
+    }
+    \strng{namehash}{AA1}
+    \strng{fullhash}{AA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{pagetotal}{11}
+    \field{title}{pgmpy: Probabilistic Graphical Models using Python}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{pgmpygit}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=AA}{%
+         family={Ankan},
+         familyi={A\bibinitperiod},
+         given={Ankur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Panda},
+         familyi={P\bibinitperiod},
+         given={Abinash},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{AAPA1}
+    \strng{fullhash}{AAPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{howpublished}{\url{https://github.com/pgmpy}}
+    \field{title}{pgmpy}
+    \field{journaltitle}{GitHub repository}
+    \field{year}{2015}
+  \endentry
+
+  \entry{badelmcgillicuddy}{report}{}
+    \name{author}{2}{}{%
+      {{hash=BA}{%
+         family={Badel},
+         familyi={B\bibinitperiod},
+         given={Alejandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={McGillicuddy},
+         familyi={M\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BAMJ1}
+    \strng{fullhash}{BAMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{13}
+    \field{title}{Oil Prices and Inflation Expectations: Is There a Link?}
+    \verb{url}
+    \verb https://www.stlouisfed.org/~/media/Publications/Regional-Economist/20
+    \verb 15/July/Oil.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Federal Reserve Bank, St. Louis}%
+    }
+    \field{type}{techreport}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{barberBRML2011}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BD}{%
+         family={Barber},
+         familyi={B\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Cambridge University Press}}%
+    }
+    \keyw{bayes bayesian book free learning machine ml online}
+    \strng{namehash}{BD1}
+    \strng{fullhash}{BD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{edition}{04-2011}
+    \field{note}{In press}
+    \field{title}{{Bayesian Reasoning and Machine Learning}}
+    \verb{url}
+    \verb http://www.cs.ucl.ac.uk/staff/d.barber/brml
+    \endverb
+    \field{year}{2011}
+  \endentry
+
+  \entry{barber2011bayesian}{book}{}
+    \name{author}{3}{}{%
+      {{hash=BD}{%
+         family={Barber},
+         familyi={B\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Cemgil},
+         familyi={C\bibinitperiod},
+         given={A.T.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chiappa},
+         familyi={C\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{BDCACS1}
+    \strng{fullhash}{BDCACS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{isbn}{9780521196765}
+    \field{series}{Bayesian Time Series Models}
+    \field{title}{Bayesian Time Series Models}
+    \verb{url}
+    \verb https://books.google.com.pk/books?id=k4z6mOFsEv8C
+    \endverb
+    \field{year}{2011}
+  \endentry
+
+  \entry{eiaoilpriceforecasts}{report}{}
+    \name{author}{3}{}{%
+      {{hash=BC}{%
+         family={Baumeister},
+         familyi={B\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kilian},
+         familyi={K\bibinitperiod},
+         given={Lutz},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LTK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Thomas\bibnamedelima K.},
+         giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BCKLLTK1}
+    \strng{fullhash}{BCKLLTK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{24}
+    \field{title}{Are there Gains from Pooling Real Time Oil Price Forecasts?}
+    \verb{url}
+    \verb https://www.eia.gov/workingpapers/pdf/oilprice_forecasts.pdf
+    \endverb
+    \list{location}{1}{%
+      {Ann Arbor, MI 48109-1220, USA}%
+    }
+    \list{institution}{1}{%
+      {University of Michigan, Department of Economics}%
+    }
+    \field{type}{techreport}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{hftoil}{report}{}
+    \name{author}{3}{}{%
+      {{hash=BCB}{%
+         family={Baumeister},
+         familyi={B\bibinitperiod},
+         given={Christiane\bibnamedelima Baumeister},
+         giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Guérin},
+         familyi={G\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kilian},
+         familyi={K\bibinitperiod},
+         given={Lutz},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BCBGPKL1}
+    \strng{fullhash}{BCBGPKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{2014-11}
+    \field{pages}{34}
+    \field{title}{Do High-Frequency Financial Data Help Forecast Oil Prices?
+  The MIDAS Touch at Work}
+    \verb{url}
+    \verb https://www.banqueducanada.ca/wp-content/uploads/2014/03/wp2014-11.pd
+    \verb f
+    \endverb
+    \list{institution}{1}{%
+      {Bank of Canada}%
+    }
+    \field{type}{techreport}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{whatdrivescrudeoilprices}{report}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Bawks},
+         familyi={B\bibinitperiod},
+         given={Bruce},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BB1}
+    \strng{fullhash}{BB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{23}
+    \field{title}{What drives crude oil prices?}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/crudeoil/reports_presentations/cr
+    \verb ude.pdf
+    \endverb
+    \list{institution}{1}{%
+      {U.S. Energy Information Administration}%
+    }
+    \field{type}{techreport}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{nonoecd}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Bawks},
+         familyi={B\bibinitperiod},
+         given={Bruce},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BB1}
+    \strng{fullhash}{BB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{What drives crude oil prices: Demand Non-OECD}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/crudeoil/demand-nonoecd.php
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{oecd}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Bawks},
+         familyi={B\bibinitperiod},
+         given={Bruce},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BB1}
+    \strng{fullhash}{BB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{What drives crude oil prices: Demand OECD}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/crudeoil/demand-oecd.php
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{eiacrude}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Bawks},
+         familyi={B\bibinitperiod},
+         given={Bruce},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BB1}
+    \strng{fullhash}{BB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{What drives crude oil prices: Overview}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/crudeoil/
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{nonopec}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Bawks},
+         familyi={B\bibinitperiod},
+         given={Bruce},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BB1}
+    \strng{fullhash}{BB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{What drives crude oil prices: Supply Non-OPEC}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/crudeoil/supply-nonopec.php
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{opec}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Bawks},
+         familyi={B\bibinitperiod},
+         given={Bruce},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BB1}
+    \strng{fullhash}{BB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{What drives crude oil prices: Supply OPEC}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/crudeoil/supply-opec.php
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Beach2007}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BSL}{%
+         family={Beach},
+         familyi={B\bibinitperiod},
+         given={Steven\bibnamedelima L.},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=OAG}{%
+         family={Orlov},
+         familyi={O\bibinitperiod},
+         given={Alexei\bibnamedelima G.},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Nature}%
+    }
+    \strng{namehash}{BSLOAG1}
+    \strng{fullhash}{BSLOAG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1007/s11408-007-0046-6
+    \endverb
+    \field{number}{2}
+    \field{title}{An application of the Black{\textendash}Litterman model with
+  {EGARCH}-M-derived views for international portfolio management}
+    \verb{url}
+    \verb https://doi.org/10.1007/s11408-007-0046-6
+    \endverb
+    \field{volume}{21}
+    \field{journaltitle}{Financial Markets and Portfolio Management}
+    \field{year}{2007}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{forex}{online}{}
+    \name{author}{3}{}{%
+      {{hash=BJ}{%
+         family={Beckmann},
+         familyi={B\bibinitperiod},
+         given={Joscha},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AV}{%
+         family={Arora},
+         familyi={A\bibinitperiod},
+         given={Vipin},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Czudaj},
+         familyi={C\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {U.S. Energy Information Administration}%
+    }
+    \strng{namehash}{BJAVCR1}
+    \strng{fullhash}{BJAVCR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{University of Bochum and Kiel Institute for the World Economy}
+    \field{title}{The Relationship Between Oil Prices and Exchange Rates:
+  Theory and Evidence}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/reports_presentations/2017/beckma
+    \verb nn.pdf
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{bendtsen2017gated}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BM}{%
+         family={Bendtsen},
+         familyi={B\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Link{\"o}ping University Electronic Press}%
+    }
+    \strng{namehash}{BM1}
+    \strng{fullhash}{BM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Gated Bayesian networks}
+    \field{volume}{1851}
+    \field{year}{2017}
+  \endentry
+
+  \entry{opecshort}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BH}{%
+         family={Blakset},
+         familyi={B\bibinitperiod},
+         given={Havar},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Rystad Energy}%
+    }
+    \strng{namehash}{BH1}
+    \strng{fullhash}{BH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{EIA Workshop on Financial \& Physical Oil Market Linkages}
+    \field{title}{OPEC Production and Consequences for short term Oil Price}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/reports_presentations/2017/blakse
+    \verb t.pdf
+    \endverb
+    \field{day}{19}
+    \field{month}{09}
+    \field{year}{2017}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{brown2004novel}{incollection}{}
+    \name{author}{3}{}{%
+      {{hash=BLE}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Laura\bibnamedelima E},
+         giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=TI}{%
+         family={Tsamardinos},
+         familyi={T\bibinitperiod},
+         given={Ioannis},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=ACF}{%
+         family={Aliferis},
+         familyi={A\bibinitperiod},
+         given={Constantin\bibnamedelima F},
+         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BLETIACF1}
+    \strng{fullhash}{BLETIACF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Studies in health technology and informatics}
+    \field{title}{A novel algorithm for scalable and accurate Bayesian network
+  learning}
+    \field{year}{2004}
+  \endentry
+
+  \entry{sevenfactors}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Bruce},
+         familyi={B\bibinitperiod},
+         given={Bawks},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {U.S. Energy Information Administration}%
+    }
+    \strng{namehash}{BB2}
+    \strng{fullhash}{BB2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{Independent Statistics \& Analysis}
+    \field{title}{An analysis of 7 factors that influence oil markets with
+  chart data updated monthly and quarterly}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/crudeoil/reports_presentations/cr
+    \verb ude.pdf
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{carvalho2009scoring}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CAM}{%
+         family={Carvalho},
+         familyi={C\bibinitperiod},
+         given={Alexandra\bibnamedelima M},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CAM1}
+    \strng{fullhash}{CAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Scoring functions for learning Bayesian networks}
+    \field{volume}{12}
+    \field{journaltitle}{Inesc-id Tec. Rep}
+    \field{year}{2009}
+  \endentry
+
+  \entry{castelo2000priors}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CR}{%
+         family={Castelo},
+         familyi={C\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Siebes},
+         familyi={S\bibinitperiod},
+         given={Arno},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CRSA1}
+    \strng{fullhash}{CRSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{1}
+    \field{pages}{39\bibrangedash 57}
+    \field{title}{Priors on network structures. Biasing the search for Bayesian
+  networks}
+    \field{volume}{24}
+    \field{journaltitle}{International Journal of Approximate Reasoning}
+    \field{year}{2000}
+  \endentry
+
+  \entry{opecnonopec}{article}{}
+    \name{author}{7}{}{%
+      {{hash=CY}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Yuwen},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yi},
+         familyi={Y\bibinitperiod},
+         given={Jiexin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YXS}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Xin-She},
+         giveni={X\bibinitperiod-S\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YG}{%
+         family={Yifan},
+         familyi={Y\bibinitperiod},
+         given={Gao},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Xi},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CY+1}
+    \strng{fullhash}{CYYJYWYXSZSYGWX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{International Journal of Systems Science}
+    \field{title}{Oil supply between OPEC and non-OPEC based on game theory}
+    \field{volume}{45}
+    \field{month}{10}
+    \field{year}{2014}
+  \endentry
+
+  \entry{cowell}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=CR}{%
+         family={Cowell},
+         familyi={C\bibinitperiod},
+         given={R.G.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Dawid},
+         familyi={D\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lauritzen},
+         familyi={L\bibinitperiod},
+         given={Steffen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Spiegelhalter},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CR+1}
+    \strng{fullhash}{CRDALSSD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Technometrics}
+    \field{title}{Probabilistic Networks and Expert Systems}
+    \field{volume}{43}
+    \field{month}{01}
+    \field{year}{2001}
+  \endentry
+
+  \entry{875348}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DKNF}{%
+         family={Daphne\bibnamedelima Koller},
+         familyi={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Nir\bibnamedelima Friedman},
+         giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The MIT Press}%
+    }
+    \strng{namehash}{DKNF1}
+    \strng{fullhash}{DKNF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{edition}{1}
+    \field{isbn}{0262013193,9780262013192}
+    \field{series}{Adaptive Computation and Machine Learning series}
+    \field{title}{Probabilistic Graphical Models: Principles and Techniques}
+    \verb{url}
+    \verb http://gen.lib.rus.ec/book/index.php?md5=8ac4fc1b72fdad0ec00029fb520b
+    \verb fce4
+    \endverb
+    \field{year}{2009}
+  \endentry
+
+  \entry{dugad1996tutorial}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DR}{%
+         family={Dugad},
+         familyi={D\bibinitperiod},
+         given={Rakesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DUB}{%
+         family={Desai},
+         familyi={D\bibinitperiod},
+         given={UDAY\bibnamedelima B},
+         giveni={U\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DRDUB1}
+    \strng{fullhash}{DRDUB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{A tutorial on hidden Markov models}
+    \field{journaltitle}{Signal Processing and Artifical Neural Networks
+  Laboratory, Dept of Electrical Engineering, Indian Institute of Technology,
+  Bombay Technical Report No.: SPANN-96.1}
+    \field{year}{1996}
+  \endentry
+
+  \entry{duivesteijn}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DW}{%
+         family={Duivesteijn},
+         familyi={D\bibinitperiod},
+         given={Wouter},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Utrecht University}%
+    }
+    \strng{namehash}{DW1}
+    \strng{fullhash}{DW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Markov Chains and Hidden Markov Models}
+    \verb{url}
+    \verb http://www.cs.uu.nl/docs/vakken/cb/slides/slides3.pdf
+    \endverb
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{ferderer1996oil}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FJP}{%
+         family={Ferderer},
+         familyi={F\bibinitperiod},
+         given={J\bibnamedelima Peter},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{FJP1}
+    \strng{fullhash}{FJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 26}
+    \field{title}{Oil price volatility and the macroeconomy}
+    \field{volume}{18}
+    \field{journaltitle}{Journal of macroeconomics}
+    \field{year}{1996}
+  \endentry
+
+  \entry{ecoact}{online}{}
+    \name{author}{1}{}{%
+      {{hash=FRD}{%
+         family={Foreman},
+         familyi={F\bibinitperiod},
+         given={R.\bibnamedelima Dean},
+         giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Saudi Aramco}%
+    }
+    \strng{namehash}{FRD1}
+    \strng{fullhash}{FRD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{note}{EIA Workshop on Financial \& Physical Oil Market Linkages}
+    \field{title}{Economic Activity \& Oil Prices, OPEC Policies, Production
+  and Price Responses}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/reports_presentations/2017/forema
+    \verb n.pdf
+    \endverb
+    \field{day}{19}
+    \field{month}{09}
+    \field{year}{2017}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{friedman2001elements}{book}{}
+    \name{author}{3}{}{%
+      {{hash=FJ}{%
+         family={Friedman},
+         familyi={F\bibinitperiod},
+         given={Jerome},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hastie},
+         familyi={H\bibinitperiod},
+         given={Trevor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Tibshirani},
+         familyi={T\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer series in statistics New York}%
+    }
+    \strng{namehash}{FJHTTR1}
+    \strng{fullhash}{FJHTTR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{The elements of statistical learning}
+    \field{volume}{1}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Gordon-2014}{book}{}
+    \name{author}{3}{}{%
+      {{hash=GAD}{%
+         family={Gordon},
+         familyi={G\bibinitperiod},
+         given={Andrew\bibnamedelima D.},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HAVTAN}{%
+         family={Henzinger},
+         familyi={H\bibinitperiod},
+         suffix={Thomas A.;\bibnamedelima Nori},
+         suffixi={T\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+         given={Aditya\bibnamedelima V.},
+         giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=RSK}{%
+         family={Rajamani},
+         familyi={R\bibinitperiod},
+         given={Sriram\bibnamedelima K.},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GADHTANAVRSK1}
+    \strng{fullhash}{GADHTANAVRSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1145/2593882.2593900
+    \endverb
+    \field{isbn}{9781450328654}
+    \field{title}{[ACM Press the - Hyderabad, India (2014.05.31-2014.06.07)]
+  Proceedings of the on Future of Software Engineering - FOSE 2014 -
+  Probabilistic programming}
+    \verb{url}
+    \verb http://gen.lib.rus.ec/scimag/index.php?s=10.1145/2593882.2593900
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{physcial}{online}{}
+    \name{author}{1}{}{%
+      {{hash=GJJJ}{%
+         family={Groen},
+         familyi={G\bibinitperiod},
+         given={Jan J.\bibnamedelima J},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {U.S. Energy Information Administration}%
+    }
+    \strng{namehash}{GJJJ1}
+    \strng{fullhash}{GJJJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{note}{Research and Statistics Group, FRBNY}
+    \field{title}{(Again) Weaker Oil Prices: Demand,Supply, or Neither?}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/reports_presentations/2016JanGroe
+    \verb n.pdf
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{hamilton2004oil}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HJD}{%
+         family={Hamilton},
+         familyi={H\bibinitperiod},
+         given={James\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HAM}{%
+         family={Herrera},
+         familyi={H\bibinitperiod},
+         given={Ana\bibnamedelima Maria},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Ohio State University Press}%
+    }
+    \strng{namehash}{HJDHAM1}
+    \strng{fullhash}{HJDHAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{2}
+    \field{pages}{265\bibrangedash 286}
+    \field{title}{Oil shocks and aggregate macroeconomic behavior: The role of
+  monetary policy: A comment}
+    \field{volume}{36}
+    \field{journaltitle}{Journal of Money, Credit, and Banking}
+    \field{year}{2004}
+  \endentry
+
+  \entry{book:642976}{book}{}
+    \name{author}{1}{}{%
+      {{hash=HF}{%
+         family={Hayek},
+         familyi={H\bibinitperiod},
+         given={F.A.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HF1}
+    \strng{fullhash}{HF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{isbn}{0415008204,9780415008204}
+    \field{pages}{77}
+    \field{title}{The Fatal Conceit (Collected Works of Friedrich August
+  Hayek)}
+    \verb{url}
+    \verb http://gen.lib.rus.ec/book/index.php?md5=CCBD1E1658FE2E5314D0E642E754
+    \verb ADE4
+    \endverb
+  \endentry
+
+  \entry{fredgit}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=h}{%
+         family={\href{https://github.com/mortada}{Mortada Mehyar}},
+         familyi={h\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{h1}
+    \strng{fullhash}{h1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{howpublished}{\url{https://github.com/mortada/fredapi}}
+    \field{title}{fredapi: Python API for FRED (Federal Reserve Economic Data)}
+    \field{journaltitle}{GitHub repository}
+    \field{year}{2017}
+  \endentry
+
+  \entry{eiagit}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=h}{%
+         family={\href{https://github.com/mra1385}{mra1385}},
+         familyi={h\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{h2}
+    \strng{fullhash}{h2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{howpublished}{\url{https://github.com/mra1385/EIA-python}}
+    \field{title}{EIA-python}
+    \field{journaltitle}{GitHub repository}
+    \field{year}{2015}
+  \endentry
+
+  \entry{lutzreport}{report}{}
+    \name{author}{1}{}{%
+      {{hash=KL}{%
+         family={Kilian},
+         familyi={K\bibinitperiod},
+         given={Lutz},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KL1}
+    \strng{fullhash}{KL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Not All Oil Price Shocks Are Alike:Disentangling Demand and
+  Supply Shocksin the Crude Oil Market}
+    \verb{url}
+    \verb http://www-personal.umich.edu/~lkilian/aer061308final.pdf
+    \endverb
+    \list{institution}{2}{%
+      {University of Michigan}%
+      {CEPR}%
+    }
+    \field{year}{2008}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{koller2009probabilistic}{book}{}
+    \name{author}{2}{}{%
+      {{hash=KD}{%
+         family={Koller},
+         familyi={K\bibinitperiod},
+         given={Daphne},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FN}{%
+         family={Friedman},
+         familyi={F\bibinitperiod},
+         given={Nir},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{KDFN1}
+    \strng{fullhash}{KDFN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Probabilistic Graphical Models: Principles and Techniques}
+    \field{year}{2009}
+  \endentry
+
+  \entry{kollerfriedman}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=KD}{%
+         family={Koller},
+         familyi={K\bibinitperiod},
+         given={Daphne},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FN}{%
+         family={Friedman},
+         familyi={F\bibinitperiod},
+         given={Nir},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KDFN1}
+    \strng{fullhash}{KDFN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{chapter}{18.3.4-18.3.6}
+    \field{pages}{802}
+    \field{title}{Probabilistic Graphical Models: principles and techniques}
+    \field{year}{2009}
+  \endentry
+
+  \entry{dmc}{misc}{}
+    \list{publisher}{1}{%
+      {Freie Universität, Fachbereich Mathematik und Informatik}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Lecture 1: Discrete Markov Chains}
+    \verb{url}
+    \verb http://www.mi.fu-berlin.de/wiki/pub/CompMolBio/MarkovKetten15/Lecture
+    \verb 1.pdf
+    \endverb
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Lee2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LCY}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Chul-Yong},
+         giveni={C\bibinitperiod-Y\bibinitperiod},
+      }}%
+      {{hash=HSY}{%
+         family={Huh},
+         familyi={H\bibinitperiod},
+         given={Sung-Yoon},
+         giveni={S\bibinitperiod-Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{MDPI} {AG}}%
+    }
+    \strng{namehash}{LCYHSY1}
+    \strng{fullhash}{LCYHSY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.3390/su9020190
+    \endverb
+    \field{number}{12}
+    \field{pages}{190}
+    \field{title}{Forecasting Long-Term Crude Oil Prices Using a Bayesian Model
+  with Informative Priors}
+    \verb{url}
+    \verb https://doi.org/10.3390/su9020190
+    \endverb
+    \field{volume}{9}
+    \field{journaltitle}{Sustainability}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{hmmsgit}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LL}{%
+         family={Lopatovsky},
+         familyi={L\bibinitperiod},
+         given={Lukas},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{LL1}
+    \strng{fullhash}{LL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{howpublished}{\url{https://github.com/lopatovsky/HMMs}}
+    \field{title}{HMMs}
+    \field{journaltitle}{GitHub repository}
+    \field{year}{2017}
+  \endentry
+
+  \entry{hmmsnotebook}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LL}{%
+         family={Lopatovsky},
+         familyi={L\bibinitperiod},
+         given={Lukas},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{LL1}
+    \strng{fullhash}{LL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+  \field{howpublished}{\url{https://github.com/lopatovsky/HMMs/blob/master/hmms.ipynb}}
+    \field{title}{HMMs}
+    \field{journaltitle}{GitHub repository}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Lukas:Thesis:2017}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=LL}{%
+         family={Lopatovsky},
+         familyi={L\bibinitperiod},
+         given={Lukas},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LL1}
+    \strng{fullhash}{LL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{{Lopatovsky, Lukas}}
+    \verb{url}
+    \verb https://dspace.cvut.cz/bitstream/handle/10467/69120/F8-DP-2017-Lopato
+    \verb vsky-Lukas-thesis.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Czech Technical University In Prague}%
+    }
+    \field{type}{mathesis}
+    \field{year}{2017}
+  \endentry
+
+  \entry{brandonmalone}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MB}{%
+         family={Malone},
+         familyi={M\bibinitperiod},
+         given={Brandon},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {University of Helsinki, Department of Computer Science}%
+    }
+    \strng{namehash}{MB1}
+    \strng{fullhash}{MB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Lecture Notes: Learning Bayesian Network Structures}
+    \verb{url}
+    \verb https://www.cs.helsinki.fi/u/bmmalone/probabilistic-models-spring-201
+    \verb 4/StructureLearning.pdf
+    \endverb
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{margaritis2003learning}{report}{}
+    \name{author}{1}{}{%
+      {{hash=MD}{%
+         family={Margaritis},
+         familyi={M\bibinitperiod},
+         given={Dimitris},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MD1}
+    \strng{fullhash}{MD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Learning Bayesian network model structure from data}
+    \verb{url}
+    \verb https://www.cs.cmu.edu/~dmarg/Papers/PhD-Thesis-Margaritis.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Carnegie-Mellon University, School of Computer Science, Pittsburgh PA}%
+    }
+    \field{type}{techreport}
+    \field{year}{2003}
+  \endentry
+
+  \entry{hmms}{misc}{}
+    \list{publisher}{1}{%
+      {Freie Universität Berlin}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Markov chains and Hidden Markov Models}
+    \verb{url}
+    \verb \url{http://www.inf.fu-berlin.de/lehre/WS05/aldabi/downloads/markov_p
+    \verb art1.pdf}
+    \endverb
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{maxwell}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Maxwell},
+         familyi={M\bibinitperiod},
+         given={Maxwell},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Quantopian}%
+    }
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Lecture 4: Introduction to pandas}
+    \verb{url}
+    \verb https://www.quantopian.com/lectures/introduction-to-pandas
+    \endverb
+  \endentry
+
+  \entry{neapolitan2004learning}{book}{}
+    \name{author}{1}{}{%
+      {{hash=NR}{%
+         family={Neapolitan},
+         familyi={N\bibinitperiod},
+         given={R.E.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson Prentice Hall}%
+    }
+    \strng{namehash}{NR1}
+    \strng{fullhash}{NR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{isbn}{9780130125347}
+    \field{series}{Artificial Intelligence}
+    \field{title}{Learning Bayesian Networks}
+    \field{year}{2004}
+  \endentry
+
+  \entry{nevmyvaka2006reinforcement}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=NY}{%
+         family={Nevmyvaka},
+         familyi={N\bibinitperiod},
+         given={Yuriy},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=FY}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Yi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kearns},
+         familyi={K\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{NYFYKM1}
+    \strng{fullhash}{NYFYKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{Proceedings of the 23rd international conference on
+  Machine learning}
+    \field{pages}{673\bibrangedash 680}
+    \field{title}{Reinforcement learning for optimized trade execution}
+    \field{year}{2006}
+  \endentry
+
+  \entry{pandasgit}{misc}{}
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{howpublished}{\url{https://github.com/pandas-dev/pandas}}
+    \field{title}{pandas}
+    \field{journaltitle}{GitHub repository}
+    \field{year}{2018}
+  \endentry
+
+  \entry{522526}{book}{}
+    \name{author}{1}{}{%
+      {{hash=PJ}{%
+         family={Pearl},
+         familyi={P\bibinitperiod},
+         given={Judea},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Morgan Kaufmann}%
+    }
+    \strng{namehash}{PJ1}
+    \strng{fullhash}{PJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{edition}{1}
+    \field{isbn}{1558604790,9781558604797}
+    \field{title}{Probabilistic Reasoning in Intelligent Systems: Networks of
+  Plausible Inference}
+    \verb{url}
+    \verb http://gen.lib.rus.ec/book/index.php?md5=9BDEE2434F2051324F7E71B76E15
+    \verb 0F22
+    \endverb
+    \field{year}{1988}
+  \endentry
+
+  \entry{pellet2008using}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PJP}{%
+         family={Pellet},
+         familyi={P\bibinitperiod},
+         given={Jean-Philippe},
+         giveni={J\bibinitperiod-P\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Elisseeff},
+         familyi={E\bibinitperiod},
+         given={Andr{\'e}},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJPEA1}
+    \strng{fullhash}{PJPEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{Jul}
+    \field{pages}{1295\bibrangedash 1342}
+    \field{title}{Using Markov blankets for causal structure learning}
+    \field{volume}{9}
+    \field{journaltitle}{Journal of Machine Learning Research}
+    \field{year}{2008}
+  \endentry
+
+  \entry{1165342}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RL}{%
+         family={Rabiner},
+         familyi={R\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JB}{%
+         family={Juang},
+         familyi={J\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{Fluctuations;Hidden Markov models;Linear systems;Mathematical
+  model;Optimization methods;Pattern matching;Speech processing;Speech
+  recognition;Time varying systems}
+    \strng{namehash}{RLJB1}
+    \strng{fullhash}{RLJB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1109/MASSP.1986.1165342
+    \endverb
+    \field{issn}{0740-7467}
+    \field{number}{1}
+    \field{pages}{4\bibrangedash 16}
+    \field{title}{An introduction to hidden Markov models}
+    \field{volume}{3}
+    \field{journaltitle}{IEEE ASSP Magazine}
+    \field{year}{1986}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Rebonato2009}{book}{}
+    \name{author}{2}{}{%
+      {{hash=RR}{%
+         family={Rebonato},
+         familyi={R\bibinitperiod},
+         given={Riccardo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Denev},
+         familyi={D\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{RRDA1}
+    \strng{fullhash}{RRDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1017/cbo9781107256736
+    \endverb
+    \field{title}{Portfolio Management Under Stress}
+    \verb{url}
+    \verb https://doi.org/10.1017/cbo9781107256736
+    \endverb
+    \field{year}{2009}
+  \endentry
+
+  \entry{gallager}{book}{}
+    \name{author}{1}{}{%
+      {{hash=RG}{%
+         family={R.G.},
+         familyi={R\bibinitperiod},
+         given={Gallager},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{RG1}
+    \strng{fullhash}{RG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{isbn}{978-1-107-03975-9}
+    \field{pages}{164}
+    \field{title}{Stochastic Processes: Theory for Applications}
+    \verb{url}
+    \verb http://gen.lib.rus.ec/book/index.php?md5=97e9ba867cf373396f2343c291de
+    \verb 7f25
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{scutari2014bayesian}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SM}{%
+         family={Scutari},
+         familyi={S\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SM1}
+    \strng{fullhash}{SM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Bayesian network constraint-based structure learning
+  algorithms: Parallel and optimised implementations in the bnlearn r package}
+    \field{journaltitle}{arXiv preprint arXiv:1406.7648}
+    \field{year}{2014}
+  \endentry
+
+  \entry{opecsmarketrole}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SJL}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={James\bibnamedelima L.},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Southern Methodist University, Dallas Texas}%
+    }
+    \strng{namehash}{SJL1}
+    \strng{fullhash}{SJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{EIA Workshop on Financial \& Physical Oil Market Linkages}
+    \field{title}{OPEC’S Market Role: Changing Signs?}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/reports_presentations/2017/yang.p
+    \verb df
+    \endverb
+    \field{day}{19}
+    \field{month}{09}
+    \field{year}{2017}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{fredweb}{online}{}
+    \name{author}{1}{}{%
+      {{hash=oSLFRB}{%
+         prefix={of},
+         prefixi={o\bibinitperiod},
+         family={St.\bibnamedelima Louis},
+         familyi={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={Federal Reserve\bibnamedelima Bank},
+         giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SLFRBo1}
+    \strng{fullhash}{SLFRBo1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{FRED Economic Data, St. Louis FRED}
+    \verb{url}
+    \verb https://fred.stlouisfed.org
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{02}
+    \field{urlmonth}{04}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{united2017statistical}{book}{}
+    \list{publisher}{2}{%
+      {United States Office of Management}%
+      {Budget}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Statistical Programs of the United States Government}
+    \verb{url}
+    \verb \url{https://obamawhitehouse.archives.gov/sites/default/files/omb/ass
+    \verb ets/information_and_regulatory_affairs/statistical-programs-2017.pdf}
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{indiana}{misc}{}
+    \list{publisher}{1}{%
+      {Dept. of Linguistics, Indiana University}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Stochastic Processes, Markov Chains,and Markov Models}
+    \verb{url}
+    \verb http://cl.indiana.edu/~md7/09/645/slides/06-markov/06-markov-2x3.pdf
+    \endverb
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{30499}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SRPN}{%
+         family={Stuart\bibnamedelima Russell},
+         familyi={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Peter\bibnamedelima Norvig},
+         giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice Hall}%
+    }
+    \strng{namehash}{SRPN1}
+    \strng{fullhash}{SRPN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{edition}{1st}
+    \field{isbn}{0131038052, 9780131038059}
+    \field{title}{Artificial Intelligence: A Modern Approach}
+    \verb{url}
+    \verb http://gen.lib.rus.ec/book/index.php?md5=BCF9E109BBFA056D2AFDB40BFB87
+    \verb A879
+    \endverb
+    \field{year}{1995}
+  \endentry
+
+  \entry{tsamardinos2006max}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TI}{%
+         family={Tsamardinos},
+         familyi={T\bibinitperiod},
+         given={Ioannis},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BLE}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Laura\bibnamedelima E},
+         giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=ACF}{%
+         family={Aliferis},
+         familyi={A\bibinitperiod},
+         given={Constantin\bibnamedelima F},
+         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{TIBLEACF1}
+    \strng{fullhash}{TIBLEACF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{number}{1}
+    \field{pages}{31\bibrangedash 78}
+    \field{title}{The max-min hill-climbing Bayesian network structure learning
+  algorithm}
+    \field{volume}{65}
+    \field{journaltitle}{Machine learning}
+    \field{year}{2006}
+  \endentry
+
+  \entry{venkatg}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=VGRK}{%
+         family={Venkatesan\bibnamedelima Guruswami},
+         familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={Ravi\bibnamedelima Kannan},
+         giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Carnegie Mellon University, School of Computer Science}%
+    }
+    \strng{namehash}{VGRK1}
+    \strng{fullhash}{VGRK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Lecture Notes: Markov Chains}
+    \verb{url}
+    \verb https://www.cs.cmu.edu/~venkatg/teaching/CStheory-infoage/book-chapte
+    \verb r-5.pdf
+    \endverb
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{wang2017bayesian}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WQ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Qiuping},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZQ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Qi},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hindawi}%
+    }
+    \strng{namehash}{WQSHZQ1}
+    \strng{fullhash}{WQSHZQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{A Bayesian Network Model on the Public Bicycle Choice
+  Behavior of Residents: A Case Study of Xi’an}
+    \field{volume}{2017}
+    \field{journaltitle}{Mathematical Problems in Engineering}
+    \field{year}{2017}
+  \endentry
+
+  \entry{14109}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=hwKW}{%
+         prefix={(https://stats.stackexchange.com/users/1434/ken},
+         prefixi={h\bibinitperiod},
+         family={williams)},
+         familyi={w\bibinitperiod},
+         given={Ken\bibnamedelima Williams},
+         giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{wKWh1}
+    \strng{fullhash}{wKWh1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{eprint}
+    \verb https://stats.stackexchange.com/q/14109
+    \endverb
+    \field{howpublished}{Cross Validated}
+    \field{note}{URL:https://stats.stackexchange.com/q/14109 (version:
+  2011-08-10)}
+    \field{title}{Using k-fold cross-validation for time-series model
+  selection}
+    \verb{url}
+    \verb https://stats.stackexchange.com/q/14109
+    \endverb
+  \endentry
+
+  \entry{impactinvent}{online}{}
+    \name{author}{1}{}{%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Jian},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Leeds School of Business, University of Colorado Boulder}%
+    }
+    \strng{namehash}{YJ1}
+    \strng{fullhash}{YJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{note}{EIA Workshop on Financial \& Physical Oil Market Linkages}
+    \field{title}{The impact of crude oil inventory announcements on prices:
+  evidence from derivatives markets}
+    \verb{url}
+    \verb https://www.eia.gov/finance/markets/reports_presentations/2017/yang.p
+    \verb df
+    \endverb
+    \field{day}{19}
+    \field{month}{09}
+    \field{year}{2017}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{zhai2003brief}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ZC}{%
+         family={Zhai},
+         familyi={Z\bibinitperiod},
+         given={ChengXiang},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZC1}
+    \strng{fullhash}{ZC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{title}{A Brief Note on the Hidden Markov Models (HMMs)}
+    \field{journaltitle}{Department of Computer Science, University of Illinois
+  at Urbana-Champaign, IL, USA}
+    \field{year}{2003}
+  \endentry
+\endsortlist
+\endinput

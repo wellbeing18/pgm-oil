@@ -1,0 +1,52 @@
+\BOOKMARK [0][-]{section*.2}{Contents}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Objective of Research}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.2.1}{Understanding the structure of the energy markets on a macroeconomic level}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.2}{Exploring government open-data facilities by extracting relevant datasets}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.3}{Constructing a Bayesian Network of Energy Markets using the macroeconomic indicators.}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.4}{Testing the outcome of the Bayesian Model based on historical performance and results.}{section.1.2}% 8
+\BOOKMARK [1][-]{section.1.3}{Data sources used in this research}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.3.1}{Federal Reserve Economic Data, St. Louis}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.2}{Energy Information Administration}{section.1.3}% 11
+\BOOKMARK [0][-]{chapter.2}{Background \046 Literature Review}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Probabilistic Graphical Models}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{Belief Networks}{section.2.1}% 14
+\BOOKMARK [3][-]{subsubsection.2.1.1.1}{Learning Belief Networks}{subsection.2.1.1}% 15
+\BOOKMARK [4][-]{paragraph.2.1.1.1.1}{Parameter learning}{subsubsection.2.1.1.1}% 16
+\BOOKMARK [4][-]{paragraph.2.1.1.1.2}{Structure learning}{subsubsection.2.1.1.1}% 17
+\BOOKMARK [5][-]{subparagraph.2.1.1.1.2.1}{Constraint-based learning}{paragraph.2.1.1.1.2}% 18
+\BOOKMARK [5][-]{subparagraph.2.1.1.1.2.2}{Score-based learning}{paragraph.2.1.1.1.2}% 19
+\BOOKMARK [2][-]{subsection.2.1.2}{Markov Chain}{section.2.1}% 20
+\BOOKMARK [3][-]{subsubsection.2.1.2.1}{Hidden Markov Models}{subsection.2.1.2}% 21
+\BOOKMARK [4][-]{paragraph.2.1.2.1.1}{The Forward Algorithm}{subsubsection.2.1.2.1}% 22
+\BOOKMARK [4][-]{paragraph.2.1.2.1.2}{The Backward Algorithm}{subsubsection.2.1.2.1}% 23
+\BOOKMARK [4][-]{paragraph.2.1.2.1.3}{The Viterbi Algorithm}{subsubsection.2.1.2.1}% 24
+\BOOKMARK [4][-]{paragraph.2.1.2.1.4}{The Baum-Welch Algorithm}{subsubsection.2.1.2.1}% 25
+\BOOKMARK [1][-]{section.2.2}{Python modules for Bayesian Programming}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.1}{pgmpy : A Python Library for Probabilistic Graphical Models}{section.2.2}% 27
+\BOOKMARK [2][-]{subsection.2.2.2}{hmms: A Python Library for Hidden Markov Models}{section.2.2}% 28
+\BOOKMARK [1][-]{section.2.3}{Datasets in macroeconomic perspective}{chapter.2}% 29
+\BOOKMARK [2][-]{subsection.2.3.1}{Physical market factors from EIA}{section.2.3}% 30
+\BOOKMARK [2][-]{subsection.2.3.2}{FRED}{section.2.3}% 31
+\BOOKMARK [0][-]{chapter.3}{Design}{}% 32
+\BOOKMARK [1][-]{section.3.1}{Macro Strategy}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.1.1}{Energy Information Administration}{section.3.1}% 34
+\BOOKMARK [3][-]{subsubsection.3.1.1.1}{Supply Non-OPEC}{subsection.3.1.1}% 35
+\BOOKMARK [3][-]{subsubsection.3.1.1.2}{Supply OPEC}{subsection.3.1.1}% 36
+\BOOKMARK [3][-]{subsubsection.3.1.1.3}{Demand OECD}{subsection.3.1.1}% 37
+\BOOKMARK [3][-]{subsubsection.3.1.1.4}{Demand Non-OECD}{subsection.3.1.1}% 38
+\BOOKMARK [3][-]{subsubsection.3.1.1.5}{Balance}{subsection.3.1.1}% 39
+\BOOKMARK [3][-]{subsubsection.3.1.1.6}{Other EIA data}{subsection.3.1.1}% 40
+\BOOKMARK [2][-]{subsection.3.1.2}{Federal Economic Reserve Data}{section.3.1}% 41
+\BOOKMARK [1][-]{section.3.2}{Preprocessing data \(Cleaning data\)}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.2.1}{pandas - powerful Python data analysis toolkit}{section.3.2}% 43
+\BOOKMARK [2][-]{subsection.3.2.2}{Obtaining the training, validation, testing set}{section.3.2}% 44
+\BOOKMARK [1][-]{section.3.3}{Time-series discretisation}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.3.1}{Regime Detection}{section.3.3}% 46
+\BOOKMARK [1][-]{section.3.4}{Constructing structure of the Crude Oil Markets}{chapter.3}% 47
+\BOOKMARK [1][-]{section.3.5}{Assessing the model}{chapter.3}% 48
+\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 49
+\BOOKMARK [0][-]{chapter.5}{Conclusions \046 Future Work}{}% 50
+\BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 51
+\BOOKMARK [0][-]{section*.16}{Bibliography}{}% 52
