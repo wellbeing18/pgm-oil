@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  19 APR 2018 13:12
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  27 APR 2018 13:13
  system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.121 seconds
+luaotfload | main : initialization completed in 0.110 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (./myclass.cls (/usr/local/texlive/2017/texmf-dist/tex/latex/memoir/memoir.cls
 Document Class: memoir 2016/05/16 v3.7f configurable book, report, article docum
@@ -373,6 +373,9 @@ Package verse [2008/07/23] emulated by memoir.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/memoir/mempatch.sty
 Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
 )))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
+)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2017/05/13 L3 programming layer (loader) 
@@ -1879,45 +1882,63 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+)
+\AM@pagewidth=\dimen339
+\AM@pageheight=\dimen340
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/ppluatex.def
+File: ppluatex.def 2017/01/14 v0.5h Pdfpages driver for LuaTeX (AM)
+)
+\AM@pagebox=\box71
+\AM@global@opts=\toks50
+\AM@toc@title=\toks51
+\c@AM@survey=\count470
+\AM@templatesizebox=\box72
+)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-\c@definition=\count470
+\c@definition=\count471
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ntheorem/ntheorem.sty
 Style `ntheorem', Version 1.33 <2011/08/15>
 Package: ntheorem 2011/08/15 1.33
-\theorem@style=\toks50
-\theorem@@style=\toks51
-\theorembodyfont=\toks52
-\theoremnumbering=\toks53
+\theorem@style=\toks52
+\theorem@@style=\toks53
+\theorembodyfont=\toks54
+\theoremnumbering=\toks55
 \theorempreskipamount=\skip278
 \theorempostskipamount=\skip279
 \theoremframepreskipamount=\skip280
 \theoremframepostskipamount=\skip281
 \theoreminframepreskipamount=\skip282
 \theoreminframepostskipamount=\skip283
-\theorem@preskip=\toks54
-\theorem@postskip=\toks55
-\theorem@framepreskip=\toks56
-\theorem@framepostskip=\toks57
-\theorem@inframepreskip=\toks58
-\theorem@inframepostskip=\toks59
-\theoremindent=\dimen339
-\theorem@indent=\dimen340
-\theoremrightindent=\dimen341
-\theorem@rightindent=\dimen342
-\theoremheaderfont=\toks60
-\theoremseparator=\toks61
-\theoremprework=\toks62
-\theorempostwork=\toks63
-\theoremsymbol=\toks64
-\qedsymbol=\toks65
-\theoremkeyword=\toks66
+\theorem@preskip=\toks56
+\theorem@postskip=\toks57
+\theorem@framepreskip=\toks58
+\theorem@framepostskip=\toks59
+\theorem@inframepreskip=\toks60
+\theorem@inframepostskip=\toks61
+\theoremindent=\dimen341
+\theorem@indent=\dimen342
+\theoremrightindent=\dimen343
+\theorem@rightindent=\dimen344
+\theoremheaderfont=\toks62
+\theoremseparator=\toks63
+\theoremprework=\toks64
+\theorempostwork=\toks65
+\theoremsymbol=\toks66
 \qedsymbol=\toks67
+\theoremkeyword=\toks68
+\qedsymbol=\toks69
 \thm@topsep=\skip284
 \thm@topsepadd=\skip285
-\shadecolor=\toks68
+\shadecolor=\toks70
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryautomata.code.tex
@@ -1931,26 +1952,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box71
-\pgfnodeparttwobox=\box72
-\pgfnodepartthreebox=\box73
-\pgfnodepartfourbox=\box74
-\pgfnodeparttwentybox=\box75
-\pgfnodepartnineteenbox=\box76
-\pgfnodeparteighteenbox=\box77
-\pgfnodepartseventeenbox=\box78
-\pgfnodepartsixteenbox=\box79
-\pgfnodepartfifteenbox=\box80
-\pgfnodepartfourteenbox=\box81
-\pgfnodepartthirteenbox=\box82
-\pgfnodeparttwelvebox=\box83
-\pgfnodepartelevenbox=\box84
-\pgfnodeparttenbox=\box85
-\pgfnodepartninebox=\box86
-\pgfnodeparteightbox=\box87
-\pgfnodepartsevenbox=\box88
-\pgfnodepartsixbox=\box89
-\pgfnodepartfivebox=\box90
+\pgfnodepartlowerbox=\box73
+\pgfnodeparttwobox=\box74
+\pgfnodepartthreebox=\box75
+\pgfnodepartfourbox=\box76
+\pgfnodeparttwentybox=\box77
+\pgfnodepartnineteenbox=\box78
+\pgfnodeparteighteenbox=\box79
+\pgfnodepartseventeenbox=\box80
+\pgfnodepartsixteenbox=\box81
+\pgfnodepartfifteenbox=\box82
+\pgfnodepartfourteenbox=\box83
+\pgfnodepartthirteenbox=\box84
+\pgfnodeparttwelvebox=\box85
+\pgfnodepartelevenbox=\box86
+\pgfnodeparttenbox=\box87
+\pgfnodepartninebox=\box88
+\pgfnodeparteightbox=\box89
+\pgfnodepartsevenbox=\box90
+\pgfnodepartsixbox=\box91
+\pgfnodepartfivebox=\box92
 )))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarychains.code.tex
@@ -2008,7 +2029,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen343
+\arrowsize=\dimen345
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
@@ -2021,8 +2042,8 @@ File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box91
-\pgf@layerboxsaved@background=\box92
+\pgf@layerbox@background=\box93
+\pgf@layerboxsaved@background=\box94
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathmorphing.code.tex
@@ -2030,16 +2051,16 @@ s/tikzlibrarydecorations.pathmorphing.code.tex
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen344
-\pgfdecoratedremainingdistance=\dimen345
-\pgfdecoratedinputsegmentcompleteddistance=\dimen346
-\pgfdecoratedinputsegmentremainingdistance=\dimen347
-\pgf@decorate@distancetomove=\dimen348
-\pgf@decorate@repeatstate=\count471
-\pgfdecorationsegmentamplitude=\dimen349
-\pgfdecorationsegmentlength=\dimen350
+\pgfdecoratedcompleteddistance=\dimen346
+\pgfdecoratedremainingdistance=\dimen347
+\pgfdecoratedinputsegmentcompleteddistance=\dimen348
+\pgfdecoratedinputsegmentremainingdistance=\dimen349
+\pgf@decorate@distancetomove=\dimen350
+\pgf@decorate@repeatstate=\count472
+\pgfdecorationsegmentamplitude=\dimen351
+\pgfdecorationsegmentlength=\dimen352
 )
-\tikz@lib@dec@box=\box93
+\tikz@lib@dec@box=\box95
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathmorphing.code.tex))
@@ -2049,30 +2070,30 @@ s/tikzlibraryintersections.code.tex
 ctions.code.tex
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
 e.tex)
-\pgf@intersect@solutions=\count472
+\pgf@intersect@solutions=\count473
 ))
-\c@frm-def=\count473
-\c@frm-thm=\count474
-\c@theorem=\count475
+\c@frm-def=\count474
+\c@frm-thm=\count475
+\c@theorem=\count476
  (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count476
-\lst@gtempboxa=\box94
-\lst@token=\toks69
-\lst@length=\count477
-\lst@currlwidth=\dimen351
-\lst@column=\count478
-\lst@pos=\count479
-\lst@lostspace=\dimen352
-\lst@width=\dimen353
-\lst@newlines=\count480
-\lst@lineno=\count481
-\lst@maxwidth=\dimen354
+\lst@mode=\count477
+\lst@gtempboxa=\box96
+\lst@token=\toks71
+\lst@length=\count478
+\lst@currlwidth=\dimen353
+\lst@column=\count479
+\lst@pos=\count480
+\lst@lostspace=\dimen354
+\lst@width=\dimen355
+\lst@newlines=\count481
+\lst@lineno=\count482
+\lst@maxwidth=\dimen356
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count482
-\lst@skipnumbers=\count483
-\lst@framebox=\box95
+\c@lstnumber=\count483
+\lst@skipnumbers=\count484
+\lst@framebox=\box97
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -2092,29 +2113,29 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 (./chap4.aux) (./chap5.aux))
 \openout1 = thesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    ... okay on input line 79.
 
 
 ******************************************************
@@ -2136,22 +2157,22 @@ Sidefoothsep and sidefootwidth: 7pt and 50pt
 Sidefootvsep and sidefootheight: 14.5pt and 546.64995pt
 ******************************************************
 
-\AtBeginShipoutBox=\box96
-Package hyperref Info: Link coloring OFF on input line 76.
+\AtBeginShipoutBox=\box98
+Package hyperref Info: Link coloring OFF on input line 79.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count484
+\c@section@level=\count485
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 76.
-LaTeX Info: Redefining \ref on input line 76.
-LaTeX Info: Redefining \pageref on input line 76.
-LaTeX Info: Redefining \nameref on input line 76.
+LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write9
 
@@ -2159,17 +2180,17 @@ LaTeX Info: Redefining \nameref on input line 76.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count485
-\scratchdimen=\dimen355
-\scratchbox=\box97
-\nofMPsegments=\count486
-\nofMParguments=\count487
-\everyMPshowfont=\toks70
-\MPscratchCnt=\count488
-\MPscratchDim=\dimen356
-\MPnumerator=\count489
-\makeMPintoPDFobject=\count490
-\everyMPtoPDFconversion=\toks71
+\scratchcounter=\count486
+\scratchdimen=\dimen357
+\scratchbox=\box99
+\nofMPsegments=\count487
+\nofMParguments=\count488
+\everyMPshowfont=\toks72
+\MPscratchCnt=\count489
+\MPscratchDim=\dimen358
+\MPnumerator=\count490
+\makeMPintoPDFobject=\count491
+\everyMPtoPDFconversion=\toks73
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -2325,10 +2346,18 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 76.
-Package biblatex Info: Reference segment=0 on input line 76.
+Package biblatex Info: Reference section=0 on input line 79.
+Package biblatex Info: Reference segment=0 on input line 79.
  ABD: EveryShipout initializing macros
-\c@lstlisting=\count491
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+\c@lstlisting=\count492
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -2852,7 +2881,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 847--848
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 849--144
+Underfull \hbox (badness 10000) in paragraph at lines 849--147
 
  []
 
@@ -3007,28 +3036,308 @@ File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on input
  line 264.
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
-
- []
-
-[44]) [45] [46]
+)
+[44] [45]
 \openout2 = chap4.aux
- (./chap4.tex) [47
+ (./chap4.tex <Implementation.pdf, id=818, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf>
+Package luatex.def Info: Implementation.pdf used on input line 13.
+(luatex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf>
+Package luatex.def Info: Implementation.pdf used on input line 13.
+(luatex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+<Implementation.pdf, id=821, page=1, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 1>
+Package luatex.def Info: Implementation.pdf, page1 used on input line 13.
+(luatex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 1>
+Package luatex.def Info: Implementation.pdf, page1 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 1>
+Package luatex.def Info: Implementation.pdf, page1 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 1>
+Package luatex.def Info: Implementation.pdf, page1 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\ignorespaces' on input line 13.
 
-]
+File: Implementation.pdf Graphic file (type pdf)
+<use Implementation.pdf, page 1>
+Package luatex.def Info: Implementation.pdf, page1 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [46
+
+
+<./Implementation.pdf>]
+<Implementation.pdf, id=855, page=2, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 2>
+Package luatex.def Info: Implementation.pdf, page2 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 2>
+Package luatex.def Info: Implementation.pdf, page2 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 2>
+Package luatex.def Info: Implementation.pdf, page2 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [47<./Implementation.pdf>]
+<Implementation.pdf, id=866, page=3, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 3>
+Package luatex.def Info: Implementation.pdf, page3 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 3>
+Package luatex.def Info: Implementation.pdf, page3 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 3>
+Package luatex.def Info: Implementation.pdf, page3 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [48<./Implementation.pdf>]
+<Implementation.pdf, id=872, page=4, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 4>
+Package luatex.def Info: Implementation.pdf, page4 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 4>
+Package luatex.def Info: Implementation.pdf, page4 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 4>
+Package luatex.def Info: Implementation.pdf, page4 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [49<./Implementation.pdf>]
+<Implementation.pdf, id=878, page=5, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 5>
+Package luatex.def Info: Implementation.pdf, page5 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 5>
+Package luatex.def Info: Implementation.pdf, page5 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 5>
+Package luatex.def Info: Implementation.pdf, page5 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [50<./Implementation.pdf>]
+<Implementation.pdf, id=904, page=6, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 6>
+Package luatex.def Info: Implementation.pdf, page6 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 6>
+Package luatex.def Info: Implementation.pdf, page6 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 6>
+Package luatex.def Info: Implementation.pdf, page6 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [51<./Implementation.pdf>]
+<Implementation.pdf, id=910, page=7, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 7>
+Package luatex.def Info: Implementation.pdf, page7 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 7>
+Package luatex.def Info: Implementation.pdf, page7 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 7>
+Package luatex.def Info: Implementation.pdf, page7 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [52<./Implementation.pdf>]
+<Implementation.pdf, id=916, page=8, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 8>
+Package luatex.def Info: Implementation.pdf, page8 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 8>
+Package luatex.def Info: Implementation.pdf, page8 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 8>
+Package luatex.def Info: Implementation.pdf, page8 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [53<./Implementation.pdf>]
+<Implementation.pdf, id=924, page=9, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 9>
+Package luatex.def Info: Implementation.pdf, page9 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 9>
+Package luatex.def Info: Implementation.pdf, page9 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 9>
+Package luatex.def Info: Implementation.pdf, page9 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [54<./Implementation.pdf>]
+<Implementation.pdf, id=930, page=10, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 10>
+Package luatex.def Info: Implementation.pdf, page10 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 10>
+Package luatex.def Info: Implementation.pdf, page10 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 10>
+Package luatex.def Info: Implementation.pdf, page10 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [55<./Implementation.pdf>]
+<Implementation.pdf, id=936, page=11, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 11>
+Package luatex.def Info: Implementation.pdf, page11 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 11>
+Package luatex.def Info: Implementation.pdf, page11 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 11>
+Package luatex.def Info: Implementation.pdf, page11 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [56<./Implementation.pdf>]
+<Implementation.pdf, id=943, page=12, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 12>
+Package luatex.def Info: Implementation.pdf, page12 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 12>
+Package luatex.def Info: Implementation.pdf, page12 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 12>
+Package luatex.def Info: Implementation.pdf, page12 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [57<./Implementation.pdf>]
+<Implementation.pdf, id=951, page=13, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 13>
+Package luatex.def Info: Implementation.pdf, page13 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 13>
+Package luatex.def Info: Implementation.pdf, page13 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 13>
+Package luatex.def Info: Implementation.pdf, page13 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [58<./Implementation.pdf>]
+<Implementation.pdf, id=957, page=14, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 14>
+Package luatex.def Info: Implementation.pdf, page14 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 14>
+Package luatex.def Info: Implementation.pdf, page14 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 14>
+Package luatex.def Info: Implementation.pdf, page14 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [59<./Implementation.pdf>]
+<Implementation.pdf, id=963, page=15, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 15>
+Package luatex.def Info: Implementation.pdf, page15 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 15>
+Package luatex.def Info: Implementation.pdf, page15 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 15>
+Package luatex.def Info: Implementation.pdf, page15 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [60<./Implementation.pdf>]
+<Implementation.pdf, id=969, page=16, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 16>
+Package luatex.def Info: Implementation.pdf, page16 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 16>
+Package luatex.def Info: Implementation.pdf, page16 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 16>
+Package luatex.def Info: Implementation.pdf, page16 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [61<./Implementation.pdf>]
+<Implementation.pdf, id=975, page=17, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 17>
+Package luatex.def Info: Implementation.pdf, page17 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 17>
+Package luatex.def Info: Implementation.pdf, page17 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 17>
+Package luatex.def Info: Implementation.pdf, page17 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [62<./Implementation.pdf>])
 \openout2 = chap5.aux
  (./chap5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -3040,43 +3349,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[48
+[63
 
 
 
-]) [49] [50
+]) [64] [65
 
 
-] [51] [52] [53]
-Overfull \hbox (6.37685pt too wide) in paragraph at lines 154--154
+] [66] [67] [68]
+Overfull \hbox (6.37685pt too wide) in paragraph at lines 157--157
 []\T1/lmr/m/n/12 Ravi Kan-nan Venkate-san Gu-ruswami. \T1/lmr/m/it/12 Lec-ture 
 Notes: Markov Chains\T1/lmr/m/n/12 . 2012. \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : 
 []$\T1/lmtt/m/n/12 https :
  []
 
-
-Overfull \hbox (50.56262pt too wide) in paragraph at lines 154--154
-\T1/lmr/m/n/12 tats.stack-ex-change.com/q/14109 (ver-sion: 2011-08-10). eprint:
- []$\T1/lmtt/m/n/12 https : / / stats . stackexchange .
- []
-
-[54
+[69
 Missing character: There is no ’ (U+2019) in font ec-lmri12!
 Missing character: There is no ’ (U+2019) in font ec-lmr12!
 ]
 \tf@thm=\write10
 
 \openout10 = thesis.thm
- [55]
+ [70]
 \tf@toc=\write11
 
 \openout11 = thesis.toc
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
  (./thesis.aux (./abstract.aux) (./chap1.aux) (./chap2.aux)
 (./chap3.aux) (./chap4.aux) (./chap5.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: FF98F07F4497CDA60029BC5360ACAE23;4236.
 
@@ -3086,20 +3389,20 @@ LaTeX Warning: There were undefined references.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
 )
 
 Here is how much of LuaTeX's memory you used:
- 48399 strings out of 494481
+ 49356 strings out of 494481
  125215,1648299 words of node,token memory allocated
- 1815 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 10 glue, 1 kern, 1 sub_mlist, 74 attribute, 202 glu
-e_spec, 74 attribute_list, 2 write, 44 pdf_action nodes
-   avail lists: 1:7,2:3815,3:1205,4:86,5:369,6:3024,7:1074,8:153,9:533,10:30,11:
+ 1805 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 10 glue, 1 kern, 1 sub_mlist, 73 attribute, 202 glu
+e_spec, 73 attribute_list, 2 write, 43 pdf_action nodes
+   avail lists: 1:6,2:3838,3:1207,4:79,5:368,6:2709,7:1074,8:153,9:556,10:30,11:
 290
- 50584 multiletter control sequences out of 65536+600000
+ 51258 multiletter control sequences out of 65536+600000
  116 fonts using 8649159 bytes
- 60i,13n,72p,1902b,2515s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 60i,18n,72p,1902b,2513s stack positions out of 5000i,500n,10000p,200000b,100000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.8'
 
@@ -3147,10 +3450,10 @@ public/lm/lmtt8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lm
 tti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb>
-Output written on thesis.pdf (60 pages, 885622 bytes).
+Output written on thesis.pdf (75 pages, 1168342 bytes).
 
-PDF statistics: 1094 PDF objects out of 1200 (max. 8388607)
- 989 compressed objects within 10 object streams
- 223 named destinations out of 1000 (max. 131072)
+PDF statistics: 1246 PDF objects out of 1440 (max. 8388607)
+ 1089 compressed objects within 11 object streams
+ 236 named destinations out of 1000 (max. 131072)
  432 words of extra memory for PDF output out of 10000 (max. 100000000)
 

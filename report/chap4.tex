@@ -1,2 +1,13 @@
-\chapter{Implementation}
-\label{impelentation}
+\includepdf[
+    %% Include all pages of the PDF
+    pages=-,
+    %% make this page have the usual page style
+    %% (you can change it to plain etc). By default pdfpages
+    %% sets the pagecommand to \pagestyle{empty}
+    pagecommand={\pagestyle{headings}},  
+    pagecommand=\thispagestyle{plain},
+    %% Add a "section" entry to the ToC with the heading
+    %% "Quilling Shapes" and the label "sec:shapes"
+    addtotoc={1,chapter,4,Implementation,sec:shapes}]
+%% The pdf file itself
+{Implementation.pdf}

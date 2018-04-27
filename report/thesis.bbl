@@ -1910,36 +1910,6 @@
     \field{year}{2017}
   \endentry
 
-  \entry{14109}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=hwKW}{%
-         prefix={(https://stats.stackexchange.com/users/1434/ken},
-         prefixi={h\bibinitperiod},
-         family={williams)},
-         familyi={w\bibinitperiod},
-         given={Ken\bibnamedelima Williams},
-         giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{wKWh1}
-    \strng{fullhash}{wKWh1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \verb{eprint}
-    \verb https://stats.stackexchange.com/q/14109
-    \endverb
-    \field{howpublished}{Cross Validated}
-    \field{note}{URL:https://stats.stackexchange.com/q/14109 (version:
-  2011-08-10)}
-    \field{title}{Using k-fold cross-validation for time-series model
-  selection}
-    \verb{url}
-    \verb https://stats.stackexchange.com/q/14109
-    \endverb
-  \endentry
-
   \entry{impactinvent}{online}{}
     \name{author}{1}{}{%
       {{hash=YJ}{%

@@ -267,19 +267,7 @@ prediction = model.predict(data_test); # Obtain prediction
 
 \section{Assessing the model}
 
-Given that our model is predicting time-series data, the application of \textbf{traditional} methods such as \textit{$k$-fold cross-validation} on a time-series prediction model often becomes a challenging task. We propose using a modified version of the \textit{$k$-fold cross-validation}, which is called \textit{forward-chaining}\citep{14109}. \\
 
-In the \textit{forward-chaining} method, we begin with a small subset of data for training purposes, and forecast it for future data points and then check the accuracy for the forecasted data points. The same forecasted data points are then included as part of the next training dataset and subsequent data points are forecasted. \\
-
-The mechanism can be demonstrated in the following psuedocode. \\
-
-\begin{algorithm}
-\caption{$k$-fold cross-validation using Forward Chaining}\label{kfoldcross}
-\begin{algorithmic}
-\Procedure{ForwardChaining}{$k$, \texttt{dataset} $\mathcal{ D}$}
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
 
 In the next chapter, we would be implementing the design process as described in Python in an attempt to experiment with the proposed models and observe their performance, feasability, reliability, and return. 
 
