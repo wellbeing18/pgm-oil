@@ -26,6 +26,8 @@ We have used [pgmpy](https://github.com/pgmpy) by Ankur Ankan and Abinash Panda 
 
 The implementation is given in the [the Jupyter notebook](https://github.com/DanishAmjadAlvi/pgm-oil/blob/master/notebook/Implementation.ipynb), covering most of the development stages.
 
+For **deeper understanding** of the topic you can see the corresponding [diploma thesis](https://github.com/danalvi/pgm-oil/blob/master/report/thesis.pdf).
+
 ## Acknowlegements
 
 This project was the final year project submitted by Danish A. Alvi, an undergraduate at University College London, Department of Computer Science as part of his completion of Bachelors in Computer Science.
