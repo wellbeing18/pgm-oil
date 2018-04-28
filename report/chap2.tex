@@ -115,7 +115,7 @@ p(x_1, \cdots, x_D) = \prod_{i=1}^{D} p(x_i \mid \textup{pa} (x_i))
 
 \vspace{-3mm}
 
-In order to explain the concept of belief networks better, the most common example that is given is that of the "Rain-Sprinkler-Wet Grass" model, which is popularly described in literature in Statistics and Machine Learning.
+In order to explain the concept of belief networks better, the most common example that is given is that of the "Rain-Sprinkler-Wet Grass" model, which is popularly described in literature in Statistics and Machine Learning \cite{sprinkler}.
 
 \vspace{3mm}
 
@@ -231,7 +231,7 @@ The sections demonstrate how belief networks represent a probability distributio
 	\item[Structure learning:]{Given a set of data samples, estimate a DAG that captures the dependencies between the variables. This step determines which arcs are in the graph without looking at parameter estimates.}
 \end{description}
 
-Most of academic literature focuses on structure learning which is the most challenging part. Indeed, the problem is certainly computationally expensive and a naive brute-force approach (greedy search) will usually does not work. In what follows, we will describe the general framework of learning belief networks and present a general overview of two algorithms that can be used more specifically for structure learning.
+Most of academic literature focuses on structure learning which is the most challenging part. Indeed, the problem is certainly computationally expensive and a naive brute-force approach (greedy search) will usually not work. In what follows, we will describe the general framework of learning belief networks and present a general overview of two algorithms that can be used more specifically for structure learning.
 
 \paragraph{Parameter learning}
 
@@ -245,7 +245,7 @@ One of the major advatanges of using a graphical model is that the estimation pr
 
 We can observe that the sparser the graph $G$ is, the smaller the expected dimension of parameters $\theta_{v\mid \text{pa}(v)}$, and therefore we can conclude that there is a computational incentive to select sparser graphs. We can also observe that issues arise when the sample size is smaller than the number of variables, which tends to increase the variability of data. This problem is frequently faced in Computational biology when the number of observations ends up smaller than the number of genes.\\
 
-Parameter learning is for \textit{discrete} nodes is of two main types:
+Parameter learning is of two main types:
 
 \begin{description}
 		\item[Maximum Likelihood Estimation:]{\label{mlw} A natural estimate for the CPDs is to simply use the relative frequencies, with which the variable states have occured. According to MLE, we should fill the CPDs such that $P(\text{data}|\text{model})$ is maximised. This is achieved when using the relative frequencies\cite{875348}.}
@@ -272,7 +272,7 @@ In context of Bayesian statistics, we could begin with selecting a prior $\mathb
 	\item{No arc between $i$ and $j$ with probability $p_0 = 1/2$}
 \end{itemize}
 
-Another possibility is to assign all the three options with equal probability $p = 1/3$. Often in literature, a uniform prior is implicitly assumed with $P(\mathcal G\,|\, D)\propto \mathbb P(D\,|\, \mathcal G)$.
+Another possibility is to assign all the three options with equal probability $p = 1/3$. Often in literature, a uniform prior is implicitly assumed with $P(\mathcal G\,|\, D)\propto P(D\,|\, \mathcal G)$.
 
 \subparagraph{Constraint-based learning}
 
@@ -295,9 +295,9 @@ Before explaining the \hyperref[icalgo]{inferred causality} algorithm, let us re
         \node[state, fill=blue, above right=10mm and 7mm of state1, text opacity=0]    (state4)  {$s$};
         \node[state,fill=green, below left=10mm and 7mm of state1, text opacity=0]    (state5)  {$s$};
         \node[state,fill=green, below right=10mm and 7mm of state1, text opacity=0]    (state6)  {$s$};
-        \node[state,above left=10mm and 3mm of state3, text opacity=0]    (state7)  {$s$};
+        \node[state, above left=10mm and 3mm of state3, text opacity=0]    (state7)  {$s$};
         \node[state,below left=13mm and 2mm of state7, text opacity=0]    (state8)  {$s$};
-         \node[state,left=20mm of state1, text opacity=0]    (state9)  {$s$};
+         \node[state, fill=red, left=5mm of state1, text opacity=0]    (state9)  {$s$};
 
          \node[state,above right=13mm and 7mm of state4, text opacity=0]    (state10)  {$s$};
 
@@ -319,7 +319,7 @@ Before explaining the \hyperref[icalgo]{inferred causality} algorithm, let us re
          	(state12) edge node {} (state6);
 
 		\begin{pgfonlayer}{background}
-		\node[draw,inner sep=10pt,fill=blue!5,fit=(state1) (state2) (state3) (state5) (state6) (state12) (state13), rounded corners=2pt, label={[xshift=25mm, yshift=-6mm] $\mathcal{M}$}] (rect) {};
+		\node[draw,inner sep=10pt,fill=blue!5,fit=(state1) (state2) (state3) (state5) (state6) (state9) (state12) (state13), rounded corners=2pt, label={[xshift=25mm, yshift=-6mm] $\mathcal{M}$}] (rect) {};
 		\end{pgfonlayer}
 \end{tikzpicture}
 \caption{Illustration of the Markov blanket (shaded area) of a node in a simple DAG.}

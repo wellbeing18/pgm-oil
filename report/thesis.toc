@@ -96,12 +96,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Constructing structure of the Crude Oil Markets}{43}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Assessing the model}{44}{section.3.5}
+\contentsline {section}{\numberline {3.5}Assessing the model}{46}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}\ignorespaces Implementation}{46}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\ignorespaces Implementation}{48}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}Conclusions \& Future Work}{63}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}Conclusions \& Future Work}{66}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Future Work}{64}{section.5.1}
+\contentsline {section}{\numberline {5.1}Future Work}{67}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{65}{section*.16}
+\contentsline {chapter}{Bibliography}{68}{section*.16}

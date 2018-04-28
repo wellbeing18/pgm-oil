@@ -35,6 +35,8 @@ In this section, we would be describing the design process of our oil trading mo
     \path [line,dashed] (expert) -- (identify);
     \path [line,dashed] (pandas) -- (init);
     \path [line] (decide) -- node {no} (test);
+    \path [line] (decide) -| node {yes} (update);
+    \path [line] (update) -- (evaluate);
     \path [line] (macro) -- (idind);
     \path [line] (idind) -- (ret);
     \path [line,dashed] (pgmpy) -- (evaluate);
@@ -225,9 +227,14 @@ Belief networks are highly applicable to capture \textbf{causal} relationships b
 
 We therefore propose using structure learning algorithms for constructing a \textit{causal} network of the oil markets. In Chapter 2, we had discussed two main \hyperref[structure]{structure learning} algorithms; the \hyperref[constraint]{\textbf{constraint-based}} Structural learning, and  \hyperref[scorebased]{\textbf{score-based}} Structural learning. Despite recent advances in constraint-based learning algorithms\cite{pellet2008using}, we would be using score-based algorithms, which have benefited a lot from past and recent research in optimization theory, using the network score as the objective function to maximise\cite{scutari2014bayesian}. A popular score-based structure learning algorithm is \hyperref[scorebased]{\textbf{Hill Climbing}}, a greedy, iterative search algorithm used to maximise the network score, which we would be using to learn the structure of the oil markets and perform inferences to make forecasts of the future. \\
 
-We would be using \texttt{pgmpy}, which provides a very straightforward implementation to the \textbf{Hill Climbing} algorithm. \texttt{pgmpy} provides an excellent notebook \cite{pgmpynotebook} for learning belief networks. We would be using our training data to \textbf{estimate the structure of the network}, and would then fit the data using an \textbf{estimator} to learn the parameters. Below is a minimal working example in Python.
 
-\begin{listing}[ht]
+However, we would not be using Hill Climbing to learn the entire structure of the oil markets. Using Hill Climbing without any initial structure not only results in models which might be \textit{causaly} incorrect, but could also result in an rather drastically different network whenever constructed again during the \textit{validation} step. This is due to the nature of the Hill Climbing algorithm, which is highly affected from where the initial point is taken and can get \enquote{stuck} at a number of different \textit{local} maxima rather than the one \textit{global} maxima. As a result, we have decided to use an expert drafted network having a basic structure of the oil markets, constructed by the expert using knowledge of laws of supply and demand in economics. Though there is chance that the re-learnt network during the validation step might be different, chances are less that the changes will not be entirely random and the basic expert framework would still exist. \\
+
+We would be using \texttt{pgmpy}, which provides a very straightforward implementation to the \textbf{Hill Climbing} algorithm. \texttt{pgmpy} provides an excellent notebook \cite{pgmpynotebook} for learning belief networks. We would be using our training data to \textbf{estimate the structure of the network}, and would then fit the data using an \textbf{estimator} to learn the parameters. Below is a minimal working example in Python. \texttt{pgmpy} also provides an excellent facility of using an initial structure to learn the network from, and we would be using the network constructed by the expert as our initial model.  \\
+
+Below is a Minimal Working Example of implementing a Hill Climb search on (randomly) produced data, using \texttt{pgmpy}.
+
+\begin{listing}[!htbp]
 \begin{minted}{python}
 import numpy as np
 import pandas as pd
@@ -267,7 +274,20 @@ prediction = model.predict(data_test); # Obtain prediction
 
 \section{Assessing the model}
 
+In Machine Learning projects, it is  almost always required to construct algorithms that learn and make predictions based on data. In our project, we would be making data driven decisions by inputing our data in a Bayesian model. \\
 
+In order to learn the Bayesian Network, we would be using the \textbf{Leave-$k$-out} cross validation method. In the $k$-fold cross-validation method, the data are randomly partitioned into $k$ subsets. Each subset is used in turn to validate the model fitted on the remaining $k - 1$ subsets.  In our example, we would be sticking to the leave-one-out cross-validation technique, thus having three datasets; the training set, the validation set, and the testing set. \\
+
+
+\begin{description}
+	\item[Training set:] is a sample used for \hyperref[learn]{learning} the Belief Network using \hyperref[learn]{Hill Climbing}.
+	\item[Validation set:]is a sample used to tune the parameters of the belief network. In our example, we experimented with using different \textit{Bayesian Dirichlet} scoring functions such as the \texttt{BDeu} or \texttt{K2} and the Bayesian Information Criterion (\texttt{BIC}) 
+	\item[Testing set:]is a sample used only to assess the performance of a \textbf{fully-trained} model. In our project, we would be using the testing dataset to estimate the error rate after we have chosen our final model with the scoring function that gives the most accurate validation dataset. 
+\end{description}
+
+The difference between the validation and testing datasets is often at times vastly misunderstood and both datasets are often incorrectly equated. The validation dataset is used for model selection and the test set is used for assessing the error in the final model that was selected to be \enquote{tuned} with the validation set\cite{friedman2001elements}. A popular ratio of $\mathtt{80:10:10}$ is used for spliting the data and we would be adhering to this standard. Moreover, given that the validation dataset and the testing data set would each be of 33 months (recall the \hyperref[30x]{\enquote{30x rule of thumb}}) hence being a appropriate length of time to have statistical confidence at. \\
+
+However, before we decide to split our preprocessed data into three datasets, there is a vital step that needs to be carried out. The \texttt{pandas.DataFrame} that \texttt{pgmpy} takes in as input has values of a \textbf{discretised} nature i.e. having a \textbf{fixed} number of states. The data obtained from the EIA and FRED is raw continious time-series data which has almost an infinite number of states theoretically having a range of $\mathbb{R}^+$. In order for \texttt{pgmpy} to use this data, it is essential we find a mechanism to find \textbf{hidden} states in time-series data for discretisation of this data. We would be describing the process of discretising the EIA and FRED data in the coming \hyperref[regime]{regime}.
 
 In the next chapter, we would be implementing the design process as described in Python in an attempt to experiment with the proposed models and observe their performance, feasability, reliability, and return. 
 

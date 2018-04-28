@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  27 APR 2018 13:13
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  28 APR 2018 01:53
  system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.110 seconds
+luaotfload | main : initialization completed in 0.107 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (./myclass.cls (/usr/local/texlive/2017/texmf-dist/tex/latex/memoir/memoir.cls
 Document Class: memoir 2016/05/16 v3.7f configurable book, report, article docum
@@ -2306,6 +2306,11 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'sprinkler':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'lutzreport':
 (biblatex)                - Invalid format of field 'date' 
 (biblatex)                - Invalid format of field 'date'.
@@ -2364,22 +2369,22 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \openout2 = abstract.aux
  (./abst
 ract.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
@@ -2793,7 +2798,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 783--784
 [27]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 786.
- <img/logo.png, id=581, 1850.915pt x 1849.91125pt>
+ <img/logo.png, id=584, 1850.915pt x 1849.91125pt>
 File: img/logo.png Graphic file (type png)
  <use img/logo.png>
 Package luatex.def Info: img/logo.png used on input line 791.
@@ -2823,7 +2828,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 808--809
 
  []
 
-<img/index.png, id=607, 1163.34625pt x 470.75874pt>
+<img/index.png, id=610, 1163.34625pt x 470.75874pt>
 File: img/index.png Graphic file (type png)
  <use img/index.png>
 Package luatex.def Info: img/index.png used on input line 812.
@@ -2896,17 +2901,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
@@ -2915,37 +2920,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-
- []
-
-[36]
 Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
@@ -2955,26 +2955,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
@@ -2985,7 +2985,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
@@ -2994,31 +2994,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 
-LaTeX Warning: Hyper reference `regime' on page 41 undefined on input line 168.
+LaTeX Warning: Hyper reference `regime' on page 41 undefined on input line 170.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
@@ -3035,11 +3050,28 @@ LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 11.
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on input
- line 264.
-)
+ line 271.
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+
+ []
+
 [44] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+
+LaTeX Warning: Hyper reference `regime' on page 46 undefined on input line 290.
+
+[46]) [47]
 \openout2 = chap4.aux
- (./chap4.tex <Implementation.pdf, id=818, 614.295pt x 794.97pt>
+ (./chap4.tex <Implementation.pdf, id=836, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf>
@@ -3050,7 +3082,7 @@ File: Implementation.pdf Graphic file (type pdf)
 Package luatex.def Info: Implementation.pdf used on input line 13.
 (luatex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<Implementation.pdf, id=821, page=1, 614.295pt x 794.97pt>
+<Implementation.pdf, id=839, page=1, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 1>
@@ -3078,11 +3110,11 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 1>
 Package luatex.def Info: Implementation.pdf, page1 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [46
+ [48
 
 
 <./Implementation.pdf>]
-<Implementation.pdf, id=855, page=2, 614.295pt x 794.97pt>
+<Implementation.pdf, id=859, page=2, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 2>
@@ -3097,8 +3129,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 2>
 Package luatex.def Info: Implementation.pdf, page2 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [47<./Implementation.pdf>]
-<Implementation.pdf, id=866, page=3, 614.295pt x 794.97pt>
+ [49<./Implementation.pdf>]
+<Implementation.pdf, id=881, page=3, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 3>
@@ -3113,8 +3145,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 3>
 Package luatex.def Info: Implementation.pdf, page3 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [48<./Implementation.pdf>]
-<Implementation.pdf, id=872, page=4, 614.295pt x 794.97pt>
+ [50<./Implementation.pdf>]
+<Implementation.pdf, id=889, page=4, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 4>
@@ -3129,8 +3161,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 4>
 Package luatex.def Info: Implementation.pdf, page4 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [49<./Implementation.pdf>]
-<Implementation.pdf, id=878, page=5, 614.295pt x 794.97pt>
+ [51<./Implementation.pdf>]
+<Implementation.pdf, id=895, page=5, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 5>
@@ -3145,8 +3177,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 5>
 Package luatex.def Info: Implementation.pdf, page5 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [50<./Implementation.pdf>]
-<Implementation.pdf, id=904, page=6, 614.295pt x 794.97pt>
+ [52<./Implementation.pdf>]
+<Implementation.pdf, id=901, page=6, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 6>
@@ -3161,8 +3193,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 6>
 Package luatex.def Info: Implementation.pdf, page6 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [51<./Implementation.pdf>]
-<Implementation.pdf, id=910, page=7, 614.295pt x 794.97pt>
+ [53<./Implementation.pdf>]
+<Implementation.pdf, id=927, page=7, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 7>
@@ -3177,8 +3209,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 7>
 Package luatex.def Info: Implementation.pdf, page7 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [52<./Implementation.pdf>]
-<Implementation.pdf, id=916, page=8, 614.295pt x 794.97pt>
+ [54<./Implementation.pdf>]
+<Implementation.pdf, id=933, page=8, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 8>
@@ -3193,8 +3225,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 8>
 Package luatex.def Info: Implementation.pdf, page8 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [53<./Implementation.pdf>]
-<Implementation.pdf, id=924, page=9, 614.295pt x 794.97pt>
+ [55<./Implementation.pdf>]
+<Implementation.pdf, id=939, page=9, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 9>
@@ -3209,8 +3241,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 9>
 Package luatex.def Info: Implementation.pdf, page9 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [54<./Implementation.pdf>]
-<Implementation.pdf, id=930, page=10, 614.295pt x 794.97pt>
+ [56<./Implementation.pdf>]
+<Implementation.pdf, id=948, page=10, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 10>
@@ -3225,8 +3257,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 10>
 Package luatex.def Info: Implementation.pdf, page10 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [55<./Implementation.pdf>]
-<Implementation.pdf, id=936, page=11, 614.295pt x 794.97pt>
+ [57<./Implementation.pdf>]
+<Implementation.pdf, id=954, page=11, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 11>
@@ -3241,8 +3273,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 11>
 Package luatex.def Info: Implementation.pdf, page11 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [56<./Implementation.pdf>]
-<Implementation.pdf, id=943, page=12, 614.295pt x 794.97pt>
+ [58<./Implementation.pdf>]
+<Implementation.pdf, id=960, page=12, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 12>
@@ -3257,8 +3289,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 12>
 Package luatex.def Info: Implementation.pdf, page12 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [57<./Implementation.pdf>]
-<Implementation.pdf, id=951, page=13, 614.295pt x 794.97pt>
+ [59<./Implementation.pdf>]
+<Implementation.pdf, id=966, page=13, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 13>
@@ -3273,8 +3305,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 13>
 Package luatex.def Info: Implementation.pdf, page13 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [58<./Implementation.pdf>]
-<Implementation.pdf, id=957, page=14, 614.295pt x 794.97pt>
+ [60<./Implementation.pdf>]
+<Implementation.pdf, id=974, page=14, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 14>
@@ -3289,8 +3321,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 14>
 Package luatex.def Info: Implementation.pdf, page14 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [59<./Implementation.pdf>]
-<Implementation.pdf, id=963, page=15, 614.295pt x 794.97pt>
+ [61<./Implementation.pdf>]
+<Implementation.pdf, id=980, page=15, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 15>
@@ -3305,8 +3337,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 15>
 Package luatex.def Info: Implementation.pdf, page15 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [60<./Implementation.pdf>]
-<Implementation.pdf, id=969, page=16, 614.295pt x 794.97pt>
+ [62<./Implementation.pdf>]
+<Implementation.pdf, id=986, page=16, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 16>
@@ -3321,8 +3353,8 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 16>
 Package luatex.def Info: Implementation.pdf, page16 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [61<./Implementation.pdf>]
-<Implementation.pdf, id=975, page=17, 614.295pt x 794.97pt>
+ [63<./Implementation.pdf>]
+<Implementation.pdf, id=993, page=17, 614.295pt x 794.97pt>
 File: Implementation.pdf Graphic file (type pdf)
 
 <use Implementation.pdf, page 17>
@@ -3337,7 +3369,23 @@ File: Implementation.pdf Graphic file (type pdf)
 <use Implementation.pdf, page 17>
 Package luatex.def Info: Implementation.pdf, page17 used on input line 13.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
- [62<./Implementation.pdf>])
+ [64<./Implementation.pdf>]
+<Implementation.pdf, id=999, page=18, 614.295pt x 794.97pt>
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 18>
+Package luatex.def Info: Implementation.pdf, page18 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+ <use Implementation.pdf, page 18>
+Package luatex.def Info: Implementation.pdf, page18 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Implementation.pdf Graphic file (type pdf)
+
+<use Implementation.pdf, page 18>
+Package luatex.def Info: Implementation.pdf, page18 used on input line 13.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [65<./Implementation.pdf>])
 \openout2 = chap5.aux
  (./chap5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -3349,28 +3397,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[63
+[66
 
 
 
-]) [64] [65
+]) [67] [68
 
 
-] [66] [67] [68]
+] [69] [70] [71]
 Overfull \hbox (6.37685pt too wide) in paragraph at lines 157--157
 []\T1/lmr/m/n/12 Ravi Kan-nan Venkate-san Gu-ruswami. \T1/lmr/m/it/12 Lec-ture 
 Notes: Markov Chains\T1/lmr/m/n/12 . 2012. \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : 
 []$\T1/lmtt/m/n/12 https :
  []
 
-[69
+[72
 Missing character: There is no ’ (U+2019) in font ec-lmri12!
 Missing character: There is no ’ (U+2019) in font ec-lmr12!
 ]
 \tf@thm=\write10
 
 \openout10 = thesis.thm
- [70]
+ [73]
 \tf@toc=\write11
 
 \openout11 = thesis.toc
@@ -3393,16 +3441,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
 )
 
 Here is how much of LuaTeX's memory you used:
- 49356 strings out of 494481
+ 49377 strings out of 494481
  125215,1648299 words of node,token memory allocated
- 1805 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 10 glue, 1 kern, 1 sub_mlist, 73 attribute, 202 glu
-e_spec, 73 attribute_list, 2 write, 43 pdf_action nodes
-   avail lists: 1:6,2:3838,3:1207,4:79,5:368,6:2709,7:1074,8:153,9:556,10:30,11:
+ 1825 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 10 glue, 1 kern, 1 sub_mlist, 75 attribute, 202 glu
+e_spec, 75 attribute_list, 2 write, 45 pdf_action nodes
+   avail lists: 1:6,2:3835,3:1207,4:79,5:369,6:3426,7:1074,8:154,9:556,10:30,11:
 290
- 51258 multiletter control sequences out of 65536+600000
+ 51263 multiletter control sequences out of 65536+600000
  116 fonts using 8649159 bytes
- 60i,18n,72p,1902b,2513s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 60i,18n,72p,1902b,2520s stack positions out of 5000i,500n,10000p,200000b,100000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.8'
 
@@ -3450,10 +3498,10 @@ public/lm/lmtt8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lm
 tti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb>
-Output written on thesis.pdf (75 pages, 1168342 bytes).
+Output written on thesis.pdf (78 pages, 1163396 bytes).
 
-PDF statistics: 1246 PDF objects out of 1440 (max. 8388607)
- 1089 compressed objects within 11 object streams
- 236 named destinations out of 1000 (max. 131072)
+PDF statistics: 1272 PDF objects out of 1440 (max. 8388607)
+ 1110 compressed objects within 12 object streams
+ 240 named destinations out of 1000 (max. 131072)
  432 words of extra memory for PDF output out of 10000 (max. 100000000)
 

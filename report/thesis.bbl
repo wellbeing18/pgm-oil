@@ -1128,6 +1128,33 @@
     \field{year}{2015}
   \endentry
 
+  \entry{sprinkler}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=HS}{%
+         family={Højsgaard},
+         familyi={H\bibinitperiod},
+         given={Søren},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Department of Mathematical Sciences, Aalborg University, Denmark}%
+    }
+    \strng{namehash}{HS1}
+    \strng{fullhash}{HS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Graphical Models and Bayesian Networks}
+    \verb{url}
+    \verb http://people.math.aau.dk/~sorenh/misc/2016-gmbn-zurich/doc/bayesnet.
+    \verb pdf
+    \endverb
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{lutzreport}{report}{}
     \name{author}{1}{}{%
       {{hash=KL}{%

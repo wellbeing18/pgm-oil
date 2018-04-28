@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  27 APR 2018 13:13
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  28 APR 2018 01:53
  system commands enabled.
 **Implementation.tex
 (./Implementation.tex
@@ -34,10 +34,10 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.115 seconds
+luaotfload | main : initialization completed in 0.109 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 luaotfload | db : Font names database loaded from /Users/danish/Library/texlive/
@@ -45,13 +45,14 @@ luaotfload | db : Font names database loaded from /Users/danish/Library/texlive/
 danish/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-r
 egular.luc))
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -98,7 +99,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count87
+\Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -117,7 +118,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen110
 \caption@hangindent=\dimen111
 )
-\c@ContinuedFloat=\count88
+\c@ContinuedFloat=\count89
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
@@ -130,7 +131,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks15
 \XKV@tempa@toks=\toks16
 )
-\XKV@depth=\count89
+\XKV@depth=\count90
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -193,10 +194,10 @@ ode.tex
 \pgf@yc=\dimen125
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count90
-\c@pgf@countb=\count91
-\c@pgf@countc=\count92
-\c@pgf@countd=\count93
+\c@pgf@counta=\count91
+\c@pgf@countb=\count92
+\c@pgf@countc=\count93
+\c@pgf@countd=\count94
 \t@pgf@toka=\toks21
 \t@pgf@tokb=\toks22
 \t@pgf@tokc=\toks23
@@ -217,8 +218,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count94
-\pgfsyssoftpath@bigbuffer@items=\count95
+\pgfsyssoftpath@smallbuffer@items=\count95
+\pgfsyssoftpath@bigbuffer@items=\count96
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -247,7 +248,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen126
-\pgfmath@count=\count96
+\pgfmath@count=\count97
 \pgfmath@box=\box28
 \pgfmath@toks=\toks24
 \pgfmath@stack@operand=\toks25
@@ -272,7 +273,7 @@ code.tex)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count97
+\c@pgfmathroundto@lastzeros=\count98
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -310,7 +311,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box29
 \pgf@hbox=\box30
 \pgf@layerbox@main=\box31
-\pgf@picture@serial@count=\count98
+\pgf@picture@serial@count=\count99
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -345,7 +346,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen150
-\pgf@sys@shading@range@num=\count99
+\pgf@sys@shading@range@num=\count100
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -397,12 +398,12 @@ Package trimclip Info: No clipping driver 'tc-luatex.def' available.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count100
+\c@checkoddpage=\count101
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box34
-\sift@deathcycles=\count101
+\sift@deathcycles=\count102
 \@vwid@loff=\dimen157
 \@vwid@roff=\dimen158
 ))
@@ -423,9 +424,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count102
-\Gm@cntv=\count103
-\c@Gm@tempcnt=\count104
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
 \Gm@bindingoffset=\dimen159
 \Gm@wd@mp=\dimen160
 \Gm@odd@mp=\dimen161
@@ -456,13 +457,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count105
+\inf@bad=\count106
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count106
-\leftroot@=\count107
+\uproot@=\count107
+\leftroot@=\count108
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count108
-\DOTSCASE@=\count109
+\classnum@=\count109
+\DOTSCASE@=\count110
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -471,15 +472,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen169
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count110
-\c@MaxMatrixCols=\count111
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
 \dotsspace@=\muskip10
-\c@parentequation=\count112
-\dspbrk@lvl=\count113
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
 \tag@help=\toks30
-\row@=\count114
-\column@=\count115
-\maxfields@=\count116
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
 \andhelp@=\toks31
 \eqnshift@=\dimen170
 \alignsep@=\dimen171
@@ -599,7 +600,7 @@ Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count117
+\uc@secondtry=\count118
 \uc@combtoks=\toks34
 \uc@combtoksb=\toks35
 \uc@temptokena=\toks36
@@ -617,11 +618,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count118
+\FV@CodeLineNo=\count119
 \FV@InFile=\read2
 \FV@TabBox=\box38
-\c@FancyVerbLine=\count119
-\FV@StepNumber=\count120
+\c@FancyVerbLine=\count120
+\FV@StepNumber=\count121
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grffile.sty
@@ -695,13 +696,13 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen176
-\Hy@linkcounter=\count121
-\Hy@pagecounter=\count122
+\Hy@linkcounter=\count122
+\Hy@pagecounter=\count123
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count123
+\Hy@SavedSpaceFactor=\count124
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -713,7 +714,7 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count124
+\c@Hy@tempcnt=\count125
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -721,7 +722,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen177
-\Fld@menulength=\count125
+\Fld@menulength=\count126
 \Field@Width=\dimen178
 \Fld@charsize=\dimen179
 Package hyperref Info: Hyper figures OFF on input line 6358.
@@ -733,17 +734,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count126
-\c@Item=\count127
-\c@Hfootnote=\count128
+\Hy@abspage=\count127
+\c@Item=\count128
+\c@Hfootnote=\count129
 )
 
 Package hyperref Message: Driver (autodetected): hluatex.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hluatex.def
 File: hluatex.def 2017/03/14 v6.85a Hyperref driver for luaTeX
-\Fld@listcount=\count129
-\c@bookmark@seq@number=\count130
+\Fld@listcount=\count130
+\c@bookmark@seq@number=\count131
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -758,16 +759,16 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip48
 \LTpre=\skip49
 \LTpost=\skip50
-\LTchunksize=\count131
+\LTchunksize=\count132
 \LTcapwidth=\dimen180
 \LT@head=\box39
 \LT@firsthead=\box40
 \LT@foot=\box41
 \LT@lastfoot=\box42
-\LT@cols=\count132
-\LT@rows=\count133
-\c@LT@tables=\count134
-\c@LT@chunks=\count135
+\LT@cols=\count133
+\LT@rows=\count134
+\c@LT@tables=\count135
+\c@LT@chunks=\count136
 \LT@p@ftn=\toks40
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
@@ -782,12 +783,12 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen188
 \cmidrulekern=\dimen189
 \defaultaddspace=\dimen190
-\@cmidla=\count136
-\@cmidlb=\count137
+\@cmidla=\count137
+\@cmidlb=\count138
 \@aboverulesep=\dimen191
 \@belowrulesep=\dimen192
-\@thisruleclass=\count138
-\@lastruleclass=\count139
+\@thisruleclass=\count139
+\@lastruleclass=\count140
 \@thisrulewidth=\dimen193
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -796,7 +797,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen194
 \enit@toks=\toks41
 \enit@inbox=\box43
-\enitdp@description=\count140
+\enitdp@description=\count141
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box44
@@ -804,58 +805,57 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \UL@skip=\skip52
 \UL@hook=\toks42
 \UL@height=\dimen195
-\UL@pe=\count141
+\UL@pe=\count142
 \UL@pixel=\dimen196
 \ULC@box=\box46
 Package: ulem 2012/05/18
 \ULdepth=\dimen197
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 269.
-Package hyperref Info: Option `colorlinks' set `true' on input line 269.
+Package hyperref Info: Option `breaklinks' set `true' on input line 270.
+Package hyperref Info: Option `colorlinks' set `true' on input line 270.
 
-(./Implementation.aux)
+No file Implementation.aux.
+
 \openout1 = Implementation.aux
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 276.
-LaTeX Font Info:    ... okay on input line 276.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 276.
-LaTeX Font Info:    ... okay on input line 276.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 276.
-LaTeX Font Info:    ... okay on input line 276.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 276.
-LaTeX Font Info:    ... okay on input line 276.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 276.
-LaTeX Font Info:    ... okay on input line 276.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 276.
-LaTeX Font Info:    ... okay on input line 276.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 276.
-LaTeX Font Info:    ... okay on input line 276.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 276.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 276.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 277.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 277.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 276.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 276.
-LaTeX Font Info:    ... okay on input line 276.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 276.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 277.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
+\scratchcounter=\count143
 \scratchdimen=\dimen198
 \scratchbox=\box47
-\nofMPsegments=\count143
-\nofMParguments=\count144
+\nofMPsegments=\count144
+\nofMParguments=\count145
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count145
+\MPscratchCnt=\count146
 \MPscratchDim=\dimen199
-\MPnumerator=\count146
-\makeMPintoPDFobject=\count147
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
 \everyMPtoPDFconversion=\toks44
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -922,7 +922,7 @@ ABD: EveryShipout initializing macros
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 276.
+Package hyperref Info: Link coloring ON on input line 277.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -930,82 +930,42 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count148
+\c@section@level=\count149
 )
-LaTeX Info: Redefining \ref on input line 276.
-LaTeX Info: Redefining \pageref on input line 276.
-LaTeX Info: Redefining \nameref on input line 276.
-
-(./Implementation.out) (./Implementation.out)
+LaTeX Info: Redefining \ref on input line 277.
+LaTeX Info: Redefining \pageref on input line 277.
+LaTeX Info: Redefining \nameref on input line 277.
 \@outlinefile=\write5
 
 \openout5 = Implementation.out
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 280.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 280.
-
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 280.
-
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 280.
-
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 280.
-
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 280.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 280.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 280.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 280.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 280.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 280.
-
-
-LaTeX Warning: No \author given.
-
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 285.
+Chapter 4.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 280.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 280.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 292.
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 298.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 287.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 293.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 323.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 328.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 349.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 330.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 344.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 350.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 345.
  [1
 
+
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 378.
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 377.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ts1lmtt.fd
@@ -1013,18 +973,46 @@ File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [2]
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 486.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 486.
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 486.
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 486.
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 486.
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 478.
+(Font)              scaled to size 11.40997pt on input line 486.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 478.
+(Font)              scaled to size 8.33606pt on input line 486.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 478.
+(Font)              scaled to size 6.25204pt on input line 486.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 478.
+(Font)              scaled to size 11.40997pt on input line 486.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 478.
+(Font)              scaled to size 8.33606pt on input line 486.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 478.
+(Font)              scaled to size 6.25204pt on input line 486.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [3]
@@ -1033,83 +1021,100 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [5]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[6
+[6]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.'
+[7
 Missing character: There is no π (U+03C0) in font ec-lmtt10!
 ]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[7]
-<Implementation_files/Implementation_49_0.png, id=130, 1163.34625pt x 470.75874
-pt>
+[8]
+<Implementation_files/Implementation_49_0.png, id=81, 1163.34625pt x 470.75874p
+t>
 File: Implementation_files/Implementation_49_0.png Graphic file (type png)
  <use Implementation_files/Implementation_49_0.png>
 Package luatex.def Info: Implementation_files/Implementation_49_0.png used on in
-put line 826.
+put line 846.
 (luatex.def)             Requested size: 1163.34343pt x 470.7576pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 828--829
+Underfull \hbox (badness 10000) in paragraph at lines 848--849
 
  []
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[8<./Implementation_files/Implementation_49_0.png>]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[9]
+[9<./Implementation_files/Implementation_49_0.png>]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [10]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [11]
-<Implementation_files/Implementation_62_1.png, id=151, 376.40625pt x 252.945pt>
-File: Implementation_files/Implementation_62_1.png Graphic file (type png)
-<use Implementation_files/Implementation_62_1.png>
-Package luatex.def Info: Implementation_files/Implementation_62_1.png used on in
-put line 1035.
+<Implementation_files/Implementation_62_0.png, id=101, 376.40625pt x 252.945pt>
+File: Implementation_files/Implementation_62_0.png Graphic file (type png)
+<use Implementation_files/Implementation_62_0.png>
+Package luatex.def Info: Implementation_files/Implementation_62_0.png used on in
+put line 1040.
 (luatex.def)             Requested size: 376.40532pt x 252.94438pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1037--1038
+warning  (pdf backend): ignoring duplicate destination with the name 'page.'
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1043
 
  []
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[12<./Implementation_files/Implementation_62_1.png>]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[13]
+[13<./Implementation_files/Implementation_62_0.png>]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [14]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [15]
-<Implementation_files/Implementation_78_0.png, id=167, 386.44376pt x 252.945pt>
-File: Implementation_files/Implementation_78_0.png Graphic file (type png)
-<use Implementation_files/Implementation_78_0.png>
-Package luatex.def Info: Implementation_files/Implementation_78_0.png used on in
-put line 1294.
-(luatex.def)             Requested size: 386.44281pt x 252.94438pt.
-
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [16]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[17<./Implementation_files/Implementation_78_0.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1303.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1303.
+[17]
+<Implementation_files/Implementation_78_0.png, id=125, 386.44376pt x 252.945pt>
+File: Implementation_files/Implementation_78_0.png Graphic file (type png)
+<use Implementation_files/Implementation_78_0.png>
+Package luatex.def Info: Implementation_files/Implementation_78_0.png used on in
+put line 1327.
+(luatex.def)             Requested size: 386.44281pt x 252.94438pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1330
+
+ []
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.'
+[18<./Implementation_files/Implementation_78_0.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1351.
  (./Implementation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1303.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1303.
-Package rerunfilecheck Info: File `Implementation.out' has not changed.
-(rerunfilecheck)             Checksum: 255804B11AF9B80FC1A6BC98C3DA29F5;1235.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1303.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1351.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1351.
+
+
+Package rerunfilecheck Warning: File `Implementation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Implementation.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  08B81E1B47D5809F1F81BBE4B059CDC3;1160.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1351.
 )
 
 Here is how much of LuaTeX's memory you used:
- 18805 strings out of 494481
+ 18708 strings out of 494481
  100000,460012 words of node,token memory allocated
- 965 words of node memory still in use:
-   5 hlist, 2 vlist, 2 rule, 2 glue, 66 kern, 50 attribute, 55 glue_spec, 50 att
+ 1009 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 74 kern, 51 attribute, 55 glue_spec, 51 att
 ribute_list, 1 write nodes
-   avail lists: 2:2020,3:160,4:410,5:131,6:2652,7:953,8:18,9:109,10:21,11:198
- 21904 multiletter control sequences out of 65536+600000
- 148 fonts using 9281207 bytes
- 65i,6n,49p,1348b,423s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 2:1752,3:194,4:342,5:107,6:2753,7:1041,8:18,9:109,10:21,11:204
+ 21886 multiletter control sequences out of 65536+600000
+ 99 fonts using 6372799 bytes
+ 65i,5n,49p,508b,421s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texl
 ive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2017/texmf
 -dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2017/texmf-dist/fonts/typ
@@ -1122,10 +1127,10 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Implementation.pdf (17 pages, 281621 bytes).
+Output written on Implementation.pdf (18 pages, 269671 bytes).
 
-PDF statistics: 218 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 131072)
- 136 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 173 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -10,13 +10,15 @@
 
 
     
-\documentclass[11pt]{article}
+\documentclass[11pt]{report}
+
 
     
     
     \usepackage[T1]{fontenc}
     % Nicer default font (+ math font) than Computer Modern for most use cases
     \usepackage{mathpazo}
+    \pagenumbering{gobble}
 
     % Basic figure setup, for now with no caption control since it's done
     % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
@@ -274,14 +276,8 @@
 
     \begin{document}
     
-    
-    \maketitle
-    
-    
-
-    
-    \hypertarget{implementation}{%
-\section{\Implementation}\label{implementation}}
+\setcounter{chapter}{3}
+\chapter{Implementation}\label{implementation}
 
 \hypertarget{using-probabilistic-graphical-models-to-forecast-the-price-of-crude-oil}{%
 \paragraph{(Using Probabilistic Graphical Models to forecast the price
@@ -324,14 +320,14 @@ a specific and relevant functionality of those packages have been used
 in our model.
 
     \hypertarget{data-preprocessing}{%
-\subsection{Data preprocessing}\label{data-preprocessing}}
+\section{Data preprocessing}\label{data-preprocessing}}
 
     Data preprocessing plays an important role in Machine Learning. Our data
 preprocessing has four main steps; data retrieval, data cleaning, data
 transformation, and data discretisation.
 
 \hypertarget{data-retrieval}{%
-\subsubsection{Data retrieval}\label{data-retrieval}}
+\subsection{Data retrieval}\label{data-retrieval}}
 
 The first step of constructing our model is to retrieve the data from
 the open-data facilities. We have selected the \textbf{EIA} and
@@ -346,8 +342,8 @@ Before beginning, we would be first be importing pandas and numpy, as
 they are highly required in the entire data preprocessing section.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd} \PY{c+c1}{\PYZsh{} pandas is an open source, data structures and data analysis tool in Python}
-        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}  \PY{c+c1}{\PYZsh{} numpy is a Python library supporting high\PYZhy{}level mathematical functions on large multidimensional arrays}
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
 \end{Verbatim}
 
 
@@ -358,9 +354,12 @@ which we shall recieve an API key, which is used as a passphrase to
 access data from the EIA's datacenter.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{k+kn}{import} \PY{n+nn}{eia} \PY{c+c1}{\PYZsh{} Importing the library}
-        \PY{n}{eia\PYZus{}key} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{265d1f2178aaab3ceec3d364d9cc1d11}\PY{l+s+s2}{\PYZdq{}}\PY{p}{;} \PY{c+c1}{\PYZsh{} the API key we recieved from EIA}
-        \PY{n}{eia\PYZus{}api} \PY{o}{=} \PY{n}{eia}\PY{o}{.}\PY{n}{API}\PY{p}{(}\PY{n}{eia\PYZus{}key}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Initiates a session with the EIA datacenter to recieve datasets}
+{\color{incolor}In [{\color{incolor}2}]:} \PY{c+c1}{\PYZsh{} Importing the library}
+        \PY{k+kn}{import} \PY{n+nn}{eia} 
+        \PY{c+c1}{\PYZsh{} the API key we recieved from EIA}
+        \PY{n}{eia\PYZus{}key} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{265d1f2178aaab3ceec3d364d9cc1d11}\PY{l+s+s2}{\PYZdq{}}\PY{p}{;} 
+        \PY{c+c1}{\PYZsh{} Initiates a session with the EIA datacenter to recieve datasets}
+        \PY{n}{eia\PYZus{}api} \PY{o}{=} \PY{n}{eia}\PY{o}{.}\PY{n}{API}\PY{p}{(}\PY{n}{eia\PYZus{}key}\PY{p}{)}\PY{p}{;} 
 \end{Verbatim}
 
 
@@ -374,12 +373,13 @@ as an example to demonstrate, we would be retrieving the \textbf{Crude
 Oil Exports, Monthly}, which has a Series ID `\textbf{TOTAL.COEXPUS.M}'.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{eia\PYZus{}data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{eia\PYZus{}api}\PY{o}{.}\PY{n}{data\PYZus{}by\PYZus{}series}\PY{p}{(}\PY{n}{series}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{TOTAL.COEXPUS.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Convert to pandas dataframe}
+{\color{incolor}In [{\color{incolor}3}]:} \PY{c+c1}{\PYZsh{} Convert to pandas dataframe}
+        \PY{n}{eia\PYZus{}data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{eia\PYZus{}api}\PY{o}{.}\PY{n}{data\PYZus{}by\PYZus{}series}\PY{p}{(}\PY{n}{series}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{TOTAL.COEXPUS.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}\PY{p}{;} 
 \end{Verbatim}
 
 
     \hypertarget{data-cleaning}{%
-\subsubsection{Data Cleaning}\label{data-cleaning}}
+\subsection{Data Cleaning}\label{data-cleaning}}
 
 Taking a look at the dataframe, we can observe some evident
 inconsistencies.
@@ -397,9 +397,12 @@ hmms, and pgmpy.
         \PY{k}{def} \PY{n+nf}{convert\PYZus{}to\PYZus{}datetime}\PY{p}{(}\PY{n+nb}{input}\PY{p}{)}\PY{p}{:}
                     \PY{k}{return} \PY{n}{datetime}\PY{o}{.}\PY{n}{datetime}\PY{o}{.}\PY{n}{strptime}\PY{p}{(}\PY{n+nb}{input}\PY{p}{[}\PY{p}{:}\PY{l+m+mi}{9}\PY{p}{]}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{Y }\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{m }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{o}{.}\PY{n}{date}\PY{p}{(}\PY{p}{)}\PY{p}{;}
         
-        \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{index} \PY{o}{=} \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{convert\PYZus{}to\PYZus{}datetime}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Apply to entire index}
-        \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{index} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{to\PYZus{}datetime}\PY{p}{(}\PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{index}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Convert dataframe index to datetime64[ns] index}
-        \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{columns} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{TOTAL.COEXPUS.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{;} \PY{c+c1}{\PYZsh{} pgmpy stores the column names as the variable name}
+        \PY{c+c1}{\PYZsh{} Apply to entire index}
+        \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{index} \PY{o}{=} \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{convert\PYZus{}to\PYZus{}datetime}\PY{p}{)}\PY{p}{;} 
+        \PY{c+c1}{\PYZsh{} Convert dataframe index to datetime64[ns] index}
+        \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{index} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{to\PYZus{}datetime}\PY{p}{(}\PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{index}\PY{p}{)}\PY{p}{;} 
+        \PY{c+c1}{\PYZsh{} pgmpy stores the column names as the variable name}
+        \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{columns} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{TOTAL.COEXPUS.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{;} 
 \end{Verbatim}
 
 
@@ -410,8 +413,10 @@ the prevalance of these holes is very rare, but just to be on the safe
 side to ensure we can possibly download every dataset.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{nan}\PY{p}{,} \PY{n}{regex}\PY{o}{=}\PY{k+kc}{True}\PY{p}{,} \PY{n}{inplace}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Replace the \PYZsq{}\PYZhy{}\PYZsq{} with np.nan}
-        \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{fillna}\PY{p}{(}\PY{n}{method}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bfill}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{inplace}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Backward fill the holes, by filling them with the data infront.}
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c+c1}{\PYZsh{} Replace the \PYZsq{}\PYZhy{}\PYZsq{} with np.nan}
+        \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{nan}\PY{p}{,} \PY{n}{regex}\PY{o}{=}\PY{k+kc}{True}\PY{p}{,} \PY{n}{inplace}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{;} 
+        \PY{c+c1}{\PYZsh{} Backward fill the holes, by filling them with the data infront.}
+        \PY{n}{eia\PYZus{}data}\PY{o}{.}\PY{n}{fillna}\PY{p}{(}\PY{n}{method}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bfill}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{inplace}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{;} 
 \end{Verbatim}
 
 
@@ -450,10 +455,14 @@ Crude Oil Price: West Texas Intermediate}, having the Series ID
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}8}]:} \PY{k+kn}{from} \PY{n+nn}{fredapi} \PY{k}{import} \PY{n}{Fred}
         
-        \PY{n}{fred\PYZus{}key} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{029c72315e9ec4eaf3e679ec3f6a2cb3}\PY{l+s+s2}{\PYZdq{}}\PY{p}{;} \PY{c+c1}{\PYZsh{} FRED API key}
-        \PY{n}{fred} \PY{o}{=} \PY{n}{Fred}\PY{p}{(}\PY{n}{api\PYZus{}key}\PY{o}{=}\PY{n}{fred\PYZus{}key}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Initiates a session with the FRED datacenter to recieve datasets}
+        \PY{c+c1}{\PYZsh{} FRED API key}
+        \PY{n}{fred\PYZus{}key} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{029c72315e9ec4eaf3e679ec3f6a2cb3}\PY{l+s+s2}{\PYZdq{}}\PY{p}{;} 
         
-        \PY{n}{fred\PYZus{}data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{fred}\PY{o}{.}\PY{n}{get\PYZus{}series}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Retrieve data from FRED API}
+        \PY{c+c1}{\PYZsh{} Initiates a session with the FRED datacenter to recieve datasets}
+        \PY{n}{fred} \PY{o}{=} \PY{n}{Fred}\PY{p}{(}\PY{n}{api\PYZus{}key}\PY{o}{=}\PY{n}{fred\PYZus{}key}\PY{p}{)}\PY{p}{;} 
+        
+        \PY{c+c1}{\PYZsh{} Retrieve data from FRED API}
+        \PY{n}{fred\PYZus{}data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{fred}\PY{o}{.}\PY{n}{get\PYZus{}series}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;} 
 \end{Verbatim}
 
 
@@ -463,7 +472,7 @@ compared to the EIA. Fortuntely, we will not be having to clean data
 obtained from the FRED.
 
 \hypertarget{constructing-the-training-validation-and-testing-datasets-data-transformation}{%
-\subsubsection{Constructing the training, validation and testing
+\subsection{Constructing the training, validation and testing
 datasets (Data
 transformation)}\label{constructing-the-training-validation-and-testing-datasets-data-transformation}}
 
@@ -556,7 +565,8 @@ allow us to make buy/sell decisions based on that forecast.
 {\color{incolor}In [{\color{incolor}11}]:} \PY{n}{datasets} \PY{o}{=} \PY{n}{datasets\PYZus{}eia} \PY{o}{+} \PY{n}{datasets\PYZus{}fred} \PY{o}{+} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{;}
          
          \PY{n}{current} \PY{o}{=}  \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{fred}\PY{o}{.}\PY{n}{get\PYZus{}series}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
-         \PY{n}{forecast} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{fred}\PY{o}{.}\PY{n}{get\PYZus{}series}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{shift}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
+         \PY{n}{forecast} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{fred}\PY{o}{.}\PY{n}{get\PYZus{}series}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{shift}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} 
+                                 \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
          
          \PY{n}{data\PYZus{}merge}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{current}\PY{p}{)}\PY{p}{;}
          \PY{n}{data\PYZus{}merge}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{forecast}\PY{p}{)}\PY{p}{;}
@@ -583,7 +593,7 @@ dataframes and construct a single dataframe on a common time interval.
 
 
     \hypertarget{data-discretisation}{%
-\subsubsection{Data Discretisation}\label{data-discretisation}}
+\subsection{Data Discretisation}\label{data-discretisation}}
 
 The data we have collected is non-categorical data; it is unlabelled and
 continuous. Belief networks have variables, each having discrete
@@ -594,7 +604,7 @@ detect these (hidden) states, we have to use graphical models called
 time-series data is called \textbf{Regime Detection}.
 
     \hypertarget{regime-detection}{%
-\subsection{Regime Detection}\label{regime-detection}}
+\section{Regime Detection}\label{regime-detection}}
 
 We would be using Python library called
 \href{https://github.com/lopatovsky/HMMs}{hmms} for implementing the
@@ -634,8 +644,11 @@ previous month and \(0\) representing a decrease in the price of the
 oil.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}16}]:} \PY{n}{price\PYZus{}diff} \PY{o}{=} \PY{n}{price}\PY{o}{.}\PY{n}{diff}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{;} \PY{c+c1}{\PYZsh{} The first value is NaN as there is not a previous month to compare with}
-         \PY{n}{e\PYZus{}seq} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{price\PYZus{}diff}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+m+mi}{1} \PY{k}{if} \PY{n}{x} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{k}{else} \PY{l+m+mi}{0}\PY{p}{)}\PY{o}{.}\PY{n}{values}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Replacing the change with 1 if positive, else 0}
+{\color{incolor}In [{\color{incolor}16}]:} \PY{c+c1}{\PYZsh{} The first value is NaN as there is not a previous month to compare with}
+         \PY{n}{price\PYZus{}diff} \PY{o}{=} \PY{n}{price}\PY{o}{.}\PY{n}{diff}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{;} 
+         
+         \PY{c+c1}{\PYZsh{} Replacing the change with 1 if positive, else 0}
+         \PY{n}{e\PYZus{}seq} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{price\PYZus{}diff}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+m+mi}{1} \PY{k}{if} \PY{n}{x} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{k}{else} \PY{l+m+mi}{0}\PY{p}{)}\PY{o}{.}\PY{n}{values}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
 
@@ -675,7 +688,7 @@ length \(32\) or less.
 
 
     \hypertarget{baum-welch-algorithm}{%
-\subsubsection{Baum-Welch Algorithm}\label{baum-welch-algorithm}}
+\subsection{Baum-Welch Algorithm}\label{baum-welch-algorithm}}
 
 We would now be using the \textbf{Baum-Welch algorithm} to learn the
 parameters of the HMM generating the time-series.
@@ -707,9 +720,9 @@ Initial probabilities (π) :
     
     \begin{verbatim}
           0
-0  0.151149
-1  0.203749
-2  0.645102
+0  0.508935
+1  0.375059
+2  0.116006
     \end{verbatim}
 
     
@@ -721,9 +734,9 @@ Transition probabilities matrix (A):
     
     \begin{verbatim}
           0         1         2
-0  0.556352  0.443599  0.000050
-1  0.043233  0.382674  0.574092
-2  0.550543  0.029073  0.420384
+0  0.381539  0.493705  0.124755
+1  0.051020  0.286328  0.662652
+2  0.161194  0.567721  0.271085
     \end{verbatim}
 
     
@@ -735,14 +748,14 @@ Emission probabilities matrix (B):
     
     \begin{verbatim}
           0         1
-0  0.311665  0.688335
-1  0.997841  0.002159
-2  0.000163  0.999837
+0  0.010699  0.989301
+1  0.440614  0.559386
+2  0.545406  0.454594
     \end{verbatim}
 
     
     \hypertarget{viterbi-algorithm}{%
-\subsubsection{Viterbi Algorithm}\label{viterbi-algorithm}}
+\subsection{Viterbi Algorithm}\label{viterbi-algorithm}}
 
 Now, given we now have parameters \(\lambda\) and the emitted
 observation sequence \(\texttt{e\_seq}\), we can use the \textbf{Viterbi
@@ -755,7 +768,7 @@ Algorithm} to identify the most likely \textbf{state-transition} path
 
 
     \hypertarget{multicolored-time-series-plot}{%
-\subsubsection{Multicolored time series
+\subsection{Multicolored time series
 plot}\label{multicolored-time-series-plot}}
 
 Now, we will be plotting this graph in a \textbf{multicolored}
@@ -765,9 +778,14 @@ First, we will have to make a dataframe which has the both the price and
 the associated regime the time-series data is in.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}22}]:} \PY{n}{price\PYZus{}plot} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{price}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,} \PY{n}{index}\PY{o}{=}\PY{n}{price}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{o}{.}\PY{n}{index}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Add price}
-         \PY{n}{price\PYZus{}plot}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{s\PYZus{}seq}\PY{p}{;} \PY{c+c1}{\PYZsh{} Add a column representing the regime }
-         \PY{n}{price\PYZus{}plot}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{price\PYZus{}diff}\PY{p}{;} \PY{c+c1}{\PYZsh{} Add a column representing the increase or decrease in price}
+{\color{incolor}In [{\color{incolor}22}]:} \PY{c+c1}{\PYZsh{} Add price}
+         \PY{n}{price\PYZus{}plot} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{price}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,} \PY{n}{index}\PY{o}{=}\PY{n}{price}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{o}{.}\PY{n}{index}\PY{p}{)}\PY{p}{;} 
+         
+         \PY{c+c1}{\PYZsh{} Add a column representing the regime }
+         \PY{n}{price\PYZus{}plot}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{s\PYZus{}seq}\PY{p}{;} 
+         
+         \PY{c+c1}{\PYZsh{} Add a column representing the increase or decrease in price}
+         \PY{n}{price\PYZus{}plot}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{price\PYZus{}diff}\PY{p}{;} 
 \end{Verbatim}
 
 
@@ -778,7 +796,8 @@ closer to zero, we can use these properties to tell which state
 represents which regime.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}23}]:} \PY{n}{means} \PY{o}{=} \PY{n}{price\PYZus{}plot}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Get means of all assigned states}
+{\color{incolor}In [{\color{incolor}23}]:} \PY{c+c1}{\PYZsh{} Get means of all assigned states}
+         \PY{n}{means} \PY{o}{=} \PY{n}{price\PYZus{}plot}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{;} 
          \PY{n}{lst\PYZus{}1} \PY{o}{=} \PY{n}{means}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{;}
          \PY{n}{lst\PYZus{}2} \PY{o}{=} \PY{n}{means}\PY{o}{.}\PY{n}{sort\PYZus{}values}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{;}
          
@@ -799,7 +818,9 @@ represents which regime.
          \PY{n}{fig}\PY{p}{,} \PY{n}{ax1} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{8}\PY{p}{)}\PY{p}{)}\PY{p}{;}
          \PY{n}{ax}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{price\PYZus{}plot}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
          
-         \PY{n}{cmap}   \PY{o}{=} \PY{n}{ListedColormap}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{r}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{b}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{g}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{indexed}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Make 0 (Bear) \PYZhy{} red, 1 (Stagnant) \PYZhy{} blue, 2 (Bull) \PYZhy{} green }
+         \PY{c+c1}{\PYZsh{} Make 0 (Bear) \PYZhy{} red, 1 (Stagnant) \PYZhy{} blue, 2 (Bull) \PYZhy{} green }
+         
+         \PY{n}{cmap}   \PY{o}{=} \PY{n}{ListedColormap}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{r}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{b}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{g}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{indexed}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;} 
          \PY{n}{norm}   \PY{o}{=} \PY{n}{BoundaryNorm}\PY{p}{(}\PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{3} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \PY{n}{cmap}\PY{o}{.}\PY{n}{N}\PY{p}{)}\PY{p}{;}
          \PY{n}{inxval} \PY{o}{=} \PY{n}{mdates}\PY{o}{.}\PY{n}{date2num}\PY{p}{(}\PY{n}{price\PYZus{}plot}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{to\PYZus{}pydatetime}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{;}
          \PY{n}{points} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{n}{inxval}\PY{p}{,} \PY{n}{price\PYZus{}plot}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{T}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{;}
@@ -832,7 +853,7 @@ all the training data so that we can discretise our data and use it as
 an input to our belief network.
 
 \hypertarget{discretising-dataframes-using-hidden-markov-models}{%
-\subsubsection{Discretising dataframes using Hidden Markov
+\subsection{Discretising dataframes using Hidden Markov
 Models}\label{discretising-dataframes-using-hidden-markov-models}}
 
 We will write a function that trains an HMM, identifies the sequence of
@@ -852,22 +873,11 @@ the variables and store them.
              \PY{k}{else}\PY{p}{:}
                  \PY{n}{dhmm} \PY{o}{=} \PY{n}{hmms}\PY{o}{.}\PY{n}{DtHMM}\PY{o}{.}\PY{n}{random}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{;}
                  \PY{n}{data\PYZus{}diff} \PY{o}{=}  \PY{n}{train\PYZus{}data}\PY{p}{[}\PY{n}{series\PYZus{}id}\PY{p}{]}\PY{o}{.}\PY{n}{diff}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{;}
-                 \PY{n}{emit\PYZus{}seq} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array\PYZus{}split}\PY{p}{(}\PY{n}{data\PYZus{}diff}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+m+mi}{1} \PY{k}{if} \PY{n}{x} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{k}{else} \PY{l+m+mi}{0}\PY{p}{)}\PY{o}{.}\PY{n}{values}\PY{p}{,} \PY{l+m+mi}{32}\PY{p}{)}\PY{p}{;}
+                 \PY{n}{emit\PYZus{}seq} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array\PYZus{}split}\PY{p}{(}\PY{n}{data\PYZus{}diff}\PY{o}{.}\PY{n}{apply}\PY{p}{(}
+                             \PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+m+mi}{1} \PY{k}{if} \PY{n}{x} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{k}{else} \PY{l+m+mi}{0}\PY{p}{)}\PY{o}{.}\PY{n}{values}\PY{p}{,} \PY{l+m+mi}{32}\PY{p}{)}\PY{p}{;}
                  \PY{n}{dhmm}\PY{o}{.}\PY{n}{baum\PYZus{}welch}\PY{p}{(}\PY{n}{emit\PYZus{}seq}\PY{p}{,} \PY{l+m+mi}{100}\PY{p}{)}\PY{p}{;}
                  \PY{n}{path} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./hmms/}\PY{l+s+s2}{\PYZdq{}} \PY{o}{+} \PY{n}{series\PYZus{}id}\PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZus{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
                  \PY{n}{dhmm}\PY{o}{.}\PY{n}{save\PYZus{}params}\PY{p}{(}\PY{n}{path}\PY{p}{)}\PY{p}{;}
-         
-         \PY{c+c1}{\PYZsh{} To retrain a specific dataset you were not satisfied with}
-         
-         \PY{c+c1}{\PYZsh{} retrain\PYZus{}dataset = \PYZsq{}STEO.RGDPQ\PYZus{}NONOECD.M\PYZsq{};}
-         \PY{c+c1}{\PYZsh{} dhmm = hmms.DtHMM.random(3,2);}
-         \PY{c+c1}{\PYZsh{} data\PYZus{}diff =  train\PYZus{}data[retrain\PYZus{}dataset].diff()[1:];}
-         \PY{c+c1}{\PYZsh{} emit\PYZus{}seq = np.array\PYZus{}split(data\PYZus{}diff.apply(lambda x: 1 if x \PYZgt{} 0 else 0).values, 32);}
-         \PY{c+c1}{\PYZsh{} dhmm.baum\PYZus{}welch(emit\PYZus{}seq, 100);}
-         \PY{c+c1}{\PYZsh{} path = \PYZdq{}./hmms/\PYZdq{} + retrain\PYZus{}dataset.replace(\PYZdq{}.\PYZdq{}, \PYZdq{}\PYZus{}\PYZdq{});}
-         \PY{c+c1}{\PYZsh{} dhmm.save\PYZus{}params(path);}
-         
-         \PY{c+c1}{\PYZsh{} Comment out the code above if you have already learnt HMMs and do not want to relearn them}
 \end{Verbatim}
 
     Now, we shall be constructing the discretised training dataframe.
@@ -882,7 +892,8 @@ the variables and store them.
              \PY{k}{else}\PY{p}{:}
                  \PY{n}{dhmm} \PY{o}{=} \PY{n}{hmms}\PY{o}{.}\PY{n}{DtHMM}\PY{o}{.}\PY{n}{from\PYZus{}file}\PY{p}{(}\PY{n}{path}\PY{p}{)}\PY{p}{;}
              \PY{n}{data\PYZus{}diff} \PY{o}{=}  \PY{n}{train\PYZus{}data}\PY{p}{[}\PY{n}{series\PYZus{}id}\PY{p}{]}\PY{o}{.}\PY{n}{diff}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{;}
-             \PY{n}{emit\PYZus{}seq} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{data\PYZus{}diff}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+m+mi}{1} \PY{k}{if} \PY{n}{x} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{k}{else} \PY{l+m+mi}{0}\PY{p}{)}\PY{o}{.}\PY{n}{values}\PY{p}{)}\PY{p}{;}
+             \PY{n}{emit\PYZus{}seq} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{data\PYZus{}diff}\PY{o}{.}\PY{n}{apply}\PY{p}{(}
+                         \PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+m+mi}{1} \PY{k}{if} \PY{n}{x} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{k}{else} \PY{l+m+mi}{0}\PY{p}{)}\PY{o}{.}\PY{n}{values}\PY{p}{)}\PY{p}{;}
              \PY{p}{(} \PY{n}{log\PYZus{}prob}\PY{p}{,} \PY{n}{s\PYZus{}seq} \PY{p}{)} \PY{o}{=}  \PY{n}{dhmm}\PY{o}{.}\PY{n}{viterbi}\PY{p}{(}\PY{n}{emit\PYZus{}seq}\PY{p}{)}\PY{p}{;}
              \PY{n}{disc\PYZus{}test}\PY{p}{[}\PY{n}{series\PYZus{}id}\PY{p}{]} \PY{o}{=} \PY{n}{s\PYZus{}seq}\PY{p}{;}
          
@@ -891,7 +902,7 @@ the variables and store them.
 
 
     \hypertarget{recommended-plotting-regime-switch-plots}{%
-\subsubsection{(Recommended) Plotting Regime Switch
+\subsection{(Recommended) Plotting Regime Switch
 plots}\label{recommended-plotting-regime-switch-plots}}
 
 In order to verify if the \textbf{HMM} has correctly identified regimes
@@ -914,7 +925,8 @@ belief network's training and prediction process.
                  \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{train\PYZus{}data}\PY{p}{[}\PY{n}{series\PYZus{}id}\PY{p}{]}\PY{o}{.}\PY{n}{diff}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{;}
                  \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{states}\PY{p}{[}\PY{n}{series\PYZus{}id}\PY{p}{]}\PY{p}{;}
                  
-                 \PY{n}{means} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Get means of all assigned states}
+                 \PY{c+c1}{\PYZsh{} Get means of all assigned states}
+                 \PY{n}{means} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{;} 
                  \PY{n}{lst\PYZus{}1} \PY{o}{=} \PY{n}{means}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{;}
                  \PY{n}{lst\PYZus{}2} \PY{o}{=} \PY{n}{means}\PY{o}{.}\PY{n}{sort\PYZus{}values}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{;}
          
@@ -951,7 +963,7 @@ belief network's training and prediction process.
 using it to train the Belief Network.
 
     \hypertarget{learning-bayesian-network-using-hill-climbing}{%
-\subsubsection{Learning Bayesian Network using Hill
+\subsection{Learning Bayesian Network using Hill
 Climbing}\label{learning-bayesian-network-using-hill-climbing}}
 
 Given that we have discretised our training dataset, we can now use
@@ -975,7 +987,8 @@ the relevant module in pgmpy.
          \PY{k+kn}{from} \PY{n+nn}{pgmpy}\PY{n+nn}{.}\PY{n+nn}{estimators} \PY{k}{import} \PY{n}{BayesianEstimator}
          \PY{k+kn}{from} \PY{n+nn}{pgmpy}\PY{n+nn}{.}\PY{n+nn}{estimators} \PY{k}{import} \PY{n}{BicScore}\PY{p}{,} \PY{n}{K2Score}\PY{p}{,} \PY{n}{BdeuScore}
          
-         \PY{n}{train\PYZus{}data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./data/train\PYZus{}data.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{index\PYZus{}col}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Retrieve training set}
+         \PY{c+c1}{\PYZsh{} Retrieve training set}
+         \PY{n}{train\PYZus{}data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./data/train\PYZus{}data.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{index\PYZus{}col}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{;} 
 \end{Verbatim}
 
 
@@ -988,16 +1001,17 @@ Hill Climbing to `attach' remaining macroeconomic variables to the
 constructed model.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}29}]:} \PY{n}{hc} \PY{o}{=} \PY{n}{HillClimbSearch}\PY{p}{(}\PY{n}{train\PYZus{}data}\PY{p}{,} \PY{n}{scoring\PYZus{}method}\PY{o}{=}\PY{n}{K2Score}\PY{p}{(}\PY{n}{train\PYZus{}data}\PY{p}{)}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{}  Initialise Hill Climbing Estimator}
+{\color{incolor}In [{\color{incolor}29}]:} \PY{c+c1}{\PYZsh{}  Initialise Hill Climbing Estimator}
+         \PY{n}{hc} \PY{o}{=} \PY{n}{HillClimbSearch}\PY{p}{(}\PY{n}{train\PYZus{}data}\PY{p}{,} \PY{n}{scoring\PYZus{}method}\PY{o}{=}\PY{n}{K2Score}\PY{p}{(}\PY{n}{train\PYZus{}data}\PY{p}{)}\PY{p}{)}\PY{p}{;} 
          \PY{n}{expert} \PY{o}{=}  \PY{n}{BayesianModel}\PY{p}{(}\PY{p}{)}\PY{p}{;}
          \PY{n}{expert}\PY{o}{.}\PY{n}{add\PYZus{}nodes\PYZus{}from}\PY{p}{(}\PY{n}{datasets}\PY{p}{)}\PY{p}{;}
          \PY{n}{expert}\PY{o}{.}\PY{n}{add\PYZus{}edges\PYZus{}from}\PY{p}{(}\PY{p}{[}
-                                         \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PAPR\PYZus{}NONOPEC.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} 
-                                         \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PAPR\PYZus{}OPEC.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
-                                         \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PATC\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
-                                         \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PATC\PYZus{}NON\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
-                                         \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.RGDPQ\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PATC\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
-                                         \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.RGDPQ\PYZus{}NONOECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PATC\PYZus{}NON\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
+                                 \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PAPR\PYZus{}NONOPEC.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} 
+                                 \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PAPR\PYZus{}OPEC.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
+                                 \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PATC\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
+                                 \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PATC\PYZus{}NON\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
+                                 \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.RGDPQ\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PATC\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
+                                 \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.RGDPQ\PYZus{}NONOECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{STEO.PATC\PYZus{}NON\PYZus{}OECD.M}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
                                \PY{p}{]}\PY{p}{)}\PY{p}{;} 
          
          \PY{n}{model} \PY{o}{=} \PY{n}{hc}\PY{o}{.}\PY{n}{estimate}\PY{p}{(}\PY{n}{expert}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Performs local hill climb search}
@@ -1009,9 +1023,7 @@ constructed model.
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}46}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{model}\PY{o}{.}\PY{n}{edges}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{;}
-         
-         \PY{k+kn}{import} \PY{n+nn}{networkx} \PY{k}{as} \PY{n+nn}{nx}
+{\color{incolor}In [{\color{incolor}30}]:} \PY{k+kn}{import} \PY{n+nn}{networkx} \PY{k}{as} \PY{n+nn}{nx}
          \PY{k+kn}{import} \PY{n+nn}{pylab} \PY{k}{as} \PY{n+nn}{plt}
          
          
@@ -1020,24 +1032,18 @@ constructed model.
          \PY{n}{pos} \PY{o}{=} \PY{n}{nx}\PY{o}{.}\PY{n}{spring\PYZus{}layout}\PY{p}{(}\PY{n}{G}\PY{p}{)}\PY{p}{;}
          \PY{n}{nx}\PY{o}{.}\PY{n}{draw\PYZus{}networkx\PYZus{}nodes}\PY{p}{(}\PY{n}{G}\PY{p}{,} \PY{n}{pos}\PY{p}{,} \PY{n}{node\PYZus{}size} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{)}\PY{p}{;}
          \PY{n}{nx}\PY{o}{.}\PY{n}{draw\PYZus{}networkx\PYZus{}edges}\PY{p}{(}\PY{n}{G}\PY{p}{,} \PY{n}{pos}\PY{p}{,} \PY{n}{arrows}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{;}
-         \PY{n}{nx}\PY{o}{.}\PY{n}{draw\PYZus{}networkx\PYZus{}labels}\PY{p}{(}\PY{n}{G}\PY{p}{,} \PY{n}{pos}\PY{p}{)}\PY{p}{;}
          \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-[('STEO.RGDPQ\_NONOECD.M', 'STEO.PATC\_NON\_OECD.M'), ('STEO.RGDPQ\_OECD.M', 'STEO.COPC\_OPEC.M'), ('STEO.RGDPQ\_OECD.M', 'STEO.CORIPUS.M'), ('STEO.RGDPQ\_OECD.M', 'STEO.FOREX\_WORLD.M'), ('STEO.RGDPQ\_OECD.M', 'IPN213111N'), ('STEO.RGDPQ\_OECD.M', 'STEO.COPRPUS.M'), ('STEO.RGDPQ\_OECD.M', 'WTISPLC'), ('STEO.RGDPQ\_OECD.M', 'forecast'), ('STEO.RGDPQ\_OECD.M', 'STEO.T3\_STCHANGE\_NOECD.M'), ('STEO.PAPR\_NONOPEC.M', 'WTISPLC'), ('STEO.PAPR\_OPEC.M', 'STEO.T3\_STCHANGE\_NOECD.M'), ('STEO.PAPR\_OPEC.M', 'PET.MCRIMXX2.M'), ('STEO.PATC\_OECD.M', 'WTISPLC'), ('STEO.PATC\_OECD.M', 'CAPG211S'), ('STEO.COPRPUS.M', 'IPG211111CN'), ('STEO.COPRPUS.M', 'CAPUTLG211S'), ('STEO.COPRPUS.M', 'STEO.PAPR\_NONOPEC.M'), ('STEO.FOREX\_WORLD.M', 'STEO.COPC\_OPEC.M'), ('STEO.PASC\_OECD\_T3.M', 'STEO.T3\_STCHANGE\_OOECD.M'), ('STEO.PASC\_OECD\_T3.M', 'STEO.PATC\_OECD.M'), ('STEO.COPC\_OPEC.M', 'STEO.PAPR\_OPEC.M'), ('STEO.T3\_STCHANGE\_NOECD.M', 'STEO.PASC\_OECD\_T3.M'), ('CPIENGSL', 'PCU211211'), ('CAPG211S', 'STEO.CORIPUS.M'), ('CAPG211S', 'WTISPLC'), ('CAPUTLG211S', 'IPG211S'), ('CAPUTLG211S', 'STEO.PATC\_NON\_OECD.M'), ('IPG211S', 'STEO.T3\_STCHANGE\_OOECD.M'), ('IPG211111CN', 'WTISPLC'), ('IPG211111CN', 'STEO.PAPR\_NONOPEC.M'), ('IPN213111N', 'WTISPLC'), ('WTISPLC', 'forecast'), ('WTISPLC', 'CPIENGSL'), ('forecast', 'CPIENGSL')]
-
-    \end{Verbatim}
-
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Implementation_files/Implementation_62_1.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Implementation_files/Implementation_62_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
     
     \begin{verbatim}
-<matplotlib.figure.Figure at 0x11a594588>
+<matplotlib.figure.Figure at 0x119df7828>
     \end{verbatim}
 
     
@@ -1048,7 +1054,7 @@ NetworkX.
 make inferences using forecasts as evidence.
 
 \hypertarget{validation}{%
-\subsection{Validation}\label{validation}}
+\section{Validation}\label{validation}}
 
 We have successfully fitted our model to the data and need to test our
 model now.
@@ -1092,7 +1098,9 @@ predicted regimes on the valdiation dataset.
                  \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{vald\PYZus{}data}\PY{p}{[}\PY{n}{series\PYZus{}id}\PY{p}{]}\PY{o}{.}\PY{n}{diff}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{;}
                  \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{states}\PY{p}{[}\PY{n}{series\PYZus{}id}\PY{p}{]}\PY{p}{;}
                  
-                 \PY{n}{means} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Get means of all assigned states}
+                 \PY{c+c1}{\PYZsh{} Get means of all assigned states}
+                 
+                 \PY{n}{means} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Regime}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Diff}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{;} 
                  
                  \PY{n}{lst\PYZus{}1} \PY{o}{=} \PY{n}{means}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{;}
                  \PY{n}{lst\PYZus{}2} \PY{o}{=} \PY{n}{means}\PY{o}{.}\PY{n}{sort\PYZus{}values}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{;}
@@ -1133,11 +1141,17 @@ For that, we have to drop the forecast column and then do an inference
 on the model.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}33}]:} \PY{n}{vald\PYZus{}real} \PY{o}{=} \PY{n}{states}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{as\PYZus{}matrix}\PY{p}{(}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Record real data observation, to be compared with the predicted one}
-         \PY{n}{vald\PYZus{}data\PYZus{}new} \PY{o}{=} \PY{n}{states}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Drop the real data observation so that it does not bias prediction}
+{\color{incolor}In [{\color{incolor}33}]:} \PY{c+c1}{\PYZsh{} Record real data observation, to be compared with the predicted one}
+         \PY{n}{vald\PYZus{}real} \PY{o}{=} \PY{n}{states}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{as\PYZus{}matrix}\PY{p}{(}\PY{p}{)}\PY{p}{;} 
          
-         \PY{n}{vald\PYZus{}prediction} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{vald\PYZus{}data\PYZus{}new}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Inference on the constructed graphical model}
-         \PY{n}{pred\PYZus{}value\PYZus{}vald} \PY{o}{=} \PY{n}{vald\PYZus{}prediction}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{as\PYZus{}matrix}\PY{p}{(}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Retrieve it as an array so we can compare with real value}
+         \PY{c+c1}{\PYZsh{} Drop the real data observation so that it does not bias prediction}
+         \PY{n}{vald\PYZus{}data\PYZus{}new} \PY{o}{=} \PY{n}{states}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{;} 
+         
+         \PY{c+c1}{\PYZsh{} Inference on the constructed graphical model}
+         \PY{n}{vald\PYZus{}prediction} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{vald\PYZus{}data\PYZus{}new}\PY{p}{)}\PY{p}{;} 
+         
+         \PY{c+c1}{\PYZsh{} Retrieve it as an array so we can compare with real value}
+         \PY{n}{pred\PYZus{}value\PYZus{}vald} \PY{o}{=} \PY{n}{vald\PYZus{}prediction}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{as\PYZus{}matrix}\PY{p}{(}\PY{p}{)}\PY{p}{;} 
 \end{Verbatim}
 
 
@@ -1157,13 +1171,13 @@ on the model.
     \begin{Verbatim}[commandchars=\\\{\}]
 
 Predicted Value: 
-[0 1 1 2 2 2 2 2 2 2 1 1 1 1 2 1 1 1 1 1 1 1 2 2 2 2 1 1]
+[1 1 1 2 1 1 1 1 2 2 1 1 1 2 1 1 1 1 1 1 1 2 1 1 1 2 1 1]
 
 Real Value: 
-[1 1 1 1 2 2 2 2 2 2 0 1 1 1 2 0 0 0 0 0 0 1 2 2 2 2 0 0]
+[1 1 1 0 2 2 2 1 0 0 2 1 1 0 2 2 2 2 2 2 2 0 2 1 1 0 2 2]
 
 Error: 
-42.857142857142854
+53.57142857142857
 
     \end{Verbatim}
 
@@ -1190,7 +1204,7 @@ our Hill Climbing method again to ensure that the Hill Climber
 atleast a better \textbf{local maximum}.
 
 \hypertarget{testing}{%
-\subsubsection{Testing}\label{testing}}
+\subsection{Testing}\label{testing}}
 
 Similar to what we did with the validation data set, we first have to
 discretise the test dataset, and predict it on the \emph{BayesianModel}.
@@ -1209,7 +1223,7 @@ discretise the test dataset, and predict it on the \emph{BayesianModel}.
              \PY{p}{(} \PY{n}{log\PYZus{}prob}\PY{p}{,} \PY{n}{s\PYZus{}seq} \PY{p}{)} \PY{o}{=}  \PY{n}{dhmm}\PY{o}{.}\PY{n}{viterbi}\PY{p}{(}\PY{n}{emit\PYZus{}seq}\PY{p}{)}\PY{p}{;}
              \PY{n}{discrete\PYZus{}test}\PY{p}{[}\PY{n}{series\PYZus{}id}\PY{p}{]} \PY{o}{=} \PY{n}{s\PYZus{}seq}\PY{p}{;}
          
-         \PY{n}{discrete\PYZus{}test}\PY{o}{.}\PY{n}{to\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./data/test\PYZus{}data.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Saving to CSV}
+         \PY{n}{discrete\PYZus{}test}\PY{o}{.}\PY{n}{to\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./data/test\PYZus{}data.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;} 
 \end{Verbatim}
 
 
@@ -1221,21 +1235,30 @@ final conclusion of the reliability of the model.
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}36}]:} \PY{n}{discrete\PYZus{}test} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./data/test\PYZus{}data.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{index\PYZus{}col}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{;}
          
-         \PY{n}{test\PYZus{}real} \PY{o}{=} \PY{n}{discrete\PYZus{}test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{as\PYZus{}matrix}\PY{p}{(}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Record real data observation, to be compared with the predicted one}
-         \PY{n}{test\PYZus{}data\PYZus{}new} \PY{o}{=} \PY{n}{discrete\PYZus{}test}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Drop the real data observation so that it does not bias prediction}
+         \PY{c+c1}{\PYZsh{} Record real data observation, to be compared with the predicted one}
+         \PY{n}{test\PYZus{}real} \PY{o}{=} \PY{n}{discrete\PYZus{}test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{as\PYZus{}matrix}\PY{p}{(}\PY{p}{)}\PY{p}{;} 
          
-         \PY{n}{test\PYZus{}prediction} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{test\PYZus{}data\PYZus{}new}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Inference on the constructed graphical model}
-         \PY{n}{pred\PYZus{}value\PYZus{}test} \PY{o}{=} \PY{n}{test\PYZus{}prediction}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{as\PYZus{}matrix}\PY{p}{(}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Retrieve it as an array so we can compare with real value}
+         \PY{c+c1}{\PYZsh{} Drop the real data observation so that it does not bias prediction}
+         \PY{n}{test\PYZus{}data\PYZus{}new} \PY{o}{=} \PY{n}{discrete\PYZus{}test}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{;} 
+         
+         \PY{c+c1}{\PYZsh{} Inference on the constructed graphical model}
+         \PY{n}{test\PYZus{}prediction} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{test\PYZus{}data\PYZus{}new}\PY{p}{)}\PY{p}{;} 
+         
+         \PY{c+c1}{\PYZsh{} Retrieve it as an array so we can compare with real value}
+         \PY{n}{pred\PYZus{}value\PYZus{}test} \PY{o}{=} \PY{n}{test\PYZus{}prediction}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{as\PYZus{}matrix}\PY{p}{(}\PY{p}{)}\PY{p}{;} 
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}37}]:} \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{Predicted Value: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
-         \PY{n+nb}{print}\PY{p}{(}\PY{n}{pred\PYZus{}value\PYZus{}test}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} This is the price, not the forecast}
+         
+         \PY{c+c1}{\PYZsh{} This is the price, not the forecast}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{pred\PYZus{}value\PYZus{}test}\PY{p}{)}\PY{p}{;} 
          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{Real Value: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
          \PY{n+nb}{print}\PY{p}{(}\PY{n}{test\PYZus{}real}\PY{p}{)}\PY{p}{;}
          
-         \PY{n}{error} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{test\PYZus{}real} \PY{o}{!=} \PY{n}{np}\PY{o}{.}\PY{n}{roll}\PY{p}{(}\PY{n}{pred\PYZus{}value\PYZus{}test}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{;} \PY{c+c1}{\PYZsh{} Shift to get forecast}
+         \PY{c+c1}{\PYZsh{} Shift to get forecast}
+         \PY{n}{error} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{test\PYZus{}real} \PY{o}{!=} \PY{n}{np}\PY{o}{.}\PY{n}{roll}\PY{p}{(}\PY{n}{pred\PYZus{}value\PYZus{}test}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{;} 
          \PY{c+c1}{\PYZsh{}error = np.mean(test\PYZus{}real != pred\PYZus{}value\PYZus{}test); \PYZsh{} Shift to get forecast}
          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{Error: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
          \PY{n+nb}{print}\PY{p}{(}\PY{n}{error} \PY{o}{*} \PY{l+m+mi}{100}\PY{p}{)}\PY{p}{;}
@@ -1245,13 +1268,13 @@ final conclusion of the reliability of the model.
     \begin{Verbatim}[commandchars=\\\{\}]
 
 Predicted Value: 
-[0 2 0 0 1 1 1 1 2 2 2 2 2 1 1 2 1 2 2 1 1 1 1 2 1 1 1 1]
+[1 2 1 1 1 1 1 1 2 1 1 1 2 1 1 1 2 1 1 2 1 1 1 1 1 1 1 1]
 
 Real Value: 
-[1 2 0 0 0 1 1 1 1 2 2 2 2 0 1 1 1 2 2 0 0 1 1 1 1 1 1 1]
+[1 0 2 2 2 1 1 1 0 2 1 1 0 2 1 1 0 2 1 0 2 1 1 1 1 1 1 1]
 
 Error: 
-28.57142857142857
+25.0
 
     \end{Verbatim}
 
@@ -1261,7 +1284,7 @@ position, and `1' for no action. We assume we start with one barrel of
 oil and we would be trading it to acquire a larger unit.
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}51}]:} \PY{n}{test\PYZus{}price} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{test\PYZus{}data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
+{\color{incolor}In [{\color{incolor}38}]:} \PY{n}{test\PYZus{}price} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{test\PYZus{}data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
          \PY{n}{test\PYZus{}signal} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{test\PYZus{}prediction}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
          \PY{n}{test\PYZus{}sheet} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{concat}\PY{p}{(}\PY{p}{[}\PY{n}{test\PYZus{}price}\PY{p}{,} \PY{n}{test\PYZus{}signal}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{join}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{inner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;}
          
@@ -1281,11 +1304,22 @@ oil and we would be trading it to acquire a larger unit.
              \PY{k}{else}\PY{p}{:}
                  \PY{n}{trades}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{trades}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{p}{;}
          
-         \PY{n}{test\PYZus{}performance} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{trades}\PY{p}{,} \PY{n}{index} \PY{o}{=} \PY{n}{test\PYZus{}signal}\PY{o}{.}\PY{n}{index}\PY{p}{,} \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{performance}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
+         \PY{n}{eia\PYZus{}forecast} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./data/eia\PYZus{}forecast.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{index\PYZus{}col}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{;}
+         \PY{n}{eia\PYZus{}forecast}\PY{o}{.}\PY{n}{index} \PY{o}{=} \PY{n}{test\PYZus{}signal}\PY{o}{.}\PY{n}{index}\PY{p}{;}
+         \PY{n}{test\PYZus{}performance} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{trades}\PY{p}{,} \PY{n}{index} \PY{o}{=} \PY{n}{test\PYZus{}signal}\PY{o}{.}\PY{n}{index}\PY{p}{,} 
+                                                     \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{performance}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
          \PY{n}{test\PYZus{}sheet} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{concat}\PY{p}{(}\PY{p}{[}\PY{n}{test\PYZus{}sheet}\PY{p}{,} \PY{n}{test\PYZus{}performance}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{join}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{inner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;}
+         
          
          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{test\PYZus{}sheet}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTISPLC}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{r}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;}
          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{test\PYZus{}sheet}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{performance}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{g}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{eia\PYZus{}forecast}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{eia\PYZus{}forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{b}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;}
+         
+         \PY{n}{r\PYZus{}patch} \PY{o}{=} \PY{n}{mpatches}\PY{o}{.}\PY{n}{Patch}\PY{p}{(}\PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{label}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{WTI Crude Oil Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;}
+         \PY{n}{g\PYZus{}patch} \PY{o}{=} \PY{n}{mpatches}\PY{o}{.}\PY{n}{Patch}\PY{p}{(}\PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{label}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Bayesian Model}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;}
+         \PY{n}{b\PYZus{}patch} \PY{o}{=} \PY{n}{mpatches}\PY{o}{.}\PY{n}{Patch}\PY{p}{(}\PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{label}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{EIA Forecast}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;}
+         
+         \PY{n}{plt}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{n}{handles}\PY{o}{=}\PY{p}{[}\PY{n}{r\PYZus{}patch}\PY{p}{,} \PY{n}{g\PYZus{}patch}\PY{p}{,} \PY{n}{b\PYZus{}patch}\PY{p}{]}\PY{p}{,} \PY{n}{loc} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lower right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
 
@@ -1293,7 +1327,22 @@ oil and we would be trading it to acquire a larger unit.
     \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Implementation_files/Implementation_78_0.png}
     \end{center}
     { \hspace*{\fill} \\}
-    As we can see, the algorithm has successfully managed to hedge the risk in the early quarter of 2015, but did end up shorting in a bull run in late 2017/early 2018. 
+    
+    As we can see, the algorithm has successfully managed to hedge the risk
+in the early quarter of 2015, but did end up shorting in a bull run in
+late 2017/early 2018.
+
+We can also compare the performance of the model with the performance of
+the EIA forecasts, where we can see the EIA forecasted a bull run when
+it was a bear run in early 2016. We can also similarly compare the
+performance in 2017 where both the EIA and the Bayesian Model predicted
+the the price will remain \textbf{stagnant}, however, in reality, it was
+a bull run.
+
+We \textbf{conclude} that our model performs \textbf{better} than the
+\textbf{EIA forecast}, however, \textbf{does not} perform better than
+the index.
+
 
     % Add a bibliography block to the postdoc
     

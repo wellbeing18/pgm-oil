@@ -1,5 +1,5 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  11 APR 2018 10:32
- restricted system commands enabled.
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  27 APR 2018 22:27
+ system commands enabled.
 **chap3.tex
 (./chap3.tex
 LaTeX2e <2017-04-15>
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.104 seconds
+luaotfload | main : initialization completed in 0.121 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 ! Undefined control sequence.
 l.1 \chapter
@@ -74,9 +74,17 @@ l.4 I
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+\citation{wang2017bayesian}
+luaotfload | db : Font names database loaded from /Users/danish/Library/texlive/
+2017/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users/
+danish/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-r
+egular.luc)(load luc: /Users/danish/Library/texlive/2017/texmf-var/luatex-cache/
+generic/fonts/otl/lmroman10-bold.luc)
 ! Undefined control sequence.
-l.4 ... oil trading model. In the previous \hyperref
-                                                  [background]{section}, we ...
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 ...cle behaviour in Xian \cite{wang2017bayesian}
+                                                  . Laying out a clear desig...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -84,8 +92,16 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
+LaTeX Warning: Citation `wang2017bayesian' on page  undefined on input line 4.
+
+
 Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
 []In
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 4--5
+[[]].
  []
 
 ! Undefined control sequence.
@@ -197,10 +213,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-luaotfload | db : Font names database loaded from /Users/danish/Library/texlive/
-2017/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users/
-danish/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-re
-gular.luc)
+(load luc: /Users/danish/Library/texlive/2017/texmf-var/luatex-cache/generic/fon
+ts/otl/lmmono10-regular.luc)
 ! Undefined control sequence.
 l.20     \node
              [block, left of=init, node distance=3cm] (ret) {retrieve \\ dat...
@@ -465,15 +479,6 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.37     \path
-             [line] (decide) -| node [near start] {yes} (update);
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.38     \path
              [line] (decide) -- node {no} (test);
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -482,8 +487,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
+l.38     \path
+             [line] (decide) -| node {yes} (update);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
 l.39     \path
-             [line] (update) |- (evaluate);
+             [line] (update) -- (evaluate);
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -538,7 +552,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.44 \caption
-           {An illustration of the design process for the oil trading model.}
+           {An illustration of the design process for the Crude Oil Trading ...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -599,9 +613,6 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 \citation{ecoact}
-(load luc: /Users/danish/Library/texlive/2017/texmf-var/luatex-cache/generic/fon
-ts/otl/lmroman10-regular.luc)(load luc: /Users/danish/Library/texlive/2017/texmf
--var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)
 ! Undefined control sequence.
 <write> ... Warning: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -2326,15 +2337,15 @@ l.99 ...NONOECD.M}{\texttt{STEO.RGDPQ\_NONOECD.M}} &
 (That makes 100 errors; please try again.)
 
 Here is how much of LuaTeX's memory you used:
- 44 strings out of 494481
+ 45 strings out of 494481
  100000,89155 words of node,token memory allocated
- 62449 words of node memory still in use:
-   153 hlist, 9 rule, 2 disc, 37 local_par, 4 dir, 2 math, 1612 glue, 35 kern, 9
-8 penalty, 3 unset, 10 noad, 9 math_char, 1 sub_box, 1 sub_mlist, 7988 glyph, 2 
-align_record, 140 attribute, 46 glue_spec, 140 attribute_list, 10 temp, 1 align_
+ 62138 words of node memory still in use:
+   156 hlist, 9 rule, 2 disc, 37 local_par, 4 dir, 2 math, 1612 glue, 35 kern, 9
+8 penalty, 3 unset, 10 noad, 9 math_char, 1 sub_box, 1 sub_mlist, 7931 glyph, 2 
+align_record, 141 attribute, 46 glue_spec, 141 attribute_list, 10 temp, 1 align_
 stack, 1 write nodes
    avail lists: 2:5,3:71,4:134,5:8,7:21,8:75,10:133
- 4277 multiletter control sequences out of 65536+600000
+ 4278 multiletter control sequences out of 65536+600000
  27 fonts using 1602879 bytes
  19i,11n,23p,978b,208s stack positions out of 5000i,500n,10000p,200000b,100000s
 !  ==> Fatal error occurred, no output PDF file produced!
