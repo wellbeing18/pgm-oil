@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  28 APR 2018 01:53
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.3.16)  28 APR 2018 14:54
  system commands enabled.
 **Implementation.tex
 (./Implementation.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.109 seconds
+luaotfload | main : initialization completed in 0.115 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
@@ -814,9 +814,9 @@ Package: ulem 2012/05/18
 Package hyperref Info: Option `breaklinks' set `true' on input line 270.
 Package hyperref Info: Option `colorlinks' set `true' on input line 270.
 
-No file Implementation.aux.
-
+(./Implementation.aux)
 \openout1 = Implementation.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 277.
 LaTeX Font Info:    ... okay on input line 277.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 277.
@@ -833,6 +833,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 277.
 LaTeX Font Info:    ... okay on input line 277.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 277.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 277.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -935,6 +936,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 277.
 LaTeX Info: Redefining \pageref on input line 277.
 LaTeX Info: Redefining \nameref on input line 277.
+
+(./Implementation.out) (./Implementation.out)
 \@outlinefile=\write5
 
 \openout5 = Implementation.out
@@ -1028,8 +1031,8 @@ Missing character: There is no π (U+03C0) in font ec-lmtt10!
 ]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [8]
-<Implementation_files/Implementation_49_0.png, id=81, 1163.34625pt x 470.75874p
-t>
+<Implementation_files/Implementation_49_0.png, id=131, 1163.34625pt x 470.75874
+pt>
 File: Implementation_files/Implementation_49_0.png Graphic file (type png)
  <use Implementation_files/Implementation_49_0.png>
 Package luatex.def Info: Implementation_files/Implementation_49_0.png used on in
@@ -1047,7 +1050,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [10]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [11]
-<Implementation_files/Implementation_62_0.png, id=101, 376.40625pt x 252.945pt>
+<Implementation_files/Implementation_62_0.png, id=148, 376.40625pt x 252.945pt>
 File: Implementation_files/Implementation_62_0.png Graphic file (type png)
 <use Implementation_files/Implementation_62_0.png>
 Package luatex.def Info: Implementation_files/Implementation_62_0.png used on in
@@ -1071,7 +1074,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [16]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [17]
-<Implementation_files/Implementation_78_0.png, id=125, 386.44376pt x 252.945pt>
+<Implementation_files/Implementation_78_0.png, id=171, 386.44376pt x 252.945pt>
 File: Implementation_files/Implementation_78_0.png Graphic file (type png)
 <use Implementation_files/Implementation_78_0.png>
 Package luatex.def Info: Implementation_files/Implementation_78_0.png used on in
@@ -1090,29 +1093,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1351.
  (./Implementation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1351.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1351.
-
-
-Package rerunfilecheck Warning: File `Implementation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Implementation.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  08B81E1B47D5809F1F81BBE4B059CDC3;1160.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `Implementation.out' has not changed.
+(rerunfilecheck)             Checksum: 08B81E1B47D5809F1F81BBE4B059CDC3;1160.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1351.
 )
 
 Here is how much of LuaTeX's memory you used:
- 18708 strings out of 494481
+ 18739 strings out of 494481
  100000,460012 words of node,token memory allocated
  1009 words of node memory still in use:
    5 hlist, 2 vlist, 2 rule, 2 glue, 74 kern, 51 attribute, 55 glue_spec, 51 att
 ribute_list, 1 write nodes
    avail lists: 2:1752,3:194,4:342,5:107,6:2753,7:1041,8:18,9:109,10:21,11:204
- 21886 multiletter control sequences out of 65536+600000
+ 21902 multiletter control sequences out of 65536+600000
  99 fonts using 6372799 bytes
  65i,5n,49p,508b,421s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texl
@@ -1127,10 +1120,10 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Implementation.pdf (18 pages, 269671 bytes).
+Output written on Implementation.pdf (18 pages, 270770 bytes).
 
-PDF statistics: 173 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+PDF statistics: 219 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
  33 named destinations out of 1000 (max. 131072)
- 16 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 100000000)
 
